@@ -1,0 +1,7 @@
+method,sessions,failed_or_mismatch,public_bytes_median,private_bytes_median,total_ms_median,total_ms_p95,wall_s
+Full escrow,29950,0,4680.0,0.0,1.137,1.356,35.9
+Hash anchor,29950,0,3631.0,1156.0,1.567,1.792,48.8
+CDR baseline,29950,0,0.0,4617.0,1.526,1.757,47.6
+DVAS-EV 2-of-3,29950,0,8768.0,5822.0,3.665,4.048,184.2
+DVAS-EV 3-of-5,29950,0,8988.0,9410.0,4.297,4.833,250.9
+DVAS-EV top-up,3395,0,12184,5822,4.398,4.991,24.9

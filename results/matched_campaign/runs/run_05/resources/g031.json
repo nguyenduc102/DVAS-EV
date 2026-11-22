@@ -1,0 +1,160 @@
+{
+  "coordinator_pid": 19947,
+  "dataset": "MFEV",
+  "group_cpu_ms_per_attempt": 8.25,
+  "group_id": "g031",
+  "group_wall_ms": 1128.604599,
+  "measured_sessions": 200,
+  "method": "DVASSelectiveQuorum",
+  "mutation": "honest",
+  "n": 3,
+  "phase": "healthy",
+  "post_group_drain_ms": 10,
+  "profile": "C3",
+  "registry_snapshot_bytes_fanout": 4342062,
+  "resource_samples": [
+    {
+      "MemAvailable": 15374380,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0390625,
+      "parent_rss_kib": 52888,
+      "pss_sum_kib": 119450,
+      "rss_sum_kib": 180568,
+      "timestamp_ns": 1791860418496415521
+    },
+    {
+      "MemAvailable": 15373872,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0390625,
+      "parent_rss_kib": 52888,
+      "pss_sum_kib": 119482,
+      "rss_sum_kib": 180568,
+      "timestamp_ns": 1791860418597582013
+    },
+    {
+      "MemAvailable": 15374328,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0390625,
+      "parent_rss_kib": 52888,
+      "pss_sum_kib": 119518,
+      "rss_sum_kib": 180568,
+      "timestamp_ns": 1791860418699487257
+    },
+    {
+      "MemAvailable": 15374328,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0390625,
+      "parent_rss_kib": 52888,
+      "pss_sum_kib": 119554,
+      "rss_sum_kib": 180568,
+      "timestamp_ns": 1791860418801085662
+    },
+    {
+      "MemAvailable": 15374328,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0390625,
+      "parent_rss_kib": 52888,
+      "pss_sum_kib": 119638,
+      "rss_sum_kib": 180568,
+      "timestamp_ns": 1791860418903517147
+    },
+    {
+      "MemAvailable": 15374328,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0390625,
+      "parent_rss_kib": 52888,
+      "pss_sum_kib": 119778,
+      "rss_sum_kib": 180568,
+      "timestamp_ns": 1791860419004903919
+    },
+    {
+      "MemAvailable": 15373824,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0390625,
+      "parent_rss_kib": 53080,
+      "pss_sum_kib": 119930,
+      "rss_sum_kib": 180952,
+      "timestamp_ns": 1791860419106291465
+    },
+    {
+      "MemAvailable": 15373824,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0390625,
+      "parent_rss_kib": 53080,
+      "pss_sum_kib": 120062,
+      "rss_sum_kib": 180952,
+      "timestamp_ns": 1791860419208227039
+    },
+    {
+      "MemAvailable": 15373824,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0390625,
+      "parent_rss_kib": 53272,
+      "pss_sum_kib": 120266,
+      "rss_sum_kib": 181144,
+      "timestamp_ns": 1791860419309644411
+    },
+    {
+      "MemAvailable": 15373824,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0390625,
+      "parent_rss_kib": 53464,
+      "pss_sum_kib": 120402,
+      "rss_sum_kib": 181336,
+      "timestamp_ns": 1791860419411504302
+    },
+    {
+      "MemAvailable": 15373980,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0390625,
+      "parent_rss_kib": 53464,
+      "pss_sum_kib": 120534,
+      "rss_sum_kib": 181336,
+      "timestamp_ns": 1791860419513113334
+    },
+    {
+      "MemAvailable": 15373480,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0390625,
+      "parent_rss_kib": 53656,
+      "pss_sum_kib": 120674,
+      "rss_sum_kib": 181912,
+      "timestamp_ns": 1791860419614844200
+    },
+    {
+      "MemAvailable": 15373480,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0390625,
+      "parent_rss_kib": 53656,
+      "pss_sum_kib": 120670,
+      "rss_sum_kib": 181912,
+      "timestamp_ns": 1791860419624238149
+    }
+  ],
+  "run_id": 5,
+  "sampled_peak_pss_sum_kib": 120674,
+  "sampled_peak_rss_sum_kib": 181912,
+  "scenario": "healthy",
+  "setup_ms": 1176.419777,
+  "t": 2,
+  "total_group_cpu_ms": 1650.0,
+  "worker_pids": [
+    21215,
+    21227,
+    21239
+  ],
+  "worker_startup_ms": 1066.7640979999078
+}

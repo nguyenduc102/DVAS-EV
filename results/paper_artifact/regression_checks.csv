@@ -1,0 +1,11 @@
+criterion,check,metric,value,expected,pass,note
+1,acn_valid: DVAS outcome == legacy outcome (or explained legacy over-hold capture),agree+explained,5000+0/5000,5000/5000,True,
+1,acn_valid: settled == rows whose exact tariff amount <= hold,settled,5000,5000,True,26.4s; max|captured-expected|=0.000001
+1,acn_valid: captured amount vs dataset expected_amount,max_abs_error,0.000001,<= 1e-6,True,exact=4996
+2,acn_original_cap: DVAS outcome == legacy outcome (or explained legacy over-hold capture),agree+explained,4999+1/5000,5000/5000,True,explained rows (legacy captured > hold via MONEY_EPS): [2320]
+2,acn_original_cap: settled == rows whose exact tariff amount <= hold,settled,4611,4611,True,25.8s; max|captured-expected|=0.000001
+2,acn_original_cap: captured amount vs dataset expected_amount,max_abs_error,0.000001,<= 1e-6,True,exact=4608
+2,acn_topup: DVAS outcome == legacy outcome (or explained legacy over-hold capture),agree+explained,388+0/388,388/388,True,
+2,acn_topup: settled == rows whose exact tariff amount <= hold,settled,388,388,True,2.3s; max|captured-expected|=0
+2,acn_topup: captured amount vs dataset expected_amount,max_abs_error,0,<= 1e-6,True,exact=388
+1,mfev_valid: all sessions settle,settled,5000/5000,all,True,max_err=0.000000

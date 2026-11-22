@@ -1,0 +1,11 @@
+home_operator,cpo,cross_domain,sessions,settled,amount_exact,users,stations,meters,verifiers,verifier_operators
+OP_A,OP_A,False,572,572,572,,,,,
+OP_A,OP_B,True,1474,1474,1474,,,,,
+OP_A,OP_C,True,392,392,392,,,,,
+OP_B,OP_A,True,813,813,813,,,,,
+OP_B,OP_B,False,202,202,202,,,,,
+OP_B,OP_C,True,382,382,382,,,,,
+OP_C,OP_A,True,615,615,615,,,,,
+OP_C,OP_B,True,223,223,223,,,,,
+OP_C,OP_C,False,327,327,327,,,,,
+REGISTRY,,,,,,870,909,909,3,3

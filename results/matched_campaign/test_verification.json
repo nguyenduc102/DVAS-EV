@@ -1,0 +1,25 @@
+{
+  "date_client_timezone": "2026-10-13 Asia/Taipei",
+  "observer": "Codex, observed local tool exits and pytest collection",
+  "before_benchmark": true,
+  "runs": [
+    {
+      "command": "bash scripts/env/dvas_run.sh python -m pytest tests/dvas/test_matched_benchmark.py -q",
+      "exit_code": 0,
+      "passed_tests": 14
+    },
+    {
+      "command": "bash scripts/env/dvas_run.sh python -m pytest tests -q",
+      "exit_code": 0,
+      "passed_tests": 282
+    }
+  ],
+  "collection_confirmation": {
+    "after_benchmark": true,
+    "command": "bash scripts/env/dvas_run.sh python -m pytest tests --collect-only -q",
+    "collected_tests": 282,
+    "new_harness_tests": 14
+  },
+  "warning_retained": "liboqs 0.15.0 versus liboqs-python 0.14.0 minor-version mismatch",
+  "not_a_latency_dataset": true
+}

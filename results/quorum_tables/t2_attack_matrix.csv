@@ -1,0 +1,9 @@
+group,attack_types,cases,rejected,accepted,errors,systematic,randomized,compound
+Replay and session,6,1800,1800,0,0,1800,0,300
+Projection integrity,4,1814,1814,0,0,1200,614,300
+Meter/role binding,3,900,900,0,0,900,0,300
+Delivery matching,5,2448,2448,0,0,1500,948,300
+Private evidence,1,615,615,0,0,300,315,0
+Quorum RBC,5,1500,1500,0,0,1500,0,900
+Lifecycle order,2,600,600,0,0,600,0,0
+Randomized compound,1,323,323,0,0,0,323,323

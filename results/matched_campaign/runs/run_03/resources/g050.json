@@ -1,0 +1,232 @@
+{
+  "coordinator_pid": 10844,
+  "dataset": "ACN",
+  "group_cpu_ms_per_attempt": 15.833333333333334,
+  "group_id": "g050",
+  "group_wall_ms": 1852.753022,
+  "measured_sessions": 12,
+  "method": "FullEvidenceQuorum",
+  "mutation": "honest",
+  "n": 5,
+  "phase": "fault",
+  "post_group_drain_ms": 10,
+  "profile": "C3",
+  "registry_snapshot_bytes_fanout": 739325,
+  "resource_samples": [
+    {
+      "MemAvailable": 15336576,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0068359375,
+      "parent_rss_kib": 57480,
+      "pss_sum_kib": 148672,
+      "rss_sum_kib": 244680,
+      "timestamp_ns": 1791860071107705469
+    },
+    {
+      "MemAvailable": 15336352,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0068359375,
+      "parent_rss_kib": 57480,
+      "pss_sum_kib": 148776,
+      "rss_sum_kib": 244680,
+      "timestamp_ns": 1791860071209363646
+    },
+    {
+      "MemAvailable": 15336352,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0068359375,
+      "parent_rss_kib": 57480,
+      "pss_sum_kib": 148884,
+      "rss_sum_kib": 244680,
+      "timestamp_ns": 1791860071310679693
+    },
+    {
+      "MemAvailable": 15336352,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0068359375,
+      "parent_rss_kib": 57480,
+      "pss_sum_kib": 148884,
+      "rss_sum_kib": 244680,
+      "timestamp_ns": 1791860071411977474
+    },
+    {
+      "MemAvailable": 15336352,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0068359375,
+      "parent_rss_kib": 57480,
+      "pss_sum_kib": 148896,
+      "rss_sum_kib": 244680,
+      "timestamp_ns": 1791860071513265503
+    },
+    {
+      "MemAvailable": 15336352,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0068359375,
+      "parent_rss_kib": 57480,
+      "pss_sum_kib": 148928,
+      "rss_sum_kib": 244872,
+      "timestamp_ns": 1791860071614569130
+    },
+    {
+      "MemAvailable": 15336352,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0068359375,
+      "parent_rss_kib": 57480,
+      "pss_sum_kib": 148928,
+      "rss_sum_kib": 244872,
+      "timestamp_ns": 1791860071716028848
+    },
+    {
+      "MemAvailable": 15336352,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0068359375,
+      "parent_rss_kib": 57480,
+      "pss_sum_kib": 148940,
+      "rss_sum_kib": 244872,
+      "timestamp_ns": 1791860071817362479
+    },
+    {
+      "MemAvailable": 15336352,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0068359375,
+      "parent_rss_kib": 57480,
+      "pss_sum_kib": 148960,
+      "rss_sum_kib": 244872,
+      "timestamp_ns": 1791860071918638475
+    },
+    {
+      "MemAvailable": 15336352,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0068359375,
+      "parent_rss_kib": 57480,
+      "pss_sum_kib": 148960,
+      "rss_sum_kib": 244872,
+      "timestamp_ns": 1791860072019922754
+    },
+    {
+      "MemAvailable": 15336352,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0068359375,
+      "parent_rss_kib": 57480,
+      "pss_sum_kib": 149004,
+      "rss_sum_kib": 244872,
+      "timestamp_ns": 1791860072121197256
+    },
+    {
+      "MemAvailable": 15336352,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0068359375,
+      "parent_rss_kib": 57480,
+      "pss_sum_kib": 149012,
+      "rss_sum_kib": 244872,
+      "timestamp_ns": 1791860072222410082
+    },
+    {
+      "MemAvailable": 15336352,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.92578125,
+      "parent_rss_kib": 57480,
+      "pss_sum_kib": 149012,
+      "rss_sum_kib": 244872,
+      "timestamp_ns": 1791860072323844873
+    },
+    {
+      "MemAvailable": 15336352,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.92578125,
+      "parent_rss_kib": 57480,
+      "pss_sum_kib": 149036,
+      "rss_sum_kib": 245064,
+      "timestamp_ns": 1791860072425237867
+    },
+    {
+      "MemAvailable": 15335904,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.92578125,
+      "parent_rss_kib": 57480,
+      "pss_sum_kib": 149068,
+      "rss_sum_kib": 245064,
+      "timestamp_ns": 1791860072526532949
+    },
+    {
+      "MemAvailable": 15335904,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.92578125,
+      "parent_rss_kib": 57480,
+      "pss_sum_kib": 149068,
+      "rss_sum_kib": 245064,
+      "timestamp_ns": 1791860072627850454
+    },
+    {
+      "MemAvailable": 15335904,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.92578125,
+      "parent_rss_kib": 57480,
+      "pss_sum_kib": 149092,
+      "rss_sum_kib": 245064,
+      "timestamp_ns": 1791860072729281099
+    },
+    {
+      "MemAvailable": 15335652,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.92578125,
+      "parent_rss_kib": 57480,
+      "pss_sum_kib": 149092,
+      "rss_sum_kib": 245064,
+      "timestamp_ns": 1791860072830662786
+    },
+    {
+      "MemAvailable": 15335652,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.92578125,
+      "parent_rss_kib": 57480,
+      "pss_sum_kib": 149092,
+      "rss_sum_kib": 245064,
+      "timestamp_ns": 1791860072931989959
+    },
+    {
+      "MemAvailable": 15335652,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.92578125,
+      "parent_rss_kib": 57480,
+      "pss_sum_kib": 149088,
+      "rss_sum_kib": 245064,
+      "timestamp_ns": 1791860072959187307
+    }
+  ],
+  "run_id": 3,
+  "sampled_peak_pss_sum_kib": 149092,
+  "sampled_peak_rss_sum_kib": 245064,
+  "scenario": "withholding_beyond_liveness",
+  "setup_ms": 1813.196761,
+  "t": 3,
+  "total_group_cpu_ms": 190.0,
+  "worker_pids": [
+    12959,
+    12971,
+    12983,
+    12995,
+    13007
+  ],
+  "worker_startup_ms": 1802.1368600000187
+}

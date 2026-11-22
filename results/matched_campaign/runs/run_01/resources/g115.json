@@ -1,0 +1,232 @@
+{
+  "coordinator_pid": 1637,
+  "dataset": "ACN",
+  "group_cpu_ms_per_attempt": 12.5,
+  "group_id": "g115",
+  "group_wall_ms": 1850.407261,
+  "measured_sessions": 12,
+  "method": "DVASSelectiveQuorum",
+  "mutation": "honest",
+  "n": 5,
+  "phase": "fault",
+  "post_group_drain_ms": 10,
+  "profile": "C3",
+  "registry_snapshot_bytes_fanout": 620955,
+  "resource_samples": [
+    {
+      "MemAvailable": 15324680,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07275390625,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161318,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859778352892969
+    },
+    {
+      "MemAvailable": 15324680,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07275390625,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161422,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859778454276026
+    },
+    {
+      "MemAvailable": 15324456,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07275390625,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161490,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859778555523413
+    },
+    {
+      "MemAvailable": 15324456,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07275390625,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161490,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859778656929302
+    },
+    {
+      "MemAvailable": 15324456,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07275390625,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161502,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859778758279550
+    },
+    {
+      "MemAvailable": 15324204,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07275390625,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161554,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859778859659554
+    },
+    {
+      "MemAvailable": 15324204,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07275390625,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161554,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859778961037767
+    },
+    {
+      "MemAvailable": 15324204,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07275390625,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161578,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859779062392327
+    },
+    {
+      "MemAvailable": 15324204,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07275390625,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161578,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859779163709588
+    },
+    {
+      "MemAvailable": 15324204,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07275390625,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161578,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859779265158209
+    },
+    {
+      "MemAvailable": 15324204,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07275390625,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161614,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859779366536825
+    },
+    {
+      "MemAvailable": 15324204,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07275390625,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161654,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859779467966466
+    },
+    {
+      "MemAvailable": 15324204,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07275390625,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161654,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859779569509591
+    },
+    {
+      "MemAvailable": 15324204,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07275390625,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161654,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859779670910418
+    },
+    {
+      "MemAvailable": 15324204,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07275390625,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161674,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859779772236124
+    },
+    {
+      "MemAvailable": 15324204,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07275390625,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161674,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859779873580673
+    },
+    {
+      "MemAvailable": 15323756,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07275390625,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161706,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859779974861193
+    },
+    {
+      "MemAvailable": 15323756,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07275390625,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161734,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859780076264959
+    },
+    {
+      "MemAvailable": 15323756,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07275390625,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161734,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859780177669075
+    },
+    {
+      "MemAvailable": 15323756,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07275390625,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161730,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859780202280857
+    }
+  ],
+  "run_id": 1,
+  "sampled_peak_pss_sum_kib": 161734,
+  "sampled_peak_rss_sum_kib": 258272,
+  "scenario": "withholding_beyond_liveness",
+  "setup_ms": 1860.626518,
+  "t": 3,
+  "total_group_cpu_ms": 150.0,
+  "worker_pids": [
+    6096,
+    6108,
+    6120,
+    6132,
+    6144
+  ],
+  "worker_startup_ms": 1852.4717860000237
+}

@@ -1,0 +1,15 @@
+view,variant,n_samples,disclosed_fields,proof_nodes_median,flags_median,total_bytes_median,verify_us_median,verify_us_p95,incomplete_tested,incomplete_accepted,all_verified,node_version
+authorization,OZ-compact,1500,21,4,24,608,2388.400,2676.600,420,420,true,v24.21.0
+authorization,OZ-check,1500,21,4,24,608,2404.500,2694.400,420,0,true,v24.21.0
+settlement,OZ-compact,1500,15,8,22,606,1736.100,1937.900,300,300,true,v24.21.0
+settlement,OZ-check,1500,15,8,22,606,1751.300,1957.700,300,0,true,v24.21.0
+dispute:tariff_mismatch,OZ-compact,1500,3,7,9,311,375.900,441.400,60,60,true,v24.21.0
+dispute:tariff_mismatch,OZ-check,1500,3,7,9,311,378.400,434.000,60,0,true,v24.21.0
+dispute:time_window,OZ-compact,1500,3,5,7,235,360.900,413.800,60,60,true,v24.21.0
+dispute:time_window,OZ-check,1500,3,5,7,235,363.300,423.400,60,0,true,v24.21.0
+dispute:over_cap,OZ-compact,1500,4,11,14,466,518.100,594.100,80,80,true,v24.21.0
+dispute:over_cap,OZ-check,1500,4,11,14,466,521.100,596.000,80,0,true,v24.21.0
+dispute:amount_exceeds_preauth,OZ-compact,1500,4,8,11,344,495.500,562.800,80,80,true,v24.21.0
+dispute:amount_exceeds_preauth,OZ-check,1500,4,8,11,344,497.500,571.600,80,0,true,v24.21.0
+dispute:replay,OZ-compact,1500,3,9,11,384,389.900,443.200,60,60,true,v24.21.0
+dispute:replay,OZ-check,1500,3,9,11,384,392.400,456.700,60,0,true,v24.21.0

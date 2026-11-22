@@ -1,0 +1,27 @@
+{
+  "country_code": "NL",
+  "party_id": "CPB",
+  "id": "LOC001",
+  "publish": true,
+  "name": "Example CPO B depot",
+  "address": "Example street 1",
+  "city": "Example",
+  "country": "NLD",
+  "coordinates": {"latitude": "52.0", "longitude": "4.0"},
+  "time_zone": "Europe/Amsterdam",
+  "evses": [
+    {
+      "uid": "EVSE-1",
+      "evse_id": "NL*CPB*E0001*1",
+      "status": "AVAILABLE",
+      "meter_id": "NL-CPB-METER-0001",
+      "connectors": [
+        {"id": "1", "standard": "IEC_62196_T2", "format": "SOCKET", "power_type": "AC_3_PHASE",
+         "max_voltage": 400, "max_amperage": 32, "tariff_ids": ["TAR-ENERGY-TIME-01"],
+         "last_updated": "2026-09-01T00:00:00Z"}
+      ],
+      "last_updated": "2026-09-01T00:00:00Z"
+    }
+  ],
+  "last_updated": "2026-09-01T00:00:00Z"
+}

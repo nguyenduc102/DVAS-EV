@@ -1,0 +1,29 @@
+source_field,dvas_field,field_id,lifecycle,status,settlement_use,value
+OCPI Token.contract_id,user_id,0x0010,PRE_SERVICE_COMMITTED,committed in rho_t,authorization predicate only,DE-EMA-C12345678-X
+OCPI Token.country_code*party_id,home_operator,0x0012,PRE_SERVICE_COMMITTED,committed in rho_t,authorization predicate only,DE*EMA
+OCPI Location.country_code*party_id*id*EVSE.uid,station_id,0x0013,PRE_SERVICE_COMMITTED,committed in rho_t,settlement predicate operand (opened to verifiers),NL*CPB*LOC001*EVSE-1
+OCPI Location.country_code*party_id,foreign_operator,0x0015,PRE_SERVICE_COMMITTED,committed in rho_t,settlement predicate operand (opened to verifiers),NL*CPB
+OCPI Location.evses[].evse_id,evse_id,0x0017,PRE_SERVICE_COMMITTED,committed in rho_t,committed; not opened at settlement,NL*CPB*E0001*1
+OCPI Location.evses[].meter_id,meter_id,0x0014,PRE_SERVICE_COMMITTED,committed in rho_t,settlement predicate operand (opened to verifiers),NL-CPB-METER-0001
+OCPI Tariff.id,tariff_id,0x0020,PRE_SERVICE_COMMITTED,committed in rho_t,settlement predicate operand (opened to verifiers),TAR-ENERGY-TIME-01
+OCPI Tariff.last_updated,tariff_version,0x0021,PRE_SERVICE_COMMITTED,committed in rho_t,settlement predicate operand (opened to verifiers),2026-09-01T00:00:00Z
+OCPI Tariff.elements[].price_components[].type (ENERGY[+TIME[+PARKING_TIME]]),tariff_mode,0x0022,PRE_SERVICE_COMMITTED,committed in rho_t,settlement predicate operand (opened to verifiers); tariff amount,ENERGY_ACTIVE_TIME
+OCPI Tariff price_component ENERGY.price,unit_price,0x0023,PRE_SERVICE_COMMITTED,committed in rho_t,settlement predicate operand (opened to verifiers); tariff amount,0.320000
+OCPI Tariff.currency,currency,0x0024,PRE_SERVICE_COMMITTED,committed in rho_t,settlement predicate operand (opened to verifiers),EUR
+DVAS authorization request.requested_kwh,requested_kwh,0x0030,PRE_SERVICE_COMMITTED,committed in rho_t,authorization predicate only,20.000000
+DVAS authorization request.max_kwh,cap_kwh,0x0031,PRE_SERVICE_COMMITTED,committed in rho_t,settlement predicate operand (opened to verifiers),20.000000
+DVAS authorization request.preauthorized_amount,preauth_limit,0x0032,PRE_SERVICE_COMMITTED,committed in rho_t,settlement predicate operand (opened to verifiers),8.000000
+DVAS authorization request.valid_from,tw_start,0x0040,PRE_SERVICE_COMMITTED,committed in rho_t,settlement predicate operand (opened to verifiers),1790841600
+DVAS authorization request.valid_until,tw_end,0x0041,PRE_SERVICE_COMMITTED,committed in rho_t,settlement predicate operand (opened to verifiers),1790877600
+OCPI authorization_reference (derived),nonce_u,0x0060,PRE_SERVICE_COMMITTED,committed in rho_t,committed; not opened at settlement,ocpi-AUTH-REF-0001
+OCPP transactionInfo.transactionId (derived),nonce_s,0x0061,PRE_SERVICE_COMMITTED,committed in rho_t,committed; not opened at settlement,ocpp-TX-0001
+OCPP TransactionEvent Ended - Started: Energy.Active.Import.Register,delivered_kwh,0x0102,POST_SERVICE_EVIDENCE,meter-signed public receipt DR_t; private evidence DR_private (bound by h_priv),Match evidence operand,14.083000
+OCPP TransactionEvent Started.timestamp,ts_start,0x0103,POST_SERVICE_EVIDENCE,meter-signed public receipt DR_t; private evidence DR_private (bound by h_priv),Match evidence operand,1790842200
+OCPP TransactionEvent Ended.timestamp,ts_end,0x0104,POST_SERVICE_EVIDENCE,meter-signed public receipt DR_t; private evidence DR_private (bound by h_priv),Match evidence operand,1790852400
+OCPP Ended.timestamp - Started.timestamp,connection_duration_s,0x0120,POST_SERVICE_EVIDENCE,private evidence DR_private (bound by h_priv),Match evidence operand,10200
+OCPP Updated(chargingState=SuspendedEV).timestamp - Started.timestamp,active_charging_duration_s,0x0121,POST_SERVICE_EVIDENCE,private evidence DR_private (bound by h_priv),Match evidence operand,8400
+OCPP Ended.timestamp - Updated(SuspendedEV).timestamp,parking_duration_s,0x0122,POST_SERVICE_EVIDENCE,private evidence DR_private (bound by h_priv),Match evidence operand,1800
+SHA-256 of OCPP sampledValue.signedMeterValue.signedMeterData (not verified),meter_values_digest,0x0124,POST_SERVICE_EVIDENCE,private evidence DR_private (bound by h_priv),bound into h_priv -> meter signature; RBC settle_h_priv,7f84e99f08fac7eed2619a41943128b22b1b402dae9eabf5b37a27f4148f91db
+OCPP transactionInfo.transactionId,session_ref,0x0123,POST_SERVICE_EVIDENCE,private evidence DR_private (bound by h_priv),carried in private evidence (h_priv-bound); not a predicate operand,TX-0001
+CPO-applied tariff reference (OCPI Tariff.id in this demo),applied_tariff_id,0x0105,POST_SERVICE_EVIDENCE,meter-signed public receipt DR_t,Match evidence operand,TAR-ENERGY-TIME-01
+CPO-applied tariff version (OCPI Tariff.last_updated in this demo),applied_tariff_version,0x0106,POST_SERVICE_EVIDENCE,meter-signed public receipt DR_t,Match evidence operand,2026-09-01T00:00:00Z

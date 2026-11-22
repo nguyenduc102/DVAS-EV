@@ -1,0 +1,68 @@
+property,reason,trials,passed,failed,holds,detail,contexts,seed
+A_correctness,authorization,1100,1100,0,True,F = F_r plus random extra committed fields,100,20261006
+A_correctness,replay,1100,1100,0,True,F = F_r plus random extra committed fields,100,20261006
+A_correctness,station_meter_binding,1100,1100,0,True,F = F_r plus random extra committed fields,100,20261006
+A_correctness,pricing,1100,1100,0,True,F = F_r plus random extra committed fields,100,20261006
+A_correctness,time_window,1100,1100,0,True,F = F_r plus random extra committed fields,100,20261006
+A_correctness,delivery_cap,1100,1100,0,True,F = F_r plus random extra committed fields,100,20261006
+A_correctness,reserve_amount,1100,1100,0,True,F = F_r plus random extra committed fields,100,20261006
+A_correctness,settlement,1100,1100,0,True,F = F_r plus random extra committed fields,100,20261006
+A_correctness,dispute:over_cap,1100,1100,0,True,F = F_r plus random extra committed fields,100,20261006
+A_correctness,dispute:tariff_mismatch,1100,1100,0,True,F = F_r plus random extra committed fields,100,20261006
+A_correctness,dispute:time_window,1100,1100,0,True,F = F_r plus random extra committed fields,100,20261006
+A_correctness,dispute:amount_exceeds_preauth,1100,1100,0,True,F = F_r plus random extra committed fields,100,20261006
+A_correctness,dispute:replay,1100,1100,0,True,F = F_r plus random extra committed fields,100,20261006
+B_opening_binding,authorization,63,63,0,True,substituted value / field ID / both at an opened position; Merkle-only verifier must reject,100,20261006
+B_opening_binding,replay,80,80,0,True,substituted value / field ID / both at an opened position; Merkle-only verifier must reject,100,20261006
+B_opening_binding,station_meter_binding,80,80,0,True,substituted value / field ID / both at an opened position; Merkle-only verifier must reject,100,20261006
+B_opening_binding,pricing,80,80,0,True,substituted value / field ID / both at an opened position; Merkle-only verifier must reject,100,20261006
+B_opening_binding,time_window,80,80,0,True,substituted value / field ID / both at an opened position; Merkle-only verifier must reject,100,20261006
+B_opening_binding,delivery_cap,80,80,0,True,substituted value / field ID / both at an opened position; Merkle-only verifier must reject,100,20261006
+B_opening_binding,reserve_amount,80,80,0,True,substituted value / field ID / both at an opened position; Merkle-only verifier must reject,100,20261006
+B_opening_binding,settlement,80,80,0,True,substituted value / field ID / both at an opened position; Merkle-only verifier must reject,100,20261006
+B_opening_binding,dispute:over_cap,80,80,0,True,substituted value / field ID / both at an opened position; Merkle-only verifier must reject,100,20261006
+B_opening_binding,dispute:tariff_mismatch,80,80,0,True,substituted value / field ID / both at an opened position; Merkle-only verifier must reject,100,20261006
+B_opening_binding,dispute:time_window,80,80,0,True,substituted value / field ID / both at an opened position; Merkle-only verifier must reject,100,20261006
+B_opening_binding,dispute:amount_exceeds_preauth,80,80,0,True,substituted value / field ID / both at an opened position; Merkle-only verifier must reject,100,20261006
+B_opening_binding,dispute:replay,80,80,0,True,substituted value / field ID / both at an opened position; Merkle-only verifier must reject,100,20261006
+B_leaf_encoding_injective,*,5100,5100,0,True,"distinct (field, value) -> distinct leaf pre-image",100,20261006
+C_predicate_completeness,authorization,4077,4077,0,True,authentic-but-incomplete openings; Merkle-only verifier accepted 4077/4077,100,20261006
+C_predicate_completeness,replay,2271,2271,0,True,authentic-but-incomplete openings; Merkle-only verifier accepted 2271/2271,100,20261006
+C_predicate_completeness,station_meter_binding,2375,2375,0,True,authentic-but-incomplete openings; Merkle-only verifier accepted 2375/2375,100,20261006
+C_predicate_completeness,pricing,2583,2583,0,True,authentic-but-incomplete openings; Merkle-only verifier accepted 2583/2583,100,20261006
+C_predicate_completeness,time_window,2271,2271,0,True,authentic-but-incomplete openings; Merkle-only verifier accepted 2271/2271,100,20261006
+C_predicate_completeness,delivery_cap,2161,2161,0,True,authentic-but-incomplete openings; Merkle-only verifier accepted 2161/2161,100,20261006
+C_predicate_completeness,reserve_amount,2384,2384,0,True,authentic-but-incomplete openings; Merkle-only verifier accepted 2384/2384,100,20261006
+C_predicate_completeness,settlement,3486,3486,0,True,authentic-but-incomplete openings; Merkle-only verifier accepted 3486/3486,100,20261006
+C_predicate_completeness,dispute:over_cap,2380,2380,0,True,authentic-but-incomplete openings; Merkle-only verifier accepted 2380/2380,100,20261006
+C_predicate_completeness,dispute:tariff_mismatch,2272,2272,0,True,authentic-but-incomplete openings; Merkle-only verifier accepted 2272/2272,100,20261006
+C_predicate_completeness,dispute:time_window,2272,2272,0,True,authentic-but-incomplete openings; Merkle-only verifier accepted 2272/2272,100,20261006
+C_predicate_completeness,dispute:amount_exceeds_preauth,2375,2375,0,True,authentic-but-incomplete openings; Merkle-only verifier accepted 2375/2375,100,20261006
+C_predicate_completeness,dispute:replay,2267,2267,0,True,authentic-but-incomplete openings; Merkle-only verifier accepted 2267/2267,100,20261006
+C_exact_policy,*,39,39,0,True,EXACT mode rejects F(pi) != F_r,100,20261006
+D_projection_soundness,authorization,2700,2700,0,True,"identical decision on full layout vs verified projection; P true in 2551, false in 149",100,20261006
+D_no_default_substitution,authorization,2100,2100,0,True,"projection minus any operand -> missing_operand, never a default",100,20261006
+D_projection_soundness,replay,2700,2700,0,True,"identical decision on full layout vs verified projection; P true in 2442, false in 258",100,20261006
+D_no_default_substitution,replay,300,300,0,True,"projection minus any operand -> missing_operand, never a default",100,20261006
+D_projection_soundness,station_meter_binding,2700,2700,0,True,"identical decision on full layout vs verified projection; P true in 2470, false in 230",100,20261006
+D_no_default_substitution,station_meter_binding,400,400,0,True,"projection minus any operand -> missing_operand, never a default",100,20261006
+D_projection_soundness,pricing,2900,2900,0,True,"identical decision on full layout vs verified projection; P true in 2556, false in 344",100,20261006
+D_no_default_substitution,pricing,600,600,0,True,"projection minus any operand -> missing_operand, never a default",100,20261006
+D_projection_soundness,time_window,2700,2700,0,True,"identical decision on full layout vs verified projection; P true in 2259, false in 441",100,20261006
+D_no_default_substitution,time_window,300,300,0,True,"projection minus any operand -> missing_operand, never a default",100,20261006
+D_projection_soundness,delivery_cap,2700,2700,0,True,"identical decision on full layout vs verified projection; P true in 2391, false in 309",100,20261006
+D_no_default_substitution,delivery_cap,200,200,0,True,"projection minus any operand -> missing_operand, never a default",100,20261006
+D_projection_soundness,reserve_amount,2900,2900,0,True,"identical decision on full layout vs verified projection; P true in 2393, false in 507",100,20261006
+D_no_default_substitution,reserve_amount,400,400,0,True,"projection minus any operand -> missing_operand, never a default",100,20261006
+D_projection_soundness,settlement,2900,2900,0,True,"identical decision on full layout vs verified projection; P true in 1815, false in 1085",100,20261006
+D_no_default_substitution,settlement,1500,1500,0,True,"projection minus any operand -> missing_operand, never a default",100,20261006
+D_projection_soundness,dispute:over_cap,2700,2700,0,True,"identical decision on full layout vs verified projection; P true in 2292, false in 408",100,20261006
+D_no_default_substitution,dispute:over_cap,400,400,0,True,"projection minus any operand -> missing_operand, never a default",100,20261006
+D_projection_soundness,dispute:tariff_mismatch,2700,2700,0,True,"identical decision on full layout vs verified projection; P true in 2377, false in 323",100,20261006
+D_no_default_substitution,dispute:tariff_mismatch,300,300,0,True,"projection minus any operand -> missing_operand, never a default",100,20261006
+D_projection_soundness,dispute:time_window,2700,2700,0,True,"identical decision on full layout vs verified projection; P true in 2214, false in 486",100,20261006
+D_no_default_substitution,dispute:time_window,300,300,0,True,"projection minus any operand -> missing_operand, never a default",100,20261006
+D_projection_soundness,dispute:amount_exceeds_preauth,2900,2900,0,True,"identical decision on full layout vs verified projection; P true in 2372, false in 528",100,20261006
+D_no_default_substitution,dispute:amount_exceeds_preauth,400,400,0,True,"projection minus any operand -> missing_operand, never a default",100,20261006
+D_projection_soundness,dispute:replay,2700,2700,0,True,"identical decision on full layout vs verified projection; P true in 2438, false in 262",100,20261006
+D_no_default_substitution,dispute:replay,300,300,0,True,"projection minus any operand -> missing_operand, never a default",100,20261006

@@ -1,0 +1,121 @@
+{
+  "files": [
+    {
+      "id": 39952252,
+      "name": "ChargingRecords.csv",
+      "size": 7605859,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/39952252",
+      "supplied_md5": "09522f5d04d44a18548ac82c2b993663",
+      "computed_md5": "09522f5d04d44a18548ac82c2b993663",
+      "mimetype": "text/plain"
+    },
+    {
+      "id": 39952261,
+      "name": "Code.zip",
+      "size": 5914,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/39952261",
+      "supplied_md5": "3421656f0b8a583f196d75baa1f65552",
+      "computed_md5": "3421656f0b8a583f196d75baa1f65552",
+      "mimetype": "application/zip"
+    }
+  ],
+  "folder_structure": {},
+  "authors": [
+    {
+      "id": 11006931,
+      "full_name": "Eunjung Lee",
+      "first_name": "Eunjung",
+      "last_name": "Lee",
+      "is_active": true,
+      "url_name": "Eunjung_Lee",
+      "orcid_id": ""
+    },
+    {
+      "id": 11006934,
+      "full_name": "Keon Baek",
+      "first_name": "Keon",
+      "last_name": "Baek",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": "0000-0002-4006-8152"
+    },
+    {
+      "id": 184673,
+      "full_name": "Jinho Kim",
+      "first_name": "Jinho",
+      "last_name": "Kim",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    }
+  ],
+  "custom_fields": [],
+  "figshare_url": "https://figshare.com/articles/dataset/A_dataset_for_multi-faceted_analysis_of_electric_vehicle_charging_transactions/22495141",
+  "download_disabled": false,
+  "description": "<p>This study discloses a dataset of electric vehicles\u2019 (EVs\u2019) charging transactions at a scale for multi-faceted analysis from both EV charger and user perspectives. The data comprises of whole sessions that occurred during a charging operation company\u2019s annual commercial operation period, specifically including identifiers and charger location categories. For data acquisition, machine-to-machine wireless communication system with proper retransmission for interruption is utilised. Entire dataset is newly collected and available with 72856 sessions from 2238 EV users and 2119 chargers. The dataset can be used in a variety of ways to the functioning of power systems and markets, including EV charging service businesses, charger installation siting, demand transaction market design, and long-term investment planning of EV-related infrastructure.</p>",
+  "funding": null,
+  "funding_list": [],
+  "version": 1,
+  "status": "public",
+  "size": 7611773,
+  "created_date": "2023-04-03T08:34:57Z",
+  "modified_date": "2023-04-03T08:34:57Z",
+  "is_public": true,
+  "is_confidential": false,
+  "is_metadata_record": false,
+  "confidential_reason": "",
+  "metadata_reason": "",
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "tags": [
+    "Electric vehicle"
+  ],
+  "keywords": [
+    "Electric vehicle"
+  ],
+  "categories": [
+    {
+      "id": 26482,
+      "title": "Electrical engineering not elsewhere classified",
+      "parent_id": 26455,
+      "path": "/26212/26455/26482",
+      "source_id": "400899",
+      "taxonomy_id": 100
+    }
+  ],
+  "references": [],
+  "has_linked_file": false,
+  "citation": "Lee, Eunjung; Baek, Keon; Kim, Jinho (2023). A dataset for multi-faceted analysis of electric vehicle charging transactions. figshare. Dataset. https://doi.org/10.6084/m9.figshare.22495141.v1",
+  "related_materials": [],
+  "is_embargoed": false,
+  "embargo_date": null,
+  "embargo_type": null,
+  "embargo_title": "",
+  "embargo_reason": "",
+  "embargo_options": [],
+  "id": 22495141,
+  "title": "A dataset for multi-faceted analysis of electric vehicle charging transactions",
+  "doi": "10.6084/m9.figshare.22495141.v1",
+  "handle": "",
+  "url": "https://api.figshare.com/v2/articles/22495141",
+  "published_date": "2023-04-03T08:34:57Z",
+  "thumb": "",
+  "defined_type": 3,
+  "defined_type_name": "dataset",
+  "group_id": null,
+  "url_private_api": "https://api.figshare.com/v2/account/articles/22495141",
+  "url_public_api": "https://api.figshare.com/v2/articles/22495141",
+  "url_private_html": "https://figshare.com/account/articles/22495141",
+  "url_public_html": "https://figshare.com/articles/dataset/A_dataset_for_multi-faceted_analysis_of_electric_vehicle_charging_transactions/22495141",
+  "timeline": {
+    "posted": "2023-04-03T08:34:57",
+    "firstOnline": "2023-04-03"
+  },
+  "resource_title": null,
+  "resource_doi": null
+}

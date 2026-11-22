@@ -1,0 +1,107 @@
+[
+  {
+    "step": "00 test suite (pytest)",
+    "returncode": 0,
+    "seconds": 10.9
+  },
+  {
+    "step": "01 regression workloads",
+    "returncode": 0,
+    "seconds": 101.8
+  },
+  {
+    "step": "02 formal property checks",
+    "returncode": 0,
+    "seconds": 6.1
+  },
+  {
+    "step": "03 minimality analysis",
+    "returncode": 0,
+    "seconds": 0.6
+  },
+  {
+    "step": "04 attack suite",
+    "returncode": 0,
+    "seconds": 12.8
+  },
+  {
+    "step": "05 PAM B0/B1/B2/B3 ablation",
+    "returncode": 0,
+    "seconds": 21.6
+  },
+  {
+    "step": "06 quorum fault matrix",
+    "returncode": 0,
+    "seconds": 25.4
+  },
+  {
+    "step": "07 quorum cost benchmark",
+    "returncode": 0,
+    "seconds": 11.0
+  },
+  {
+    "step": "08 PQ profile benchmark",
+    "returncode": 0,
+    "seconds": 41.5
+  },
+  {
+    "step": "09 controlled baselines",
+    "returncode": 0,
+    "seconds": 7.6
+  },
+  {
+    "step": "10 multi-operator workload",
+    "returncode": 0,
+    "seconds": 28.2
+  },
+  {
+    "step": "11 standards-mapping demo",
+    "returncode": 0,
+    "seconds": 0.6
+  },
+  {
+    "step": "12 Foundry tests + gas",
+    "returncode": 0,
+    "seconds": 0.8
+  },
+  {
+    "step": "13 legacy regression",
+    "returncode": 0,
+    "seconds": 1.0
+  },
+  {
+    "step": "14 security boundary",
+    "returncode": 0,
+    "seconds": 3.9
+  },
+  {
+    "step": "15 summary tables",
+    "returncode": 0,
+    "seconds": 0.2
+  },
+  {
+    "step": "16 figures",
+    "returncode": 0,
+    "seconds": 2.8
+  },
+  {
+    "step": "17 paper numbers",
+    "returncode": 0,
+    "seconds": 0.9
+  },
+  {
+    "step": "18 comparison with validated run",
+    "returncode": 0,
+    "seconds": 0.2
+  },
+  {
+    "step": "19 reproducibility manifest",
+    "returncode": 0,
+    "seconds": 0
+  },
+  {
+    "step": "TOTAL",
+    "returncode": 0,
+    "seconds": 279.4
+  }
+]

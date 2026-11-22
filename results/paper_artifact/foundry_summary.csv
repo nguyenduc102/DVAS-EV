@@ -1,0 +1,2 @@
+criterion,check,metric,value,expected,pass,note
+17,forge test (legacy + DVASQuorumSettle),passed/failed,42/0,failed=0,True,releaseByQuorumRBC_2of3=164067 gas

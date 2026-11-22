@@ -1,0 +1,17 @@
+reason,effect,attributed_to,fields_saved,sibling_hashes_saved,bytes_saved,verify_us_saved,incomplete_accepted_before_after
+authorization,selection_effect_vs_full (B0-full -> B1),PA-MSP field selection,5,,-3240.5,-52.225,
+authorization,selection_effect_vs_row (B0-row -> B1),PA-MSP field selection,3,15.0,541.5,14.006,
+authorization,packing_effect (B1 -> B2),standard packed Merkle multiproof,0,101.0,3232.0,30.428,
+authorization,completeness_effect (B2 -> B3),predicate-completeness verification policy,0,0.0,0.0,-1.429,420 -> 0 of 420
+delivery_cap,selection_effect_vs_full (B0-full -> B1),PA-MSP field selection,24,,200.5,40.724,
+delivery_cap,selection_effect_vs_row (B0-row -> B1),PA-MSP field selection,5,25.0,887.0,26.104,
+delivery_cap,packing_effect (B1 -> B2),standard packed Merkle multiproof,0,2.0,64.0,-4.693,
+delivery_cap,completeness_effect (B2 -> B3),predicate-completeness verification policy,0,0.0,0.0,-0.91,40 -> 0 of 40
+settlement,selection_effect_vs_full (B0-full -> B1),PA-MSP field selection,11,,-2150.0,-23.82,
+settlement,selection_effect_vs_row (B0-row -> B1),PA-MSP field selection,9,45.0,1632.0,42.389,
+settlement,packing_effect (B1 -> B2),standard packed Merkle multiproof,0,67.0,2144.0,17.752,
+settlement,completeness_effect (B2 -> B3),predicate-completeness verification policy,0,0.0,0.0,-1.23,300 -> 0 of 300
+dispute:over_cap,selection_effect_vs_full (B0-full -> B1),PA-MSP field selection,22,,-165.5,32.309,
+dispute:over_cap,selection_effect_vs_row (B0-row -> B1),PA-MSP field selection,11,55.0,1999.5,53.605,
+dispute:over_cap,packing_effect (B1 -> B2),standard packed Merkle multiproof,0,9.0,288.0,-3.135,
+dispute:over_cap,completeness_effect (B2 -> B3),predicate-completeness verification policy,0,0.0,0.0,-1.041,80 -> 0 of 80

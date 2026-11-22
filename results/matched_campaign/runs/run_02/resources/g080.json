@@ -1,0 +1,50 @@
+{
+  "coordinator_pid": 6293,
+  "dataset": "ACN",
+  "group_cpu_ms_per_attempt": 10.0,
+  "group_id": "g080",
+  "group_wall_ms": 100.692038,
+  "measured_sessions": 12,
+  "method": "DVASSelectiveQuorum",
+  "mutation": "honest",
+  "n": 5,
+  "phase": "fault",
+  "post_group_drain_ms": 10,
+  "profile": "C3",
+  "registry_snapshot_bytes_fanout": 715995,
+  "resource_samples": [
+    {
+      "MemAvailable": 15377348,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.1796875,
+      "parent_rss_kib": 63100,
+      "pss_sum_kib": 114831,
+      "rss_sum_kib": 175420,
+      "timestamp_ns": 1791859921957523713
+    },
+    {
+      "MemAvailable": 15377032,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.1796875,
+      "parent_rss_kib": 63100,
+      "pss_sum_kib": 115119,
+      "rss_sum_kib": 175804,
+      "timestamp_ns": 1791859922057397345
+    }
+  ],
+  "run_id": 2,
+  "sampled_peak_pss_sum_kib": 115119,
+  "sampled_peak_rss_sum_kib": 175804,
+  "scenario": "offline_tolerated",
+  "setup_ms": 1764.713808,
+  "t": 3,
+  "total_group_cpu_ms": 120.0,
+  "worker_pids": [
+    9376,
+    9388,
+    9400
+  ],
+  "worker_startup_ms": 1753.116227000021
+}

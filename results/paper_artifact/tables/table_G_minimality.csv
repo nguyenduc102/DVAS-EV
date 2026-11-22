@@ -1,0 +1,14 @@
+predicate,F_r_size,classification,boolean_witnesses,decision_witnesses,nonnecessity_certificates
+authorization,21,NOT_MINIMAL,20,20,payment_semantics: SINGLETON_DOMAIN
+replay,3,BOOLEAN_MINIMAL,3,3,
+station_meter_binding,4,BOOLEAN_MINIMAL,4,4,
+pricing,6,DECISION_MINIMAL_ONLY,4,6,"tariff_mode: VACUOUS_ATOM:amount_defined, unit_price: VACUOUS_ATOM:amount_defined"
+time_window,3,BOOLEAN_MINIMAL,3,3,
+delivery_cap,2,BOOLEAN_MINIMAL,2,2,
+reserve_amount,4,BOOLEAN_MINIMAL,4,4,
+settlement,15,BOOLEAN_MINIMAL,15,15,
+dispute:over_cap,4,BOOLEAN_MINIMAL,4,4,
+dispute:tariff_mismatch,3,BOOLEAN_MINIMAL,3,3,
+dispute:time_window,3,BOOLEAN_MINIMAL,3,3,
+dispute:amount_exceeds_preauth,4,BOOLEAN_MINIMAL,4,4,
+dispute:replay,3,BOOLEAN_MINIMAL,3,3,

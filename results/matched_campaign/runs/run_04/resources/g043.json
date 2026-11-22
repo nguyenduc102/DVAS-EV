@@ -1,0 +1,230 @@
+{
+  "coordinator_pid": 15395,
+  "dataset": "ACN",
+  "group_cpu_ms_per_attempt": 9.166666666666666,
+  "group_id": "g043",
+  "group_wall_ms": 1849.408395,
+  "measured_sessions": 12,
+  "method": "FullEvidenceQuorum",
+  "mutation": "honest",
+  "n": 3,
+  "phase": "fault",
+  "post_group_drain_ms": 10,
+  "profile": "C3",
+  "registry_snapshot_bytes_fanout": 407766,
+  "resource_samples": [
+    {
+      "MemAvailable": 15382888,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.20751953125,
+      "parent_rss_kib": 55864,
+      "pss_sum_kib": 107601,
+      "rss_sum_kib": 168568,
+      "timestamp_ns": 1791860251440508082
+    },
+    {
+      "MemAvailable": 15382888,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.20751953125,
+      "parent_rss_kib": 55864,
+      "pss_sum_kib": 107657,
+      "rss_sum_kib": 168760,
+      "timestamp_ns": 1791860251541743508
+    },
+    {
+      "MemAvailable": 15382888,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.20751953125,
+      "parent_rss_kib": 55864,
+      "pss_sum_kib": 107701,
+      "rss_sum_kib": 168760,
+      "timestamp_ns": 1791860251642779855
+    },
+    {
+      "MemAvailable": 15382888,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.20751953125,
+      "parent_rss_kib": 55864,
+      "pss_sum_kib": 107701,
+      "rss_sum_kib": 168760,
+      "timestamp_ns": 1791860251743857829
+    },
+    {
+      "MemAvailable": 15382888,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.20751953125,
+      "parent_rss_kib": 55864,
+      "pss_sum_kib": 107709,
+      "rss_sum_kib": 168760,
+      "timestamp_ns": 1791860251845002922
+    },
+    {
+      "MemAvailable": 15382888,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.20751953125,
+      "parent_rss_kib": 55864,
+      "pss_sum_kib": 107717,
+      "rss_sum_kib": 168760,
+      "timestamp_ns": 1791860251945966253
+    },
+    {
+      "MemAvailable": 15382888,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.20751953125,
+      "parent_rss_kib": 55864,
+      "pss_sum_kib": 107717,
+      "rss_sum_kib": 168760,
+      "timestamp_ns": 1791860252047043415
+    },
+    {
+      "MemAvailable": 15382888,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.20751953125,
+      "parent_rss_kib": 55864,
+      "pss_sum_kib": 107725,
+      "rss_sum_kib": 168760,
+      "timestamp_ns": 1791860252148052173
+    },
+    {
+      "MemAvailable": 15382776,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.20751953125,
+      "parent_rss_kib": 55864,
+      "pss_sum_kib": 107769,
+      "rss_sum_kib": 168760,
+      "timestamp_ns": 1791860252249168076
+    },
+    {
+      "MemAvailable": 15382776,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.20751953125,
+      "parent_rss_kib": 55864,
+      "pss_sum_kib": 107769,
+      "rss_sum_kib": 168760,
+      "timestamp_ns": 1791860252350195764
+    },
+    {
+      "MemAvailable": 15382776,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.20751953125,
+      "parent_rss_kib": 55864,
+      "pss_sum_kib": 107785,
+      "rss_sum_kib": 168760,
+      "timestamp_ns": 1791860252451081422
+    },
+    {
+      "MemAvailable": 15382776,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.1103515625,
+      "parent_rss_kib": 55864,
+      "pss_sum_kib": 107797,
+      "rss_sum_kib": 168760,
+      "timestamp_ns": 1791860252552067500
+    },
+    {
+      "MemAvailable": 15382776,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.1103515625,
+      "parent_rss_kib": 55864,
+      "pss_sum_kib": 107797,
+      "rss_sum_kib": 168760,
+      "timestamp_ns": 1791860252653197172
+    },
+    {
+      "MemAvailable": 15382776,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.1103515625,
+      "parent_rss_kib": 55864,
+      "pss_sum_kib": 107801,
+      "rss_sum_kib": 168760,
+      "timestamp_ns": 1791860252754494830
+    },
+    {
+      "MemAvailable": 15382776,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.1103515625,
+      "parent_rss_kib": 55864,
+      "pss_sum_kib": 107813,
+      "rss_sum_kib": 168952,
+      "timestamp_ns": 1791860252855549970
+    },
+    {
+      "MemAvailable": 15382776,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.1103515625,
+      "parent_rss_kib": 55864,
+      "pss_sum_kib": 107813,
+      "rss_sum_kib": 168952,
+      "timestamp_ns": 1791860252956598100
+    },
+    {
+      "MemAvailable": 15382776,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.1103515625,
+      "parent_rss_kib": 55864,
+      "pss_sum_kib": 107817,
+      "rss_sum_kib": 168952,
+      "timestamp_ns": 1791860253057641397
+    },
+    {
+      "MemAvailable": 15382776,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.1103515625,
+      "parent_rss_kib": 55864,
+      "pss_sum_kib": 107837,
+      "rss_sum_kib": 168952,
+      "timestamp_ns": 1791860253158722033
+    },
+    {
+      "MemAvailable": 15382776,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.1103515625,
+      "parent_rss_kib": 55864,
+      "pss_sum_kib": 107837,
+      "rss_sum_kib": 168952,
+      "timestamp_ns": 1791860253259795825
+    },
+    {
+      "MemAvailable": 15382776,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.1103515625,
+      "parent_rss_kib": 55864,
+      "pss_sum_kib": 107833,
+      "rss_sum_kib": 168952,
+      "timestamp_ns": 1791860253289254692
+    }
+  ],
+  "run_id": 4,
+  "sampled_peak_pss_sum_kib": 107837,
+  "sampled_peak_rss_sum_kib": 168952,
+  "scenario": "withholding_beyond_liveness",
+  "setup_ms": 1064.992779,
+  "t": 2,
+  "total_group_cpu_ms": 110.0,
+  "worker_pids": [
+    17278,
+    17290,
+    17302
+  ],
+  "worker_startup_ms": 1055.0701089999848
+}

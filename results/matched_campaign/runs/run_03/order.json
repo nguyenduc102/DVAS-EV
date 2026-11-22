@@ -1,0 +1,2162 @@
+[
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "replay",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "behaviors": {
+        "SV1": "inflate"
+      },
+      "deadline_ms": 150
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "one_inflating_verifier",
+    "t": 3,
+    "warmup": 2
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "behaviors": {
+        "SV1": "inflate",
+        "SV2": "inflate"
+      },
+      "deadline_ms": 150
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "threshold_collusion_outside_safety",
+    "t": 2,
+    "warmup": 2
+  },
+  {
+    "count": 200,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [],
+    "phase": "healthy",
+    "profile": "C3",
+    "scenario": "healthy",
+    "t": 3,
+    "warmup": 20
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "private_substitution",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "behaviors": {
+        "SV1": "inflate"
+      },
+      "deadline_ms": 150
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "one_inflating_verifier",
+    "t": 2,
+    "warmup": 2
+  },
+  {
+    "count": 200,
+    "dataset": "MFEV",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [],
+    "phase": "healthy",
+    "profile": "C3",
+    "scenario": "healthy",
+    "t": 2,
+    "warmup": 20
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "behaviors": {
+        "SV1": "inflate"
+      },
+      "deadline_ms": 150
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [
+      "SV2",
+      "SV3"
+    ],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "one_inflating_plus_offline",
+    "t": 3,
+    "warmup": 2
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "replay",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 150
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [
+      "SV1",
+      "SV2",
+      "SV3"
+    ],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "offline_beyond_liveness",
+    "t": 3,
+    "warmup": 2
+  },
+  {
+    "count": 200,
+    "dataset": "MFEV",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [],
+    "phase": "healthy",
+    "profile": "C0",
+    "scenario": "healthy",
+    "t": 2,
+    "warmup": 20
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "over_cap",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 200,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [],
+    "phase": "healthy",
+    "profile": "C3",
+    "scenario": "healthy",
+    "t": 3,
+    "warmup": 20
+  },
+  {
+    "count": 200,
+    "dataset": "MFEV",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [],
+    "phase": "healthy",
+    "profile": "C0",
+    "scenario": "healthy",
+    "t": 3,
+    "warmup": 20
+  },
+  {
+    "count": 200,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [],
+    "phase": "healthy",
+    "profile": "C0",
+    "scenario": "healthy",
+    "t": 2,
+    "warmup": 20
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "private_substitution",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "replay",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "over_cap",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "tariff_swap",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "over_cap",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 200,
+    "dataset": "MFEV",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [],
+    "phase": "healthy",
+    "profile": "C3",
+    "scenario": "healthy",
+    "t": 3,
+    "warmup": 20
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 150,
+      "withholding": [
+        "SV1",
+        "SV2"
+      ]
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "withholding_beyond_liveness",
+    "t": 2,
+    "warmup": 2
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 150,
+      "delay_ms": 5
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "delay_5ms_each_direction",
+    "t": 3,
+    "warmup": 2
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "incomplete_opening",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 150,
+      "delay_ms": 25,
+      "jitter_ms": 5
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "delay_25ms_jitter_0to5ms_each_direction",
+    "t": 3,
+    "warmup": 2
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "incomplete_opening",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "over_cap",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "incomplete_opening",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "behaviors": {
+        "SV1": "inflate"
+      },
+      "deadline_ms": 150
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "one_inflating_verifier",
+    "t": 3,
+    "warmup": 2
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "behaviors": {
+        "SV1": "inflate"
+      },
+      "deadline_ms": 150
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [
+      "SV2",
+      "SV3"
+    ],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "one_inflating_plus_offline",
+    "t": 3,
+    "warmup": 2
+  },
+  {
+    "count": 200,
+    "dataset": "MFEV",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [],
+    "phase": "healthy",
+    "profile": "C3",
+    "scenario": "healthy",
+    "t": 3,
+    "warmup": 20
+  },
+  {
+    "count": 200,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [],
+    "phase": "healthy",
+    "profile": "C3",
+    "scenario": "healthy",
+    "t": 2,
+    "warmup": 20
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 150
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [
+      "SV1",
+      "SV2"
+    ],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "offline_beyond_liveness",
+    "t": 2,
+    "warmup": 2
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "over_cap",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "behaviors": {
+        "SV1": "inflate",
+        "SV2": "inflate",
+        "SV3": "inflate"
+      },
+      "deadline_ms": 150
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "threshold_collusion_outside_safety",
+    "t": 3,
+    "warmup": 2
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "private_substitution",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "private_substitution",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 150,
+      "delay_ms": 25,
+      "jitter_ms": 5
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "delay_25ms_jitter_0to5ms_each_direction",
+    "t": 2,
+    "warmup": 2
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "replay",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 150,
+      "delay_ms": 5
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "delay_5ms_each_direction",
+    "t": 3,
+    "warmup": 2
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "private_substitution",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 150,
+      "delay_ms": 25,
+      "jitter_ms": 5
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "delay_25ms_jitter_0to5ms_each_direction",
+    "t": 2,
+    "warmup": 2
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 150,
+      "withholding": [
+        "SV1"
+      ]
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "withholding_tolerated",
+    "t": 2,
+    "warmup": 2
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "incomplete_opening",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "replay",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "incomplete_opening",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "over_cap",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 150,
+      "withholding": [
+        "SV1",
+        "SV2",
+        "SV3"
+      ]
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "withholding_beyond_liveness",
+    "t": 3,
+    "warmup": 2
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 150,
+      "withholding": [
+        "SV1",
+        "SV2"
+      ]
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "withholding_tolerated",
+    "t": 3,
+    "warmup": 2
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "private_substitution",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 150,
+      "withholding": [
+        "SV1",
+        "SV2",
+        "SV3"
+      ]
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "withholding_beyond_liveness",
+    "t": 3,
+    "warmup": 2
+  },
+  {
+    "count": 200,
+    "dataset": "MFEV",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [],
+    "phase": "healthy",
+    "profile": "C0",
+    "scenario": "healthy",
+    "t": 2,
+    "warmup": 20
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "incomplete_opening",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "incomplete_opening",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 150
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [
+      "SV1"
+    ],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "offline_tolerated",
+    "t": 2,
+    "warmup": 2
+  },
+  {
+    "count": 200,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [],
+    "phase": "healthy",
+    "profile": "C0",
+    "scenario": "healthy",
+    "t": 3,
+    "warmup": 20
+  },
+  {
+    "count": 200,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [],
+    "phase": "healthy",
+    "profile": "C0",
+    "scenario": "healthy",
+    "t": 3,
+    "warmup": 20
+  },
+  {
+    "count": 200,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [],
+    "phase": "healthy",
+    "profile": "C3",
+    "scenario": "healthy",
+    "t": 2,
+    "warmup": 20
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "tariff_swap",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "over_cap",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "tariff_swap",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "over_cap",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 200,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [],
+    "phase": "healthy",
+    "profile": "C3",
+    "scenario": "healthy",
+    "t": 3,
+    "warmup": 20
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "replay",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 200,
+    "dataset": "MFEV",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [],
+    "phase": "healthy",
+    "profile": "C0",
+    "scenario": "healthy",
+    "t": 3,
+    "warmup": 20
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "behaviors": {
+        "SV1": "inflate"
+      },
+      "deadline_ms": 150
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [
+      "SV2"
+    ],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "one_inflating_plus_offline",
+    "t": 2,
+    "warmup": 2
+  },
+  {
+    "count": 200,
+    "dataset": "MFEV",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [],
+    "phase": "healthy",
+    "profile": "C0",
+    "scenario": "healthy",
+    "t": 3,
+    "warmup": 20
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "replay",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "tariff_swap",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "private_substitution",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 150
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [
+      "SV1",
+      "SV2",
+      "SV3"
+    ],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "offline_beyond_liveness",
+    "t": 3,
+    "warmup": 2
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "over_cap",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "tariff_swap",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "tariff_swap",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "incomplete_opening",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "tariff_swap",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "behaviors": {
+        "SV1": "inflate",
+        "SV2": "inflate"
+      },
+      "deadline_ms": 150
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "threshold_collusion_outside_safety",
+    "t": 2,
+    "warmup": 2
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 150,
+      "withholding": [
+        "SV1"
+      ]
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "withholding_tolerated",
+    "t": 2,
+    "warmup": 2
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "private_substitution",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "tariff_swap",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "behaviors": {
+        "SV1": "inflate"
+      },
+      "deadline_ms": 150
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "one_inflating_verifier",
+    "t": 2,
+    "warmup": 2
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "tariff_swap",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 200,
+    "dataset": "MFEV",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [],
+    "phase": "healthy",
+    "profile": "C3",
+    "scenario": "healthy",
+    "t": 2,
+    "warmup": 20
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "behaviors": {
+        "SV1": "inflate"
+      },
+      "deadline_ms": 150
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [
+      "SV2"
+    ],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "one_inflating_plus_offline",
+    "t": 2,
+    "warmup": 2
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "private_substitution",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "tariff_swap",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "tariff_swap",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 150,
+      "delay_ms": 5
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "delay_5ms_each_direction",
+    "t": 2,
+    "warmup": 2
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "over_cap",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "behaviors": {
+        "SV1": "inflate",
+        "SV2": "inflate",
+        "SV3": "inflate"
+      },
+      "deadline_ms": 150
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "threshold_collusion_outside_safety",
+    "t": 3,
+    "warmup": 2
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "incomplete_opening",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "over_cap",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 200,
+    "dataset": "MFEV",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [],
+    "phase": "healthy",
+    "profile": "C3",
+    "scenario": "healthy",
+    "t": 2,
+    "warmup": 20
+  },
+  {
+    "count": 200,
+    "dataset": "MFEV",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [],
+    "phase": "healthy",
+    "profile": "C3",
+    "scenario": "healthy",
+    "t": 3,
+    "warmup": 20
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 150,
+      "delay_ms": 5
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "delay_5ms_each_direction",
+    "t": 2,
+    "warmup": 2
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "tariff_swap",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "private_substitution",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 200,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [],
+    "phase": "healthy",
+    "profile": "C3",
+    "scenario": "healthy",
+    "t": 2,
+    "warmup": 20
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "private_substitution",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 150,
+      "withholding": [
+        "SV1",
+        "SV2"
+      ]
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "withholding_beyond_liveness",
+    "t": 2,
+    "warmup": 2
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "over_cap",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 150
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [
+      "SV1",
+      "SV2"
+    ],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "offline_tolerated",
+    "t": 3,
+    "warmup": 2
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 150
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [
+      "SV1"
+    ],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "offline_tolerated",
+    "t": 2,
+    "warmup": 2
+  },
+  {
+    "count": 200,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [],
+    "phase": "healthy",
+    "profile": "C0",
+    "scenario": "healthy",
+    "t": 2,
+    "warmup": 20
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "replay",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 150
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [
+      "SV1",
+      "SV2"
+    ],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "offline_tolerated",
+    "t": 3,
+    "warmup": 2
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "private_substitution",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 200,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [],
+    "phase": "healthy",
+    "profile": "C0",
+    "scenario": "healthy",
+    "t": 3,
+    "warmup": 20
+  },
+  {
+    "count": 200,
+    "dataset": "MFEV",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [],
+    "phase": "healthy",
+    "profile": "C0",
+    "scenario": "healthy",
+    "t": 2,
+    "warmup": 20
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "incomplete_opening",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 150,
+      "delay_ms": 25,
+      "jitter_ms": 5
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "delay_25ms_jitter_0to5ms_each_direction",
+    "t": 3,
+    "warmup": 2
+  },
+  {
+    "count": 200,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [],
+    "phase": "healthy",
+    "profile": "C0",
+    "scenario": "healthy",
+    "t": 2,
+    "warmup": 20
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullTranscriptEscrow",
+    "mutation": "replay",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "replay",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 150,
+      "withholding": [
+        "SV1",
+        "SV2"
+      ]
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "honest",
+    "n": 5,
+    "offline": [],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "withholding_tolerated",
+    "t": 3,
+    "warmup": 2
+  },
+  {
+    "count": 12,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 150
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "honest",
+    "n": 3,
+    "offline": [
+      "SV1",
+      "SV2"
+    ],
+    "phase": "fault",
+    "profile": "C3",
+    "scenario": "offline_beyond_liveness",
+    "t": 2,
+    "warmup": 2
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "replay",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "FullEvidenceQuorum",
+    "mutation": "incomplete_opening",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C3",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": false,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "incomplete_opening",
+    "n": 3,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 2,
+    "warmup": 0
+  },
+  {
+    "count": 10,
+    "dataset": "ACN",
+    "expected_accept": true,
+    "fault": {
+      "deadline_ms": 1000
+    },
+    "method": "DVASSelectiveQuorum",
+    "mutation": "replay",
+    "n": 5,
+    "offline": [],
+    "phase": "security",
+    "profile": "C0",
+    "scenario": "attack_probe",
+    "t": 3,
+    "warmup": 0
+  }
+]

@@ -1,0 +1,232 @@
+{
+  "coordinator_pid": 1637,
+  "dataset": "ACN",
+  "group_cpu_ms_per_attempt": 15.0,
+  "group_id": "g112",
+  "group_wall_ms": 1850.126335,
+  "measured_sessions": 12,
+  "method": "FullEvidenceQuorum",
+  "mutation": "honest",
+  "n": 5,
+  "phase": "fault",
+  "post_group_drain_ms": 10,
+  "profile": "C3",
+  "registry_snapshot_bytes_fanout": 620955,
+  "resource_samples": [
+    {
+      "MemAvailable": 15329248,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.173828125,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161379,
+      "rss_sum_kib": 258080,
+      "timestamp_ns": 1791859771748108287
+    },
+    {
+      "MemAvailable": 15329248,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.173828125,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161475,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859771849880040
+    },
+    {
+      "MemAvailable": 15329248,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.173828125,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161575,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859771951174068
+    },
+    {
+      "MemAvailable": 15329248,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.173828125,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161575,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859772052596246
+    },
+    {
+      "MemAvailable": 15329024,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07958984375,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161587,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859772153796934
+    },
+    {
+      "MemAvailable": 15329024,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07958984375,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161607,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859772255054287
+    },
+    {
+      "MemAvailable": 15329024,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07958984375,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161607,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859772356564682
+    },
+    {
+      "MemAvailable": 15328504,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07958984375,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161619,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859772457942130
+    },
+    {
+      "MemAvailable": 15328504,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07958984375,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161635,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859772559288950
+    },
+    {
+      "MemAvailable": 15328504,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07958984375,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161635,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859772660723922
+    },
+    {
+      "MemAvailable": 15328504,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07958984375,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161647,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859772762161981
+    },
+    {
+      "MemAvailable": 15328504,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07958984375,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161671,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859772863573651
+    },
+    {
+      "MemAvailable": 15328504,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07958984375,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161671,
+      "rss_sum_kib": 258272,
+      "timestamp_ns": 1791859772964997130
+    },
+    {
+      "MemAvailable": 15328504,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07958984375,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161687,
+      "rss_sum_kib": 258464,
+      "timestamp_ns": 1791859773066231886
+    },
+    {
+      "MemAvailable": 15327804,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07958984375,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161711,
+      "rss_sum_kib": 258656,
+      "timestamp_ns": 1791859773167492915
+    },
+    {
+      "MemAvailable": 15327804,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07958984375,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161711,
+      "rss_sum_kib": 258656,
+      "timestamp_ns": 1791859773268805690
+    },
+    {
+      "MemAvailable": 15327552,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07958984375,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161735,
+      "rss_sum_kib": 258656,
+      "timestamp_ns": 1791859773369943454
+    },
+    {
+      "MemAvailable": 15327052,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07958984375,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161747,
+      "rss_sum_kib": 258656,
+      "timestamp_ns": 1791859773471215204
+    },
+    {
+      "MemAvailable": 15327052,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07958984375,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161747,
+      "rss_sum_kib": 258656,
+      "timestamp_ns": 1791859773572529290
+    },
+    {
+      "MemAvailable": 15327052,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.07958984375,
+      "parent_rss_kib": 70304,
+      "pss_sum_kib": 161743,
+      "rss_sum_kib": 258656,
+      "timestamp_ns": 1791859773597193378
+    }
+  ],
+  "run_id": 1,
+  "sampled_peak_pss_sum_kib": 161747,
+  "sampled_peak_rss_sum_kib": 258656,
+  "scenario": "withholding_beyond_liveness",
+  "setup_ms": 1767.008328,
+  "t": 3,
+  "total_group_cpu_ms": 180.0,
+  "worker_pids": [
+    5961,
+    5973,
+    5985,
+    5997,
+    6009
+  ],
+  "worker_startup_ms": 1758.4994429999767
+}

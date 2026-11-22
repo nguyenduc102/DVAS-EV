@@ -1,0 +1,17 @@
+config,n,t,malicious_colluding,offline,available,sessions_per_goal,semantic_incorrect_settlement_observed,semantic_incorrect_settlement_possible,settlement_possible,capture_above_hold_accepted,capture_above_hold_possible,replay_sessions,replay_attempts_after_settlement,replay_accepted,replay_possible,replay_refusal_codes,over_hold_refusal_codes,within_f_lt_t_assumption,expected_reason
+2-of-3,3,2,0,0,3,100,0,no,yes,0,no,30,30,0,no,RECEIPT_REPLAY,,True,f < t: honest quorum decides; malicious attestations cannot reach t
+2-of-3,3,2,0,1,2,100,0,no,yes,0,no,30,30,0,no,RECEIPT_REPLAY,,True,f < t: honest quorum decides; malicious attestations cannot reach t
+2-of-3,3,2,0,2,1,100,0,no,no,0,no,30,0,0,no (nothing settled to replay: available < t),NO_PRIOR_SETTLEMENT,NO_QUORUM,True,"available honest verifiers < t: no quorum, no settlement (never incorrect)"
+2-of-3,3,2,1,0,3,100,0,no,yes,0,no,30,30,0,no,RECEIPT_REPLAY,,True,f < t: honest quorum decides; malicious attestations cannot reach t
+2-of-3,3,2,1,1,2,100,0,no,no,0,no,30,30,0,no,RECEIPT_REPLAY,NO_QUORUM,True,"available honest verifiers < t: no quorum, no settlement (never incorrect)"
+2-of-3,3,2,2,0,3,100,200,yes,yes,0,no,30,30,0,no,RECEIPT_REPLAY,CAPTURE_EXCEEDS_LIMIT,False,f >= t colluding: semantic decision can be bypassed; SettleSC public invariants still enforced
+2-of-3,3,2,3,0,3,100,200,yes,yes,0,no,30,30,0,no,RECEIPT_REPLAY,CAPTURE_EXCEEDS_LIMIT,False,f >= t colluding: semantic decision can be bypassed; SettleSC public invariants still enforced
+3-of-5,5,3,0,0,5,100,0,no,yes,0,no,30,30,0,no,RECEIPT_REPLAY,,True,f < t: honest quorum decides; malicious attestations cannot reach t
+3-of-5,5,3,0,1,4,100,0,no,yes,0,no,30,30,0,no,RECEIPT_REPLAY,,True,f < t: honest quorum decides; malicious attestations cannot reach t
+3-of-5,5,3,0,2,3,100,0,no,yes,0,no,30,30,0,no,RECEIPT_REPLAY,,True,f < t: honest quorum decides; malicious attestations cannot reach t
+3-of-5,5,3,0,3,2,100,0,no,no,0,no,30,0,0,no (nothing settled to replay: available < t),NO_PRIOR_SETTLEMENT,NO_QUORUM,True,"available honest verifiers < t: no quorum, no settlement (never incorrect)"
+3-of-5,5,3,1,0,5,100,0,no,yes,0,no,30,30,0,no,RECEIPT_REPLAY,,True,f < t: honest quorum decides; malicious attestations cannot reach t
+3-of-5,5,3,1,2,3,100,0,no,no,0,no,30,30,0,no,RECEIPT_REPLAY,NO_QUORUM,True,"available honest verifiers < t: no quorum, no settlement (never incorrect)"
+3-of-5,5,3,2,0,5,100,0,no,yes,0,no,30,30,0,no,RECEIPT_REPLAY,,True,f < t: honest quorum decides; malicious attestations cannot reach t
+3-of-5,5,3,2,1,4,100,0,no,no,0,no,30,30,0,no,RECEIPT_REPLAY,NO_QUORUM,True,"available honest verifiers < t: no quorum, no settlement (never incorrect)"
+3-of-5,5,3,3,0,5,100,200,yes,yes,0,no,30,30,0,no,RECEIPT_REPLAY,CAPTURE_EXCEEDS_LIMIT,False,f >= t colluding: semantic decision can be bypassed; SettleSC public invariants still enforced

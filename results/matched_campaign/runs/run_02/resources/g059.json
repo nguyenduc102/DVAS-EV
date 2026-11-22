@@ -1,0 +1,232 @@
+{
+  "coordinator_pid": 6293,
+  "dataset": "ACN",
+  "group_cpu_ms_per_attempt": 12.5,
+  "group_id": "g059",
+  "group_wall_ms": 1850.978273,
+  "measured_sessions": 12,
+  "method": "FullEvidenceQuorum",
+  "mutation": "honest",
+  "n": 5,
+  "phase": "fault",
+  "post_group_drain_ms": 10,
+  "profile": "C3",
+  "registry_snapshot_bytes_fanout": 715995,
+  "resource_samples": [
+    {
+      "MemAvailable": 15337296,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.03076171875,
+      "parent_rss_kib": 60160,
+      "pss_sum_kib": 151432,
+      "rss_sum_kib": 248704,
+      "timestamp_ns": 1791859886703291814
+    },
+    {
+      "MemAvailable": 15337296,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.03076171875,
+      "parent_rss_kib": 60160,
+      "pss_sum_kib": 151556,
+      "rss_sum_kib": 248704,
+      "timestamp_ns": 1791859886804996528
+    },
+    {
+      "MemAvailable": 15337296,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.03076171875,
+      "parent_rss_kib": 60160,
+      "pss_sum_kib": 151668,
+      "rss_sum_kib": 248896,
+      "timestamp_ns": 1791859886906437829
+    },
+    {
+      "MemAvailable": 15337296,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.03076171875,
+      "parent_rss_kib": 60160,
+      "pss_sum_kib": 151668,
+      "rss_sum_kib": 248896,
+      "timestamp_ns": 1791859887007843349
+    },
+    {
+      "MemAvailable": 15336324,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.03076171875,
+      "parent_rss_kib": 60160,
+      "pss_sum_kib": 151680,
+      "rss_sum_kib": 248896,
+      "timestamp_ns": 1791859887109190899
+    },
+    {
+      "MemAvailable": 15336324,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.94775390625,
+      "parent_rss_kib": 60160,
+      "pss_sum_kib": 151696,
+      "rss_sum_kib": 248896,
+      "timestamp_ns": 1791859887210421892
+    },
+    {
+      "MemAvailable": 15336324,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.94775390625,
+      "parent_rss_kib": 60160,
+      "pss_sum_kib": 151696,
+      "rss_sum_kib": 248896,
+      "timestamp_ns": 1791859887311810850
+    },
+    {
+      "MemAvailable": 15336100,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.94775390625,
+      "parent_rss_kib": 60160,
+      "pss_sum_kib": 151708,
+      "rss_sum_kib": 248896,
+      "timestamp_ns": 1791859887413074518
+    },
+    {
+      "MemAvailable": 15336100,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.94775390625,
+      "parent_rss_kib": 60160,
+      "pss_sum_kib": 151716,
+      "rss_sum_kib": 248896,
+      "timestamp_ns": 1791859887514391077
+    },
+    {
+      "MemAvailable": 15336100,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.94775390625,
+      "parent_rss_kib": 60160,
+      "pss_sum_kib": 151716,
+      "rss_sum_kib": 248896,
+      "timestamp_ns": 1791859887615778267
+    },
+    {
+      "MemAvailable": 15336100,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.94775390625,
+      "parent_rss_kib": 60160,
+      "pss_sum_kib": 151748,
+      "rss_sum_kib": 248896,
+      "timestamp_ns": 1791859887717221448
+    },
+    {
+      "MemAvailable": 15336100,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.94775390625,
+      "parent_rss_kib": 60160,
+      "pss_sum_kib": 151752,
+      "rss_sum_kib": 248896,
+      "timestamp_ns": 1791859887818577996
+    },
+    {
+      "MemAvailable": 15336100,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.94775390625,
+      "parent_rss_kib": 60160,
+      "pss_sum_kib": 151752,
+      "rss_sum_kib": 248896,
+      "timestamp_ns": 1791859887919891377
+    },
+    {
+      "MemAvailable": 15335876,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.94775390625,
+      "parent_rss_kib": 60160,
+      "pss_sum_kib": 151760,
+      "rss_sum_kib": 248896,
+      "timestamp_ns": 1791859888021170150
+    },
+    {
+      "MemAvailable": 15335876,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.94775390625,
+      "parent_rss_kib": 60160,
+      "pss_sum_kib": 151792,
+      "rss_sum_kib": 248896,
+      "timestamp_ns": 1791859888122494322
+    },
+    {
+      "MemAvailable": 15335876,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.94775390625,
+      "parent_rss_kib": 60160,
+      "pss_sum_kib": 151792,
+      "rss_sum_kib": 248896,
+      "timestamp_ns": 1791859888223644832
+    },
+    {
+      "MemAvailable": 15335876,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.94775390625,
+      "parent_rss_kib": 60160,
+      "pss_sum_kib": 151824,
+      "rss_sum_kib": 248896,
+      "timestamp_ns": 1791859888324781705
+    },
+    {
+      "MemAvailable": 15335876,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.94775390625,
+      "parent_rss_kib": 60160,
+      "pss_sum_kib": 151872,
+      "rss_sum_kib": 248896,
+      "timestamp_ns": 1791859888426093276
+    },
+    {
+      "MemAvailable": 15335876,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.94775390625,
+      "parent_rss_kib": 60160,
+      "pss_sum_kib": 151872,
+      "rss_sum_kib": 248896,
+      "timestamp_ns": 1791859888527308915
+    },
+    {
+      "MemAvailable": 15335876,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.94775390625,
+      "parent_rss_kib": 60160,
+      "pss_sum_kib": 151868,
+      "rss_sum_kib": 248896,
+      "timestamp_ns": 1791859888553258102
+    }
+  ],
+  "run_id": 2,
+  "sampled_peak_pss_sum_kib": 151872,
+  "sampled_peak_rss_sum_kib": 248896,
+  "scenario": "withholding_beyond_liveness",
+  "setup_ms": 1831.147769,
+  "t": 3,
+  "total_group_cpu_ms": 150.0,
+  "worker_pids": [
+    8491,
+    8503,
+    8515,
+    8527,
+    8539
+  ],
+  "worker_startup_ms": 1821.2994190000131
+}

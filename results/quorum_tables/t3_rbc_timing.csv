@@ -1,0 +1,61 @@
+workload,quorum,component,median_ms,p95_ms,settled,sessions
+ACN-10k,2-of-3,Commit root,0.113,0.14,10000,10000
+ACN-10k,2-of-3,Authorization sign/open,0.345,0.492,10000,10000
+ACN-10k,2-of-3,Authorize reserve,0.398,0.518,10000,10000
+ACN-10k,2-of-3,Session open,0.575,0.75,10000,10000
+ACN-10k,2-of-3,Receipt build/sign,0.265,0.33,10000,10000
+ACN-10k,2-of-3,Protect private,0.101,0.152,10000,10000
+ACN-10k,2-of-3,Receipt submit,0.237,0.303,10000,10000
+ACN-10k,2-of-3,SV quorum/RBC,0.8,1.095,10000,10000
+ACN-10k,2-of-3,Release by RBC,0.656,0.801,10000,10000
+ACN-10k,2-of-3,Total,3.589,4.132,10000,10000
+ACN-10k,3-of-5,Commit root,0.114,0.141,10000,10000
+ACN-10k,3-of-5,Authorization sign/open,0.345,0.485,10000,10000
+ACN-10k,3-of-5,Authorize reserve,0.399,0.501,10000,10000
+ACN-10k,3-of-5,Session open,0.573,0.741,10000,10000
+ACN-10k,3-of-5,Receipt build/sign,0.265,0.329,10000,10000
+ACN-10k,3-of-5,Protect private,0.141,0.203,10000,10000
+ACN-10k,3-of-5,Receipt submit,0.238,0.302,10000,10000
+ACN-10k,3-of-5,SV quorum/RBC,0.845,1.145,10000,10000
+ACN-10k,3-of-5,Release by RBC,1.068,1.263,10000,10000
+ACN-10k,3-of-5,Total,4.107,4.574,10000,10000
+ACN-30k,2-of-3,Commit root,0.115,0.15,30000,30000
+ACN-30k,2-of-3,Authorization sign/open,0.349,0.498,30000,30000
+ACN-30k,2-of-3,Authorize reserve,0.403,0.518,30000,30000
+ACN-30k,2-of-3,Session open,0.579,0.759,30000,30000
+ACN-30k,2-of-3,Receipt build/sign,0.269,0.332,30000,30000
+ACN-30k,2-of-3,Protect private,0.102,0.155,30000,30000
+ACN-30k,2-of-3,Receipt submit,0.238,0.302,30000,30000
+ACN-30k,2-of-3,SV quorum/RBC,0.811,1.192,30000,30000
+ACN-30k,2-of-3,Release by RBC,0.66,0.804,30000,30000
+ACN-30k,2-of-3,Total,3.628,4.379,30000,30000
+ACN-30k,3-of-5,Commit root,0.113,0.137,30000,30000
+ACN-30k,3-of-5,Authorization sign/open,0.338,0.472,30000,30000
+ACN-30k,3-of-5,Authorize reserve,0.394,0.467,30000,30000
+ACN-30k,3-of-5,Session open,0.568,0.72,30000,30000
+ACN-30k,3-of-5,Receipt build/sign,0.265,0.311,30000,30000
+ACN-30k,3-of-5,Protect private,0.139,0.181,30000,30000
+ACN-30k,3-of-5,Receipt submit,0.236,0.278,30000,30000
+ACN-30k,3-of-5,SV quorum/RBC,0.826,1.22,30000,30000
+ACN-30k,3-of-5,Release by RBC,1.053,1.23,30000,30000
+ACN-30k,3-of-5,Total,4.034,4.655,30000,30000
+MFEV-50k,2-of-3,Commit root,0.113,0.137,50000,50000
+MFEV-50k,2-of-3,Authorization sign/open,0.34,0.478,50000,50000
+MFEV-50k,2-of-3,Authorize reserve,0.396,0.48,50000,50000
+MFEV-50k,2-of-3,Session open,0.571,0.731,50000,50000
+MFEV-50k,2-of-3,Receipt build/sign,0.276,0.33,50000,50000
+MFEV-50k,2-of-3,Protect private,0.102,0.143,50000,50000
+MFEV-50k,2-of-3,Receipt submit,0.237,0.29,50000,50000
+MFEV-50k,2-of-3,SV quorum/RBC,0.795,1.094,50000,50000
+MFEV-50k,2-of-3,Release by RBC,0.652,0.767,50000,50000
+MFEV-50k,2-of-3,Total,3.563,4.116,50000,50000
+MFEV-50k,3-of-5,Commit root,0.118,0.153,50000,50000
+MFEV-50k,3-of-5,Authorization sign/open,0.352,0.503,50000,50000
+MFEV-50k,3-of-5,Authorize reserve,0.405,0.529,50000,50000
+MFEV-50k,3-of-5,Session open,0.583,0.775,50000,50000
+MFEV-50k,3-of-5,Receipt build/sign,0.284,0.354,50000,50000
+MFEV-50k,3-of-5,Protect private,0.148,0.218,50000,50000
+MFEV-50k,3-of-5,Receipt submit,0.244,0.312,50000,50000
+MFEV-50k,3-of-5,SV quorum/RBC,0.858,1.418,50000,50000
+MFEV-50k,3-of-5,Release by RBC,1.081,1.333,50000,50000
+MFEV-50k,3-of-5,Total,4.211,5.111,50000,50000

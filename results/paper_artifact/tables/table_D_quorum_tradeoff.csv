@@ -1,0 +1,5 @@
+configuration,per_verifier_ms_median,critical_path_ms_median,critical_path_ms_p95,total_verifier_cpu_ms_median,rbc_bytes_median,rbc_encoding,signatures,gas_release,observed_tolerance,settles_with_1_offline,safe_with_1_malicious
+legacy single SettlementVerifier,0.685,0.9563,1.1796,0.685,1128.0,JSON record,1,120574,none (single verifier),no (single verifier),no (probe P3: inflated capture accepted)
+DVAS-EV 1-of-1,0.7134,0.9679,1.2526,0.7134,529.0,canonical body + attestations,1,154767,none (t=1),no,no (t=1)
+DVAS-EV 2-of-3,0.7043,1.4366,2.0169,2.1221,749.0,canonical body + attestations,2,164067,up to 1 malicious OR up to 1 offline (faults count together),100/100,100/100 correct
+DVAS-EV 3-of-5,0.6989,1.8862,2.5332,3.5144,969.0,canonical body + attestations,3,173390,up to 2 malicious OR up to 2 offline (faults count together),100/100,100/100 correct

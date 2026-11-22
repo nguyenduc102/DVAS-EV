@@ -1,0 +1,9 @@
+{
+  "authorization_reference": "AUTH-REF-0001",
+  "requested_kwh": 20.0,
+  "max_kwh": 20.0,
+  "preauthorized_amount": 8.00,
+  "valid_from": "2026-10-01T08:00:00Z",
+  "valid_until": "2026-10-01T18:00:00Z",
+  "note": "Request object of the DVAS-EV authorization step; OCPI has no pre-authorized-amount object in Token/Session, so this is a protocol-specific field."
+}

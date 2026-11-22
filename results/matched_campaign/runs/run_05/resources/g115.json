@@ -1,0 +1,52 @@
+{
+  "coordinator_pid": 19947,
+  "dataset": "ACN",
+  "group_cpu_ms_per_attempt": 9.0,
+  "group_id": "g115",
+  "group_wall_ms": 77.263049,
+  "measured_sessions": 10,
+  "method": "FullEvidenceQuorum",
+  "mutation": "tariff_swap",
+  "n": 5,
+  "phase": "security",
+  "post_group_drain_ms": 10,
+  "profile": "C0",
+  "registry_snapshot_bytes_fanout": 116030,
+  "resource_samples": [
+    {
+      "MemAvailable": 15329520,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.076171875,
+      "parent_rss_kib": 69520,
+      "pss_sum_kib": 158407,
+      "rss_sum_kib": 251920,
+      "timestamp_ns": 1791860555556649995
+    },
+    {
+      "MemAvailable": 15328792,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.076171875,
+      "parent_rss_kib": 69520,
+      "pss_sum_kib": 159387,
+      "rss_sum_kib": 254416,
+      "timestamp_ns": 1791860555632447409
+    }
+  ],
+  "run_id": 5,
+  "sampled_peak_pss_sum_kib": 159387,
+  "sampled_peak_rss_sum_kib": 254416,
+  "scenario": "attack_probe",
+  "setup_ms": 2190.999837,
+  "t": 3,
+  "total_group_cpu_ms": 90.0,
+  "worker_pids": [
+    24255,
+    24267,
+    24279,
+    24291,
+    24303
+  ],
+  "worker_startup_ms": 2183.8557640001
+}

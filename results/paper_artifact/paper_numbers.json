@@ -1,0 +1,1239 @@
+{
+  "attacks.attack_types": {
+    "derivation": "",
+    "source": "attack_results.csv",
+    "value": 27
+  },
+  "attacks.cases": {
+    "derivation": "",
+    "source": "attack_results.csv",
+    "value": 3060
+  },
+  "attacks.compound": {
+    "derivation": "",
+    "source": "attack_results.csv",
+    "value": 633
+  },
+  "attacks.family_A": {
+    "derivation": "",
+    "source": "attack_results.csv",
+    "value": 2067
+  },
+  "attacks.family_B": {
+    "derivation": "",
+    "source": "attack_results.csv",
+    "value": 633
+  },
+  "attacks.family_C": {
+    "derivation": "",
+    "source": "attack_results.csv",
+    "value": 360
+  },
+  "attacks.harness_errors": {
+    "derivation": "",
+    "source": "attack_results.csv",
+    "value": 0
+  },
+  "attacks.randomized": {
+    "derivation": "",
+    "source": "attack_results.csv",
+    "value": 1500
+  },
+  "attacks.systematic": {
+    "derivation": "",
+    "source": "attack_results.csv",
+    "value": 1560
+  },
+  "attacks.unexpected_accepts": {
+    "derivation": "",
+    "source": "attack_results.csv",
+    "value": 0
+  },
+  "baseline.CDR.over_cap_delivery.detected": {
+    "derivation": "",
+    "source": "baseline_attack_detection.csv",
+    "value": "0/50"
+  },
+  "baseline.CDR.post_authorization_tariff_swap.detected": {
+    "derivation": "",
+    "source": "baseline_attack_detection.csv",
+    "value": "0/50"
+  },
+  "baseline.CDR.public_bytes_median": {
+    "derivation": "",
+    "source": "baselines.csv",
+    "value": "0.0"
+  },
+  "baseline.CDR.single_signer_inflated_amount.detected": {
+    "derivation": "",
+    "source": "baseline_attack_detection.csv",
+    "value": "0/50"
+  },
+  "baseline.CDR.total_ms_median": {
+    "derivation": "",
+    "source": "baselines.csv",
+    "value": "1.2605"
+  },
+  "baseline.DVAS-EV.over_cap_delivery.detected": {
+    "derivation": "",
+    "source": "baseline_attack_detection.csv",
+    "value": "50/50"
+  },
+  "baseline.DVAS-EV.post_authorization_tariff_swap.detected": {
+    "derivation": "",
+    "source": "baseline_attack_detection.csv",
+    "value": "50/50"
+  },
+  "baseline.DVAS-EV.public_bytes_median": {
+    "derivation": "",
+    "source": "baselines.csv",
+    "value": "2121.5"
+  },
+  "baseline.DVAS-EV.single_signer_inflated_amount.detected": {
+    "derivation": "",
+    "source": "baseline_attack_detection.csv",
+    "value": "50/50"
+  },
+  "baseline.DVAS-EV.total_ms_median": {
+    "derivation": "",
+    "source": "baselines.csv",
+    "value": "5.1428"
+  },
+  "baseline.FullEscrow.over_cap_delivery.detected": {
+    "derivation": "",
+    "source": "baseline_attack_detection.csv",
+    "value": "50/50"
+  },
+  "baseline.FullEscrow.post_authorization_tariff_swap.detected": {
+    "derivation": "",
+    "source": "baseline_attack_detection.csv",
+    "value": "50/50"
+  },
+  "baseline.FullEscrow.public_bytes_median": {
+    "derivation": "",
+    "source": "baselines.csv",
+    "value": "1375.5"
+  },
+  "baseline.FullEscrow.single_signer_inflated_amount.detected": {
+    "derivation": "",
+    "source": "baseline_attack_detection.csv",
+    "value": "50/50"
+  },
+  "baseline.FullEscrow.total_ms_median": {
+    "derivation": "",
+    "source": "baselines.csv",
+    "value": "0.8997"
+  },
+  "baseline.HashAnchor.over_cap_delivery.detected": {
+    "derivation": "",
+    "source": "baseline_attack_detection.csv",
+    "value": "0/50"
+  },
+  "baseline.HashAnchor.post_authorization_tariff_swap.detected": {
+    "derivation": "",
+    "source": "baseline_attack_detection.csv",
+    "value": "0/50"
+  },
+  "baseline.HashAnchor.public_bytes_median": {
+    "derivation": "",
+    "source": "baselines.csv",
+    "value": "318.0"
+  },
+  "baseline.HashAnchor.single_signer_inflated_amount.detected": {
+    "derivation": "",
+    "source": "baseline_attack_detection.csv",
+    "value": "0/50"
+  },
+  "baseline.HashAnchor.total_ms_median": {
+    "derivation": "",
+    "source": "baselines.csv",
+    "value": "1.2908"
+  },
+  "formal.A_correctness.passed": {
+    "derivation": "",
+    "source": "formal_properties_results.csv",
+    "value": 14300
+  },
+  "formal.A_correctness.trials": {
+    "derivation": "",
+    "source": "formal_properties_results.csv",
+    "value": 14300
+  },
+  "formal.B_leaf_encoding_injective.passed": {
+    "derivation": "",
+    "source": "formal_properties_results.csv",
+    "value": 5100
+  },
+  "formal.B_leaf_encoding_injective.trials": {
+    "derivation": "",
+    "source": "formal_properties_results.csv",
+    "value": 5100
+  },
+  "formal.B_opening_binding.passed": {
+    "derivation": "",
+    "source": "formal_properties_results.csv",
+    "value": 1023
+  },
+  "formal.B_opening_binding.trials": {
+    "derivation": "",
+    "source": "formal_properties_results.csv",
+    "value": 1023
+  },
+  "formal.C_exact_policy.passed": {
+    "derivation": "",
+    "source": "formal_properties_results.csv",
+    "value": 39
+  },
+  "formal.C_exact_policy.trials": {
+    "derivation": "",
+    "source": "formal_properties_results.csv",
+    "value": 39
+  },
+  "formal.C_predicate_completeness.passed": {
+    "derivation": "",
+    "source": "formal_properties_results.csv",
+    "value": 33174
+  },
+  "formal.C_predicate_completeness.trials": {
+    "derivation": "",
+    "source": "formal_properties_results.csv",
+    "value": 33174
+  },
+  "formal.D_no_default_substitution.passed": {
+    "derivation": "",
+    "source": "formal_properties_results.csv",
+    "value": 7500
+  },
+  "formal.D_no_default_substitution.trials": {
+    "derivation": "",
+    "source": "formal_properties_results.csv",
+    "value": 7500
+  },
+  "formal.D_projection_soundness.passed": {
+    "derivation": "",
+    "source": "formal_properties_results.csv",
+    "value": 35900
+  },
+  "formal.D_projection_soundness.trials": {
+    "derivation": "",
+    "source": "formal_properties_results.csv",
+    "value": 35900
+  },
+  "formal.contexts": {
+    "derivation": "",
+    "source": "formal_properties_results.csv",
+    "value": 100
+  },
+  "gas.DBASETGasFeasibilityMeasured.authorize": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 146524
+  },
+  "gas.DBASETGasFeasibilityMeasured.deployment": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 3066
+  },
+  "gas.DBASETGasFeasibilityMeasured.deployment_size_bytes": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 4423
+  },
+  "gas.DBASETGasFeasibilityMeasured.openDispute": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 75077
+  },
+  "gas.DBASETGasFeasibilityMeasured.refund": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 53548
+  },
+  "gas.DBASETGasFeasibilityMeasured.rejectBadVerifierSignature": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 50915
+  },
+  "gas.DBASETGasFeasibilityMeasured.rejectOverCapture": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 44728
+  },
+  "gas.DBASETGasFeasibilityMeasured.rejectReplayAtRelease": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 42536
+  },
+  "gas.DBASETGasFeasibilityMeasured.rejectWrongReceiptDigest": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 40344
+  },
+  "gas.DBASETGasFeasibilityMeasured.rejectWrongRoot": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 36084
+  },
+  "gas.DBASETGasFeasibilityMeasured.rejectWrongSession": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 38217
+  },
+  "gas.DBASETGasFeasibilityMeasured.releaseByRBC": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 120574
+  },
+  "gas.DBASETGasFeasibilityMeasured.setVerifier": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 34967
+  },
+  "gas.DBASETGasFeasibilityMeasured.submitReceiptHash": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 51947
+  },
+  "gas.DVASQuorumSettle.authorize": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 176121
+  },
+  "gas.DVASQuorumSettle.reject_1of3_below_threshold": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 71430
+  },
+  "gas.DVASQuorumSettle.reject_capture_exceeds_reserve": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 59552
+  },
+  "gas.DVASQuorumSettle.reject_different_decision_digests": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 74148
+  },
+  "gas.DVASQuorumSettle.reject_duplicate_signer": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 78980
+  },
+  "gas.DVASQuorumSettle.reject_invalid_verifier_signature": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 81265
+  },
+  "gas.DVASQuorumSettle.reject_refund_mismatch": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 59807
+  },
+  "gas.DVASQuorumSettle.reject_replayed_rbc": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 46531
+  },
+  "gas.DVASQuorumSettle.reject_revoked_verifier": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 74183
+  },
+  "gas.DVASQuorumSettle.reject_stale_key_epoch": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 81637
+  },
+  "gas.DVASQuorumSettle.reject_stale_verifier_set": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 67459
+  },
+  "gas.DVASQuorumSettle.reject_unknown_verifier": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 74211
+  },
+  "gas.DVASQuorumSettle.reject_wrong_receipt_or_hpriv": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 57411
+  },
+  "gas.DVASQuorumSettle.reject_wrong_root": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 48863
+  },
+  "gas.DVASQuorumSettle.reject_wrong_session": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 51013
+  },
+  "gas.DVASQuorumSettle.releaseByQuorumRBC_1of1": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 154767
+  },
+  "gas.DVASQuorumSettle.releaseByQuorumRBC_2of3": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 164067
+  },
+  "gas.DVASQuorumSettle.releaseByQuorumRBC_3of3": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 173373
+  },
+  "gas.DVASQuorumSettle.releaseByQuorumRBC_3of5": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 173390
+  },
+  "gas.DVASQuorumSettle.submitReceipt": {
+    "derivation": "gasleft() delta around the call inside a Foundry test; excludes 21k intrinsic + calldata",
+    "source": "solidity_gas.csv",
+    "value": 81449
+  },
+  "minimality.authorization": {
+    "derivation": "",
+    "source": "minimality_classification.csv",
+    "value": "NOT_MINIMAL"
+  },
+  "minimality.delivery_cap": {
+    "derivation": "",
+    "source": "minimality_classification.csv",
+    "value": "BOOLEAN_MINIMAL"
+  },
+  "minimality.dispute:amount_exceeds_preauth": {
+    "derivation": "",
+    "source": "minimality_classification.csv",
+    "value": "BOOLEAN_MINIMAL"
+  },
+  "minimality.dispute:over_cap": {
+    "derivation": "",
+    "source": "minimality_classification.csv",
+    "value": "BOOLEAN_MINIMAL"
+  },
+  "minimality.dispute:replay": {
+    "derivation": "",
+    "source": "minimality_classification.csv",
+    "value": "BOOLEAN_MINIMAL"
+  },
+  "minimality.dispute:tariff_mismatch": {
+    "derivation": "",
+    "source": "minimality_classification.csv",
+    "value": "BOOLEAN_MINIMAL"
+  },
+  "minimality.dispute:time_window": {
+    "derivation": "",
+    "source": "minimality_classification.csv",
+    "value": "BOOLEAN_MINIMAL"
+  },
+  "minimality.pricing": {
+    "derivation": "",
+    "source": "minimality_classification.csv",
+    "value": "DECISION_MINIMAL_ONLY"
+  },
+  "minimality.replay": {
+    "derivation": "",
+    "source": "minimality_classification.csv",
+    "value": "BOOLEAN_MINIMAL"
+  },
+  "minimality.reserve_amount": {
+    "derivation": "",
+    "source": "minimality_classification.csv",
+    "value": "BOOLEAN_MINIMAL"
+  },
+  "minimality.settlement": {
+    "derivation": "",
+    "source": "minimality_classification.csv",
+    "value": "BOOLEAN_MINIMAL"
+  },
+  "minimality.station_meter_binding": {
+    "derivation": "",
+    "source": "minimality_classification.csv",
+    "value": "BOOLEAN_MINIMAL"
+  },
+  "minimality.time_window": {
+    "derivation": "",
+    "source": "minimality_classification.csv",
+    "value": "BOOLEAN_MINIMAL"
+  },
+  "pam.capsules": {
+    "derivation": "distinct capsules (rep 0)",
+    "source": "raw/pam_ablation_raw.csv",
+    "value": 500
+  },
+  "pam.settlement.B0-full.auth_proof_bytes": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "0.0"
+  },
+  "pam.settlement.B0-full.auth_sibling_hashes": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "0.0"
+  },
+  "pam.settlement.B0-full.gen_us_median": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "1.01"
+  },
+  "pam.settlement.B0-full.semantic_disclosure_fields": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "26"
+  },
+  "pam.settlement.B0-full.total_bytes": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "578.0"
+  },
+  "pam.settlement.B0-full.verify_us_median": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "55.297"
+  },
+  "pam.settlement.B0-full.verify_us_p95": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "67.115"
+  },
+  "pam.settlement.B0-row.auth_proof_bytes": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "3840.0"
+  },
+  "pam.settlement.B0-row.auth_sibling_hashes": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "120.0"
+  },
+  "pam.settlement.B0-row.gen_us_median": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "17.23"
+  },
+  "pam.settlement.B0-row.semantic_disclosure_fields": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "24"
+  },
+  "pam.settlement.B0-row.total_bytes": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "4360.0"
+  },
+  "pam.settlement.B0-row.verify_us_median": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "121.506"
+  },
+  "pam.settlement.B0-row.verify_us_p95": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "150.246"
+  },
+  "pam.settlement.B1.auth_proof_bytes": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "2400.0"
+  },
+  "pam.settlement.B1.auth_sibling_hashes": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "75.0"
+  },
+  "pam.settlement.B1.gen_us_median": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "11.896"
+  },
+  "pam.settlement.B1.semantic_disclosure_fields": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "15"
+  },
+  "pam.settlement.B1.total_bytes": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "2728.0"
+  },
+  "pam.settlement.B1.verify_us_median": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "79.117"
+  },
+  "pam.settlement.B1.verify_us_p95": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "102.47"
+  },
+  "pam.settlement.B2.auth_proof_bytes": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "256.0"
+  },
+  "pam.settlement.B2.auth_sibling_hashes": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "8.0"
+  },
+  "pam.settlement.B2.gen_us_median": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "12.456"
+  },
+  "pam.settlement.B2.incomplete_accepted": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "300/300"
+  },
+  "pam.settlement.B2.semantic_disclosure_fields": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "15"
+  },
+  "pam.settlement.B2.total_bytes": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "584.0"
+  },
+  "pam.settlement.B2.verify_us_median": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "61.365"
+  },
+  "pam.settlement.B2.verify_us_p95": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "78.912"
+  },
+  "pam.settlement.B3.auth_proof_bytes": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "256.0"
+  },
+  "pam.settlement.B3.auth_sibling_hashes": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "8.0"
+  },
+  "pam.settlement.B3.gen_us_median": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "12.426"
+  },
+  "pam.settlement.B3.incomplete_accepted": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "0/300"
+  },
+  "pam.settlement.B3.semantic_disclosure_fields": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "15"
+  },
+  "pam.settlement.B3.total_bytes": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "584.0"
+  },
+  "pam.settlement.B3.verify_us_median": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "62.595"
+  },
+  "pam.settlement.B3.verify_us_p95": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "81.788"
+  },
+  "pam.settlement.completeness_effect.bytes_saved": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "0.0"
+  },
+  "pam.settlement.completeness_effect.fields_saved": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "0"
+  },
+  "pam.settlement.completeness_effect.sibling_hashes_saved": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "0.0"
+  },
+  "pam.settlement.completeness_effect.verify_us_saved": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "-1.23"
+  },
+  "pam.settlement.packing_effect.bytes_saved": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "2144.0"
+  },
+  "pam.settlement.packing_effect.fields_saved": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "0"
+  },
+  "pam.settlement.packing_effect.sibling_hashes_saved": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "67.0"
+  },
+  "pam.settlement.packing_effect.verify_us_saved": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "17.752"
+  },
+  "pam.settlement.selection_effect_vs_full.bytes_saved": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "-2150.0"
+  },
+  "pam.settlement.selection_effect_vs_full.fields_saved": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "11"
+  },
+  "pam.settlement.selection_effect_vs_full.sibling_hashes_saved": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": ""
+  },
+  "pam.settlement.selection_effect_vs_full.verify_us_saved": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "-23.82"
+  },
+  "pam.settlement.selection_effect_vs_row.bytes_saved": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "1632.0"
+  },
+  "pam.settlement.selection_effect_vs_row.fields_saved": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "9"
+  },
+  "pam.settlement.selection_effect_vs_row.sibling_hashes_saved": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "45.0"
+  },
+  "pam.settlement.selection_effect_vs_row.verify_us_saved": {
+    "derivation": "",
+    "source": "pam_ablation_updated.csv",
+    "value": "42.389"
+  },
+  "pq.C0.2of3.auth_sig_bytes": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "71"
+  },
+  "pq.C0.2of3.authorization_ms_median": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "0.598"
+  },
+  "pq.C0.2of3.kem_ct_bytes": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "32"
+  },
+  "pq.C0.2of3.private_envelope_bytes_median": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "701.0"
+  },
+  "pq.C0.2of3.rbc_bytes_median": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "752.0"
+  },
+  "pq.C0.2of3.total_ms_median": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "3.3837"
+  },
+  "pq.C0.2of3.total_ms_p95": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "4.0734"
+  },
+  "pq.C0.2of3.verifier_sig_bytes": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "70"
+  },
+  "pq.C0.pq_status": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "CLASSICAL"
+  },
+  "pq.C1.2of3.auth_sig_bytes": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "3309"
+  },
+  "pq.C1.2of3.authorization_ms_median": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "0.3198"
+  },
+  "pq.C1.2of3.kem_ct_bytes": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "32"
+  },
+  "pq.C1.2of3.private_envelope_bytes_median": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "701.0"
+  },
+  "pq.C1.2of3.rbc_bytes_median": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "752.0"
+  },
+  "pq.C1.2of3.total_ms_median": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "2.7941"
+  },
+  "pq.C1.2of3.total_ms_p95": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "3.4339"
+  },
+  "pq.C1.2of3.verifier_sig_bytes": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "71"
+  },
+  "pq.C1.pq_status": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "PARTIAL-PQ"
+  },
+  "pq.C2.2of3.auth_sig_bytes": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "72"
+  },
+  "pq.C2.2of3.authorization_ms_median": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "0.6007"
+  },
+  "pq.C2.2of3.kem_ct_bytes": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "1088"
+  },
+  "pq.C2.2of3.private_envelope_bytes_median": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "3869.0"
+  },
+  "pq.C2.2of3.rbc_bytes_median": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "752.0"
+  },
+  "pq.C2.2of3.total_ms_median": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "3.2584"
+  },
+  "pq.C2.2of3.total_ms_p95": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "4.0681"
+  },
+  "pq.C2.2of3.verifier_sig_bytes": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "71"
+  },
+  "pq.C2.pq_status": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "PARTIAL-PQ"
+  },
+  "pq.C3.2of3.auth_sig_bytes": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "3384"
+  },
+  "pq.C3.2of3.authorization_ms_median": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "0.7614"
+  },
+  "pq.C3.2of3.kem_ct_bytes": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "1088"
+  },
+  "pq.C3.2of3.private_envelope_bytes_median": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "3869.0"
+  },
+  "pq.C3.2of3.rbc_bytes_median": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "752.0"
+  },
+  "pq.C3.2of3.total_ms_median": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "3.5771"
+  },
+  "pq.C3.2of3.total_ms_p95": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "4.3584"
+  },
+  "pq.C3.2of3.verifier_sig_bytes": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "71"
+  },
+  "pq.C3.pq_status": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "HYBRID"
+  },
+  "pq.C4.2of3.auth_sig_bytes": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "3384"
+  },
+  "pq.C4.2of3.authorization_ms_median": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "0.7518"
+  },
+  "pq.C4.2of3.kem_ct_bytes": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "1088"
+  },
+  "pq.C4.2of3.private_envelope_bytes_median": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "3869.0"
+  },
+  "pq.C4.2of3.rbc_bytes_median": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "10466.0"
+  },
+  "pq.C4.2of3.total_ms_median": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "2.915"
+  },
+  "pq.C4.2of3.total_ms_p95": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "3.6383"
+  },
+  "pq.C4.2of3.verifier_sig_bytes": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "3309"
+  },
+  "pq.C4.pq_status": {
+    "derivation": "",
+    "source": "pq_ablation.csv",
+    "value": "HYBRID"
+  },
+  "quorum.DVAS-EV_1-of-1.critical_path_ms_median": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "0.9679"
+  },
+  "quorum.DVAS-EV_1-of-1.critical_path_ms_p95": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "1.2526"
+  },
+  "quorum.DVAS-EV_1-of-1.gas_release": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "154767"
+  },
+  "quorum.DVAS-EV_1-of-1.observed_tolerance": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "none (t=1)"
+  },
+  "quorum.DVAS-EV_1-of-1.per_verifier_ms_median": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "0.7134"
+  },
+  "quorum.DVAS-EV_1-of-1.rbc_bytes_median": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "529.0"
+  },
+  "quorum.DVAS-EV_1-of-1.signatures": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "1"
+  },
+  "quorum.DVAS-EV_2-of-3.critical_path_ms_median": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "1.4366"
+  },
+  "quorum.DVAS-EV_2-of-3.critical_path_ms_p95": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "2.0169"
+  },
+  "quorum.DVAS-EV_2-of-3.gas_release": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "164067"
+  },
+  "quorum.DVAS-EV_2-of-3.observed_tolerance": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "up to 1 malicious OR up to 1 offline (faults count together)"
+  },
+  "quorum.DVAS-EV_2-of-3.per_verifier_ms_median": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "0.7043"
+  },
+  "quorum.DVAS-EV_2-of-3.rbc_bytes_median": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "749.0"
+  },
+  "quorum.DVAS-EV_2-of-3.signatures": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "2"
+  },
+  "quorum.DVAS-EV_3-of-5.critical_path_ms_median": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "1.8862"
+  },
+  "quorum.DVAS-EV_3-of-5.critical_path_ms_p95": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "2.5332"
+  },
+  "quorum.DVAS-EV_3-of-5.gas_release": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "173390"
+  },
+  "quorum.DVAS-EV_3-of-5.observed_tolerance": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "up to 2 malicious OR up to 2 offline (faults count together)"
+  },
+  "quorum.DVAS-EV_3-of-5.per_verifier_ms_median": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "0.6989"
+  },
+  "quorum.DVAS-EV_3-of-5.rbc_bytes_median": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "969.0"
+  },
+  "quorum.DVAS-EV_3-of-5.signatures": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "3"
+  },
+  "quorum.fault_matrix.cells": {
+    "derivation": "",
+    "source": "quorum_fault_matrix.csv",
+    "value": 48
+  },
+  "quorum.fault_matrix.matching": {
+    "derivation": "",
+    "source": "quorum_fault_matrix.csv",
+    "value": 48
+  },
+  "quorum.fault_matrix.sessions_per_cell": {
+    "derivation": "",
+    "source": "quorum_fault_matrix.csv",
+    "value": 100
+  },
+  "quorum.legacy_single_SettlementVerifier.critical_path_ms_median": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "0.9563"
+  },
+  "quorum.legacy_single_SettlementVerifier.critical_path_ms_p95": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "1.1796"
+  },
+  "quorum.legacy_single_SettlementVerifier.gas_release": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "120574"
+  },
+  "quorum.legacy_single_SettlementVerifier.observed_tolerance": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "none (single verifier)"
+  },
+  "quorum.legacy_single_SettlementVerifier.per_verifier_ms_median": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "0.685"
+  },
+  "quorum.legacy_single_SettlementVerifier.rbc_bytes_median": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "1128.0"
+  },
+  "quorum.legacy_single_SettlementVerifier.signatures": {
+    "derivation": "",
+    "source": "tables/table_D_quorum_tradeoff.csv (from quorum_cost.csv, solidity_gas.csv, quorum_fault_matrix.csv)",
+    "value": "1"
+  },
+  "legacy_regression.passed": {
+    "derivation": "",
+    "source": "legacy_regression.csv",
+    "value": "5/5"
+  },
+  "security.capture_above_hold_accepted_total": {
+    "derivation": "",
+    "source": "security_boundary.csv",
+    "value": 0
+  },
+  "security.f_lt_t_incorrect_settlements": {
+    "derivation": "",
+    "source": "security_boundary.csv",
+    "value": 0
+  },
+  "security.replay_accepted_total": {
+    "derivation": "",
+    "source": "security_boundary.csv",
+    "value": 0
+  },
+  "standards_demo.captured": {
+    "derivation": "",
+    "source": "standards_demo_result.json",
+    "value": "4.576560"
+  },
+  "standards_demo.settled_ok": {
+    "derivation": "",
+    "source": "standards_demo_result.json",
+    "value": true
+  },
+  "tests.foundry.failed": {
+    "derivation": "",
+    "source": "test_summary.csv",
+    "value": 0
+  },
+  "tests.foundry.passed": {
+    "derivation": "",
+    "source": "test_summary.csv",
+    "value": 42
+  },
+  "tests.pytest.failed": {
+    "derivation": "",
+    "source": "test_summary.csv",
+    "value": 0
+  },
+  "tests.pytest.passed": {
+    "derivation": "",
+    "source": "test_summary.csv",
+    "value": 268
+  },
+  "workload.acn_original_cap.agree_with_legacy": {
+    "derivation": "agree",
+    "source": "regression_rows.csv",
+    "value": 4999
+  },
+  "workload.acn_original_cap.explained_legacy_over_hold_rows": {
+    "derivation": "",
+    "source": "regression_rows.csv",
+    "value": [
+      2320
+    ]
+  },
+  "workload.acn_original_cap.sessions": {
+    "derivation": "count rows",
+    "source": "regression_rows.csv",
+    "value": 5000
+  },
+  "workload.acn_original_cap.settled": {
+    "derivation": "dvas_ok",
+    "source": "regression_rows.csv",
+    "value": 4611
+  },
+  "workload.acn_topup.agree_with_legacy": {
+    "derivation": "agree",
+    "source": "regression_rows.csv",
+    "value": 388
+  },
+  "workload.acn_topup.sessions": {
+    "derivation": "count rows",
+    "source": "regression_rows.csv",
+    "value": 388
+  },
+  "workload.acn_topup.settled": {
+    "derivation": "dvas_ok",
+    "source": "regression_rows.csv",
+    "value": 388
+  },
+  "workload.acn_valid.agree_with_legacy": {
+    "derivation": "agree",
+    "source": "regression_rows.csv",
+    "value": 5000
+  },
+  "workload.acn_valid.sessions": {
+    "derivation": "count rows",
+    "source": "regression_rows.csv",
+    "value": 5000
+  },
+  "workload.acn_valid.settled": {
+    "derivation": "dvas_ok",
+    "source": "regression_rows.csv",
+    "value": 5000
+  },
+  "workload.mfev_valid.settled_of_sessions": {
+    "derivation": "",
+    "source": "regression_checks.csv",
+    "value": "5000/5000"
+  },
+  "workload.multi_operator.cross_domain": {
+    "derivation": "",
+    "source": "multi_operator_results.csv",
+    "value": 3899
+  },
+  "workload.multi_operator.home_cpo_pairs": {
+    "derivation": "",
+    "source": "multi_operator_results.csv",
+    "value": 9
+  },
+  "workload.multi_operator.sessions": {
+    "derivation": "",
+    "source": "multi_operator_results.csv",
+    "value": 5000
+  },
+  "workload.multi_operator.settled": {
+    "derivation": "",
+    "source": "multi_operator_results.csv",
+    "value": 5000
+  }
+}

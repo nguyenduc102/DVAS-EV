@@ -1,0 +1,22 @@
+{
+  "scope": "semantic mapping demonstration with representative fixtures; not OCPI/OCPP compliance",
+  "tid": "ocpi-demo-tx-0001",
+  "rho_t": "1008291fb1f8ed23d3b224914b097e9e8bbcc75502513cf848810b65833d0a86",
+  "authorize": "OK",
+  "session_open": "OK",
+  "receipt_submit": "OK",
+  "verifiers": {
+    "SV1": "OK",
+    "SV2": "OK",
+    "SV3": "OK"
+  },
+  "rbc_attestations": [
+    "SV1",
+    "SV2",
+    "SV3"
+  ],
+  "settle": "OK",
+  "captured": "4.576560",
+  "expected_amount_from_ocpi_tariff": "4.576560",
+  "settled_ok": true
+}

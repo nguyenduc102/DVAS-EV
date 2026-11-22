@@ -1,0 +1,96 @@
+{
+  "coordinator_pid": 1637,
+  "dataset": "ACN",
+  "group_cpu_ms_per_attempt": 2.8,
+  "group_id": "g046",
+  "group_wall_ms": 565.242301,
+  "measured_sessions": 200,
+  "method": "FullTranscriptEscrow",
+  "mutation": "honest",
+  "n": 5,
+  "phase": "healthy",
+  "post_group_drain_ms": 10,
+  "profile": "C3",
+  "registry_snapshot_bytes_fanout": 0,
+  "resource_samples": [
+    {
+      "MemAvailable": 15448288,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.27685546875,
+      "parent_rss_kib": 55664,
+      "pss_sum_kib": 44859,
+      "rss_sum_kib": 55664,
+      "timestamp_ns": 1791859676127969485
+    },
+    {
+      "MemAvailable": 15448288,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.27685546875,
+      "parent_rss_kib": 55664,
+      "pss_sum_kib": 44863,
+      "rss_sum_kib": 55664,
+      "timestamp_ns": 1791859676228784702
+    },
+    {
+      "MemAvailable": 15448288,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.27685546875,
+      "parent_rss_kib": 55664,
+      "pss_sum_kib": 44863,
+      "rss_sum_kib": 55664,
+      "timestamp_ns": 1791859676329506152
+    },
+    {
+      "MemAvailable": 15448288,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.27685546875,
+      "parent_rss_kib": 55664,
+      "pss_sum_kib": 44863,
+      "rss_sum_kib": 55664,
+      "timestamp_ns": 1791859676430140124
+    },
+    {
+      "MemAvailable": 15448288,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.27685546875,
+      "parent_rss_kib": 55664,
+      "pss_sum_kib": 44863,
+      "rss_sum_kib": 55664,
+      "timestamp_ns": 1791859676530633569
+    },
+    {
+      "MemAvailable": 15448288,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.27685546875,
+      "parent_rss_kib": 55664,
+      "pss_sum_kib": 44863,
+      "rss_sum_kib": 55664,
+      "timestamp_ns": 1791859676631111662
+    },
+    {
+      "MemAvailable": 15448288,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.27685546875,
+      "parent_rss_kib": 55664,
+      "pss_sum_kib": 44859,
+      "rss_sum_kib": 55664,
+      "timestamp_ns": 1791859676692836363
+    }
+  ],
+  "run_id": 1,
+  "sampled_peak_pss_sum_kib": 44863,
+  "sampled_peak_rss_sum_kib": 55664,
+  "scenario": "healthy",
+  "setup_ms": 45.403885,
+  "t": 3,
+  "total_group_cpu_ms": 560.0,
+  "worker_pids": [],
+  "worker_startup_ms": 0
+}

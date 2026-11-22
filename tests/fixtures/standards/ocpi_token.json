@@ -1,0 +1,11 @@
+{
+  "country_code": "DE",
+  "party_id": "EMA",
+  "uid": "012345678",
+  "type": "RFID",
+  "contract_id": "DE-EMA-C12345678-X",
+  "issuer": "Example eMSP A",
+  "valid": true,
+  "whitelist": "ALLOWED",
+  "last_updated": "2026-09-01T00:00:00Z"
+}

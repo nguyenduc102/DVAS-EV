@@ -1,0 +1,6 @@
+issue_id,description,legacy_result,dvas_result,expected_result,pass
+R1,authentic Merkle opening missing a required predicate field,ACCEPTED (legacy Match defaults cap_kwh; over-cap RBC issued),REJECTED (INCOMPLETE_OPENING; verifiers: ['PAM_INCOMPLETE_OPENING']; settled=False),REJECTED,True
+R2,attacker-generated valid KEM+AEAD private ciphertext not bound to the meter,ACCEPTED (no origin binding),REJECTED (['PRIVATE_DIGEST_MISMATCH']),REJECTED,True
+R3,single malicious verifier signs an inflated semantic decision,ACCEPTED (single SV; captured 9.99 for a 4.0 delivery),"SETTLED CORRECT AMOUNT 4.576543 (2-of-3, SV2 inflate excluded)",SETTLED WITH HONEST AMOUNT,True
+R4,capture exceeds hold by floating-point tolerance,ACCEPTED (captured 0.527759 vs hold 0.527758; MONEY_EPS=1e-5),"REJECTED (NO_QUORUM[SV1:MATCH_FAILED:amount_within_effective_limit,amount_within_hold;SV2:)",REJECTED,True
+R5,missing predicate operand receives no default value,ACCEPTED (cap_kwh defaulted to delivered_kwh),REJECTED (missing_operand:committed:cap_kwh),REJECTED,True

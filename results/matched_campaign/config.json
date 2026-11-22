@@ -1,0 +1,10 @@
+{
+  "fault_deadline_ms": 150,
+  "fault_sessions": 12,
+  "healthy_deadline_ms": 1000,
+  "runs": 5,
+  "security_sessions": 10,
+  "seed": 20261013,
+  "sessions": 200,
+  "warmup": 20
+}

@@ -1,0 +1,232 @@
+{
+  "coordinator_pid": 19947,
+  "dataset": "ACN",
+  "group_cpu_ms_per_attempt": 12.5,
+  "group_id": "g066",
+  "group_wall_ms": 1853.542471,
+  "measured_sessions": 12,
+  "method": "FullEvidenceQuorum",
+  "mutation": "honest",
+  "n": 5,
+  "phase": "fault",
+  "post_group_drain_ms": 10,
+  "profile": "C3",
+  "registry_snapshot_bytes_fanout": 739115,
+  "resource_samples": [
+    {
+      "MemAvailable": 15339652,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97509765625,
+      "parent_rss_kib": 59728,
+      "pss_sum_kib": 150926,
+      "rss_sum_kib": 247696,
+      "timestamp_ns": 1791860475908038385
+    },
+    {
+      "MemAvailable": 15339264,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97509765625,
+      "parent_rss_kib": 59728,
+      "pss_sum_kib": 151026,
+      "rss_sum_kib": 247696,
+      "timestamp_ns": 1791860476009657387
+    },
+    {
+      "MemAvailable": 15339264,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97509765625,
+      "parent_rss_kib": 59728,
+      "pss_sum_kib": 151134,
+      "rss_sum_kib": 248272,
+      "timestamp_ns": 1791860476111018270
+    },
+    {
+      "MemAvailable": 15339264,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97509765625,
+      "parent_rss_kib": 59728,
+      "pss_sum_kib": 151134,
+      "rss_sum_kib": 248272,
+      "timestamp_ns": 1791860476212422650
+    },
+    {
+      "MemAvailable": 15338788,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97509765625,
+      "parent_rss_kib": 59728,
+      "pss_sum_kib": 151146,
+      "rss_sum_kib": 248272,
+      "timestamp_ns": 1791860476313729750
+    },
+    {
+      "MemAvailable": 15338788,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97509765625,
+      "parent_rss_kib": 59728,
+      "pss_sum_kib": 151162,
+      "rss_sum_kib": 248272,
+      "timestamp_ns": 1791860476415078809
+    },
+    {
+      "MemAvailable": 15338788,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97509765625,
+      "parent_rss_kib": 59728,
+      "pss_sum_kib": 151162,
+      "rss_sum_kib": 248272,
+      "timestamp_ns": 1791860476516474795
+    },
+    {
+      "MemAvailable": 15338788,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97509765625,
+      "parent_rss_kib": 59728,
+      "pss_sum_kib": 151174,
+      "rss_sum_kib": 248272,
+      "timestamp_ns": 1791860476617732055
+    },
+    {
+      "MemAvailable": 15339040,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97509765625,
+      "parent_rss_kib": 59728,
+      "pss_sum_kib": 151182,
+      "rss_sum_kib": 248272,
+      "timestamp_ns": 1791860476719046148
+    },
+    {
+      "MemAvailable": 15339040,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97509765625,
+      "parent_rss_kib": 59728,
+      "pss_sum_kib": 151182,
+      "rss_sum_kib": 248272,
+      "timestamp_ns": 1791860476820544486
+    },
+    {
+      "MemAvailable": 15339040,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97509765625,
+      "parent_rss_kib": 59728,
+      "pss_sum_kib": 151214,
+      "rss_sum_kib": 248272,
+      "timestamp_ns": 1791860476922030483
+    },
+    {
+      "MemAvailable": 15338788,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97509765625,
+      "parent_rss_kib": 59728,
+      "pss_sum_kib": 151234,
+      "rss_sum_kib": 248272,
+      "timestamp_ns": 1791860477023439763
+    },
+    {
+      "MemAvailable": 15338788,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97509765625,
+      "parent_rss_kib": 59728,
+      "pss_sum_kib": 151234,
+      "rss_sum_kib": 248272,
+      "timestamp_ns": 1791860477124838498
+    },
+    {
+      "MemAvailable": 15338788,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97509765625,
+      "parent_rss_kib": 59728,
+      "pss_sum_kib": 151254,
+      "rss_sum_kib": 248272,
+      "timestamp_ns": 1791860477226133400
+    },
+    {
+      "MemAvailable": 15338788,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97509765625,
+      "parent_rss_kib": 59728,
+      "pss_sum_kib": 151266,
+      "rss_sum_kib": 248272,
+      "timestamp_ns": 1791860477327497455
+    },
+    {
+      "MemAvailable": 15338788,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97509765625,
+      "parent_rss_kib": 59728,
+      "pss_sum_kib": 151266,
+      "rss_sum_kib": 248272,
+      "timestamp_ns": 1791860477428996698
+    },
+    {
+      "MemAvailable": 15338788,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97509765625,
+      "parent_rss_kib": 59728,
+      "pss_sum_kib": 151286,
+      "rss_sum_kib": 248464,
+      "timestamp_ns": 1791860477530467051
+    },
+    {
+      "MemAvailable": 15338788,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.89697265625,
+      "parent_rss_kib": 59728,
+      "pss_sum_kib": 151306,
+      "rss_sum_kib": 248464,
+      "timestamp_ns": 1791860477631911122
+    },
+    {
+      "MemAvailable": 15338788,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.89697265625,
+      "parent_rss_kib": 59728,
+      "pss_sum_kib": 151306,
+      "rss_sum_kib": 248464,
+      "timestamp_ns": 1791860477733352500
+    },
+    {
+      "MemAvailable": 15338816,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.89697265625,
+      "parent_rss_kib": 59728,
+      "pss_sum_kib": 151302,
+      "rss_sum_kib": 248464,
+      "timestamp_ns": 1791860477760144333
+    }
+  ],
+  "run_id": 5,
+  "sampled_peak_pss_sum_kib": 151306,
+  "sampled_peak_rss_sum_kib": 248464,
+  "scenario": "withholding_beyond_liveness",
+  "setup_ms": 1869.31342,
+  "t": 3,
+  "total_group_cpu_ms": 150.0,
+  "worker_pids": [
+    22610,
+    22622,
+    22634,
+    22646,
+    22658
+  ],
+  "worker_startup_ms": 1858.9820729999929
+}

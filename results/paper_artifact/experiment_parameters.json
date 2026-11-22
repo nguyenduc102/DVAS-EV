@@ -1,0 +1,97 @@
+{
+  "mode": "full",
+  "parameters": {
+    "regression": [
+      "--rows",
+      "5000"
+    ],
+    "formal": [
+      "--acn",
+      "70",
+      "--mfev",
+      "30",
+      "--scale",
+      "2"
+    ],
+    "minimality": [
+      "--acn",
+      "10",
+      "--mfev",
+      "5"
+    ],
+    "attacks": [
+      "--rows",
+      "40",
+      "--mfev-rows",
+      "20",
+      "--random",
+      "1500",
+      "--seed",
+      "20261005"
+    ],
+    "pam": [
+      "--capsules",
+      "500",
+      "--repeats",
+      "10",
+      "--warmup",
+      "100"
+    ],
+    "fault": [
+      "--rows",
+      "100"
+    ],
+    "qcost": [
+      "--sessions",
+      "500",
+      "--warmup",
+      "50"
+    ],
+    "pq": [
+      "--sessions",
+      "500",
+      "--warmup",
+      "50"
+    ],
+    "baselines": [
+      "--sessions",
+      "500",
+      "--warmup",
+      "50",
+      "--attack-rows",
+      "50"
+    ],
+    "multiop": [
+      "--acn",
+      "2000",
+      "--mfev",
+      "3000"
+    ],
+    "boundary": [
+      "--replay-sessions",
+      "30"
+    ]
+  },
+  "order": [
+    "00 test suite (pytest)",
+    "01 regression workloads",
+    "02 formal property checks",
+    "03 minimality analysis",
+    "04 attack suite",
+    "05 PAM B0/B1/B2/B3 ablation",
+    "06 quorum fault matrix",
+    "07 quorum cost benchmark",
+    "08 PQ profile benchmark",
+    "09 controlled baselines",
+    "10 multi-operator workload",
+    "11 standards-mapping demo",
+    "12 Foundry tests + gas",
+    "13 legacy regression",
+    "14 security boundary",
+    "15 summary tables",
+    "16 figures",
+    "17 paper numbers",
+    "18 comparison with validated run",
+    "19 reproducibility manifest"
+  ]
+}

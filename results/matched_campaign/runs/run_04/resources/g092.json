@@ -1,0 +1,230 @@
+{
+  "coordinator_pid": 15395,
+  "dataset": "ACN",
+  "group_cpu_ms_per_attempt": 10.833333333333334,
+  "group_id": "g092",
+  "group_wall_ms": 1849.886949,
+  "measured_sessions": 12,
+  "method": "DVASSelectiveQuorum",
+  "mutation": "honest",
+  "n": 3,
+  "phase": "fault",
+  "post_group_drain_ms": 10,
+  "profile": "C3",
+  "registry_snapshot_bytes_fanout": 407766,
+  "resource_samples": [
+    {
+      "MemAvailable": 15373780,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0615234375,
+      "parent_rss_kib": 67232,
+      "pss_sum_kib": 118737,
+      "rss_sum_kib": 179552,
+      "timestamp_ns": 1791860322159721463
+    },
+    {
+      "MemAvailable": 15373780,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0615234375,
+      "parent_rss_kib": 67232,
+      "pss_sum_kib": 118797,
+      "rss_sum_kib": 179744,
+      "timestamp_ns": 1791860322261401835
+    },
+    {
+      "MemAvailable": 15373780,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0615234375,
+      "parent_rss_kib": 67232,
+      "pss_sum_kib": 118845,
+      "rss_sum_kib": 179744,
+      "timestamp_ns": 1791860322362455308
+    },
+    {
+      "MemAvailable": 15373780,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.0615234375,
+      "parent_rss_kib": 67232,
+      "pss_sum_kib": 118845,
+      "rss_sum_kib": 179744,
+      "timestamp_ns": 1791860322463615464
+    },
+    {
+      "MemAvailable": 15373780,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97607421875,
+      "parent_rss_kib": 67232,
+      "pss_sum_kib": 118849,
+      "rss_sum_kib": 179744,
+      "timestamp_ns": 1791860322564911594
+    },
+    {
+      "MemAvailable": 15373780,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97607421875,
+      "parent_rss_kib": 67232,
+      "pss_sum_kib": 118853,
+      "rss_sum_kib": 179744,
+      "timestamp_ns": 1791860322666099039
+    },
+    {
+      "MemAvailable": 15373780,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97607421875,
+      "parent_rss_kib": 67232,
+      "pss_sum_kib": 118853,
+      "rss_sum_kib": 179744,
+      "timestamp_ns": 1791860322767241840
+    },
+    {
+      "MemAvailable": 15373788,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97607421875,
+      "parent_rss_kib": 67232,
+      "pss_sum_kib": 118865,
+      "rss_sum_kib": 179744,
+      "timestamp_ns": 1791860322868459837
+    },
+    {
+      "MemAvailable": 15373788,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97607421875,
+      "parent_rss_kib": 67232,
+      "pss_sum_kib": 118893,
+      "rss_sum_kib": 179936,
+      "timestamp_ns": 1791860322969442980
+    },
+    {
+      "MemAvailable": 15373788,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97607421875,
+      "parent_rss_kib": 67232,
+      "pss_sum_kib": 118893,
+      "rss_sum_kib": 179936,
+      "timestamp_ns": 1791860323070570431
+    },
+    {
+      "MemAvailable": 15373788,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97607421875,
+      "parent_rss_kib": 67232,
+      "pss_sum_kib": 118929,
+      "rss_sum_kib": 179936,
+      "timestamp_ns": 1791860323171464351
+    },
+    {
+      "MemAvailable": 15373788,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97607421875,
+      "parent_rss_kib": 67232,
+      "pss_sum_kib": 118961,
+      "rss_sum_kib": 179936,
+      "timestamp_ns": 1791860323272640324
+    },
+    {
+      "MemAvailable": 15373788,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97607421875,
+      "parent_rss_kib": 67232,
+      "pss_sum_kib": 118961,
+      "rss_sum_kib": 179936,
+      "timestamp_ns": 1791860323373697263
+    },
+    {
+      "MemAvailable": 15373788,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97607421875,
+      "parent_rss_kib": 67232,
+      "pss_sum_kib": 118965,
+      "rss_sum_kib": 179936,
+      "timestamp_ns": 1791860323474634214
+    },
+    {
+      "MemAvailable": 15373788,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97607421875,
+      "parent_rss_kib": 67232,
+      "pss_sum_kib": 118965,
+      "rss_sum_kib": 179936,
+      "timestamp_ns": 1791860323575804452
+    },
+    {
+      "MemAvailable": 15373788,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97607421875,
+      "parent_rss_kib": 67232,
+      "pss_sum_kib": 118965,
+      "rss_sum_kib": 179936,
+      "timestamp_ns": 1791860323676968878
+    },
+    {
+      "MemAvailable": 15373788,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97607421875,
+      "parent_rss_kib": 67232,
+      "pss_sum_kib": 118977,
+      "rss_sum_kib": 179936,
+      "timestamp_ns": 1791860323778320873
+    },
+    {
+      "MemAvailable": 15373788,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97607421875,
+      "parent_rss_kib": 67232,
+      "pss_sum_kib": 118985,
+      "rss_sum_kib": 179936,
+      "timestamp_ns": 1791860323879332047
+    },
+    {
+      "MemAvailable": 15373788,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97607421875,
+      "parent_rss_kib": 67232,
+      "pss_sum_kib": 118985,
+      "rss_sum_kib": 179936,
+      "timestamp_ns": 1791860323980560579
+    },
+    {
+      "MemAvailable": 15373788,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.97607421875,
+      "parent_rss_kib": 67232,
+      "pss_sum_kib": 118981,
+      "rss_sum_kib": 179936,
+      "timestamp_ns": 1791860324008905012
+    }
+  ],
+  "run_id": 4,
+  "sampled_peak_pss_sum_kib": 118985,
+  "sampled_peak_rss_sum_kib": 179936,
+  "scenario": "withholding_beyond_liveness",
+  "setup_ms": 1058.610559,
+  "t": 2,
+  "total_group_cpu_ms": 130.0,
+  "worker_pids": [
+    18911,
+    18923,
+    18935
+  ],
+  "worker_startup_ms": 1048.7289080000437
+}

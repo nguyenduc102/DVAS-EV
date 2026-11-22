@@ -1,0 +1,72 @@
+{
+  "coordinator_pid": 6293,
+  "dataset": "ACN",
+  "group_cpu_ms_per_attempt": 12.5,
+  "group_id": "g058",
+  "group_wall_ms": 225.961064,
+  "measured_sessions": 12,
+  "method": "FullEvidenceQuorum",
+  "mutation": "honest",
+  "n": 5,
+  "phase": "fault",
+  "post_group_drain_ms": 20,
+  "profile": "C3",
+  "registry_snapshot_bytes_fanout": 715995,
+  "resource_samples": [
+    {
+      "MemAvailable": 15337580,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.03076171875,
+      "parent_rss_kib": 60160,
+      "pss_sum_kib": 151467,
+      "rss_sum_kib": 247936,
+      "timestamp_ns": 1791859884232982452
+    },
+    {
+      "MemAvailable": 15336320,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.03076171875,
+      "parent_rss_kib": 60160,
+      "pss_sum_kib": 151763,
+      "rss_sum_kib": 248320,
+      "timestamp_ns": 1791859884334403415
+    },
+    {
+      "MemAvailable": 15336068,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.03076171875,
+      "parent_rss_kib": 60160,
+      "pss_sum_kib": 151907,
+      "rss_sum_kib": 248320,
+      "timestamp_ns": 1791859884436810789
+    },
+    {
+      "MemAvailable": 15336068,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.03076171875,
+      "parent_rss_kib": 60160,
+      "pss_sum_kib": 151903,
+      "rss_sum_kib": 248320,
+      "timestamp_ns": 1791859884458034965
+    }
+  ],
+  "run_id": 2,
+  "sampled_peak_pss_sum_kib": 151907,
+  "sampled_peak_rss_sum_kib": 248320,
+  "scenario": "delay_5ms_each_direction",
+  "setup_ms": 1767.116551,
+  "t": 3,
+  "total_group_cpu_ms": 150.0,
+  "worker_pids": [
+    8430,
+    8442,
+    8454,
+    8466,
+    8478
+  ],
+  "worker_startup_ms": 1757.2629090000191
+}

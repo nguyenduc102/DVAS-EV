@@ -1,0 +1,172 @@
+{
+  "coordinator_pid": 1637,
+  "dataset": "MFEV",
+  "group_cpu_ms_per_attempt": 11.7,
+  "group_id": "g021",
+  "group_wall_ms": 1245.662531,
+  "measured_sessions": 200,
+  "method": "FullEvidenceQuorum",
+  "mutation": "honest",
+  "n": 5,
+  "phase": "healthy",
+  "post_group_drain_ms": 10,
+  "profile": "C0",
+  "registry_snapshot_bytes_fanout": 1553010,
+  "resource_samples": [
+    {
+      "MemAvailable": 15343068,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.384765625,
+      "parent_rss_kib": 50944,
+      "pss_sum_kib": 151106,
+      "rss_sum_kib": 246132,
+      "timestamp_ns": 1791859618282392624
+    },
+    {
+      "MemAvailable": 15343068,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.384765625,
+      "parent_rss_kib": 50944,
+      "pss_sum_kib": 151170,
+      "rss_sum_kib": 246132,
+      "timestamp_ns": 1791859618383735491
+    },
+    {
+      "MemAvailable": 15343068,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.384765625,
+      "parent_rss_kib": 50944,
+      "pss_sum_kib": 151174,
+      "rss_sum_kib": 246132,
+      "timestamp_ns": 1791859618486401901
+    },
+    {
+      "MemAvailable": 15344420,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.384765625,
+      "parent_rss_kib": 50944,
+      "pss_sum_kib": 151346,
+      "rss_sum_kib": 246132,
+      "timestamp_ns": 1791859618588552152
+    },
+    {
+      "MemAvailable": 15344172,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.384765625,
+      "parent_rss_kib": 50944,
+      "pss_sum_kib": 151518,
+      "rss_sum_kib": 246132,
+      "timestamp_ns": 1791859618690935360
+    },
+    {
+      "MemAvailable": 15344172,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.384765625,
+      "parent_rss_kib": 50944,
+      "pss_sum_kib": 151686,
+      "rss_sum_kib": 246132,
+      "timestamp_ns": 1791859618792845159
+    },
+    {
+      "MemAvailable": 15345624,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.384765625,
+      "parent_rss_kib": 50944,
+      "pss_sum_kib": 151842,
+      "rss_sum_kib": 246132,
+      "timestamp_ns": 1791859618896311118
+    },
+    {
+      "MemAvailable": 15345624,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.384765625,
+      "parent_rss_kib": 50944,
+      "pss_sum_kib": 151978,
+      "rss_sum_kib": 246900,
+      "timestamp_ns": 1791859618998241467
+    },
+    {
+      "MemAvailable": 15345624,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.384765625,
+      "parent_rss_kib": 50944,
+      "pss_sum_kib": 152114,
+      "rss_sum_kib": 247092,
+      "timestamp_ns": 1791859619100773173
+    },
+    {
+      "MemAvailable": 15345148,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.384765625,
+      "parent_rss_kib": 50944,
+      "pss_sum_kib": 152230,
+      "rss_sum_kib": 247092,
+      "timestamp_ns": 1791859619203272348
+    },
+    {
+      "MemAvailable": 15344896,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.384765625,
+      "parent_rss_kib": 50944,
+      "pss_sum_kib": 152378,
+      "rss_sum_kib": 247284,
+      "timestamp_ns": 1791859619305664101
+    },
+    {
+      "MemAvailable": 15344396,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.384765625,
+      "parent_rss_kib": 50944,
+      "pss_sum_kib": 152494,
+      "rss_sum_kib": 247284,
+      "timestamp_ns": 1791859619408059766
+    },
+    {
+      "MemAvailable": 15343640,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.384765625,
+      "parent_rss_kib": 50944,
+      "pss_sum_kib": 152634,
+      "rss_sum_kib": 247284,
+      "timestamp_ns": 1791859619510771898
+    },
+    {
+      "MemAvailable": 15343640,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.384765625,
+      "parent_rss_kib": 50944,
+      "pss_sum_kib": 152650,
+      "rss_sum_kib": 247284,
+      "timestamp_ns": 1791859619526963514
+    }
+  ],
+  "run_id": 1,
+  "sampled_peak_pss_sum_kib": 152650,
+  "sampled_peak_rss_sum_kib": 247284,
+  "scenario": "healthy",
+  "setup_ms": 2096.232731,
+  "t": 3,
+  "total_group_cpu_ms": 2340.0,
+  "worker_pids": [
+    2559,
+    2571,
+    2583,
+    2595,
+    2607
+  ],
+  "worker_startup_ms": 2001.7985960000005
+}

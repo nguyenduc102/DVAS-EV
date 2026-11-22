@@ -1,0 +1,20 @@
+[
+  {"eventType": "Started", "timestamp": "2026-10-01T08:10:00Z", "triggerReason": "Authorized", "seqNo": 0,
+   "transactionInfo": {"transactionId": "TX-0001", "chargingState": "Charging"},
+   "idToken": {"idToken": "012345678", "type": "ISO14443"},
+   "evse": {"id": 1, "connectorId": 1},
+   "meterValue": [{"timestamp": "2026-10-01T08:10:00Z", "sampledValue": [
+     {"value": 1250000, "measurand": "Energy.Active.Import.Register", "context": "Transaction.Begin",
+      "unitOfMeasure": {"unit": "Wh", "multiplier": 0},
+      "signedMeterValue": {"signedMeterData": "OCMF|{\"FV\":\"1.0\",\"RD\":[{\"TM\":\"2026-10-01T08:10:00,000+0000 S\",\"RV\":1250.000,\"RU\":\"kWh\"}]}|{\"SA\":\"ECDSA-secp256r1-SHA256\",\"SD\":\"3045...\"}",
+                           "signingMethod": "ECDSA-secp256r1-SHA256", "encodingMethod": "OCMF", "publicKey": ""}}]}]},
+  {"eventType": "Updated", "timestamp": "2026-10-01T10:30:00Z", "triggerReason": "ChargingStateChanged", "seqNo": 1,
+   "transactionInfo": {"transactionId": "TX-0001", "chargingState": "SuspendedEV"}},
+  {"eventType": "Ended", "timestamp": "2026-10-01T11:00:00Z", "triggerReason": "EVCommunicationLost", "seqNo": 2,
+   "transactionInfo": {"transactionId": "TX-0001", "chargingState": "Idle", "stoppedReason": "EVDisconnected"},
+   "meterValue": [{"timestamp": "2026-10-01T11:00:00Z", "sampledValue": [
+     {"value": 1264083, "measurand": "Energy.Active.Import.Register", "context": "Transaction.End",
+      "unitOfMeasure": {"unit": "Wh", "multiplier": 0},
+      "signedMeterValue": {"signedMeterData": "OCMF|{\"FV\":\"1.0\",\"RD\":[{\"TM\":\"2026-10-01T11:00:00,000+0000 S\",\"RV\":1264.083,\"RU\":\"kWh\"}]}|{\"SA\":\"ECDSA-secp256r1-SHA256\",\"SD\":\"3046...\"}",
+                           "signingMethod": "ECDSA-secp256r1-SHA256", "encodingMethod": "OCMF", "publicKey": ""}}]}]}
+]

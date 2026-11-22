@@ -1,0 +1,150 @@
+{
+  "coordinator_pid": 6293,
+  "dataset": "ACN",
+  "group_cpu_ms_per_attempt": 8.0,
+  "group_id": "g042",
+  "group_wall_ms": 1089.662455,
+  "measured_sessions": 200,
+  "method": "DVASSelectiveQuorum",
+  "mutation": "honest",
+  "n": 3,
+  "phase": "healthy",
+  "post_group_drain_ms": 10,
+  "profile": "C3",
+  "registry_snapshot_bytes_fanout": 1830519,
+  "resource_samples": [
+    {
+      "MemAvailable": 15373888,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.2548828125,
+      "parent_rss_kib": 56440,
+      "pss_sum_kib": 113096,
+      "rss_sum_kib": 174240,
+      "timestamp_ns": 1791859857385077493
+    },
+    {
+      "MemAvailable": 15373888,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.2548828125,
+      "parent_rss_kib": 56440,
+      "pss_sum_kib": 113100,
+      "rss_sum_kib": 174240,
+      "timestamp_ns": 1791859857486336162
+    },
+    {
+      "MemAvailable": 15373888,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.2548828125,
+      "parent_rss_kib": 56440,
+      "pss_sum_kib": 113100,
+      "rss_sum_kib": 174240,
+      "timestamp_ns": 1791859857587544127
+    },
+    {
+      "MemAvailable": 15373888,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.2548828125,
+      "parent_rss_kib": 56440,
+      "pss_sum_kib": 113136,
+      "rss_sum_kib": 174240,
+      "timestamp_ns": 1791859857689276864
+    },
+    {
+      "MemAvailable": 15373888,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.2548828125,
+      "parent_rss_kib": 56440,
+      "pss_sum_kib": 113176,
+      "rss_sum_kib": 174432,
+      "timestamp_ns": 1791859857791179751
+    },
+    {
+      "MemAvailable": 15373408,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.2548828125,
+      "parent_rss_kib": 56440,
+      "pss_sum_kib": 113264,
+      "rss_sum_kib": 174816,
+      "timestamp_ns": 1791859857892521973
+    },
+    {
+      "MemAvailable": 15372904,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.2548828125,
+      "parent_rss_kib": 56440,
+      "pss_sum_kib": 113368,
+      "rss_sum_kib": 174816,
+      "timestamp_ns": 1791859857993664931
+    },
+    {
+      "MemAvailable": 15372904,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.2548828125,
+      "parent_rss_kib": 56440,
+      "pss_sum_kib": 113424,
+      "rss_sum_kib": 174816,
+      "timestamp_ns": 1791859858094752549
+    },
+    {
+      "MemAvailable": 15372904,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.2548828125,
+      "parent_rss_kib": 56440,
+      "pss_sum_kib": 113496,
+      "rss_sum_kib": 174816,
+      "timestamp_ns": 1791859858196779788
+    },
+    {
+      "MemAvailable": 15373160,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.2548828125,
+      "parent_rss_kib": 56440,
+      "pss_sum_kib": 113536,
+      "rss_sum_kib": 174816,
+      "timestamp_ns": 1791859858297810909
+    },
+    {
+      "MemAvailable": 15373160,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.2548828125,
+      "parent_rss_kib": 56440,
+      "pss_sum_kib": 113592,
+      "rss_sum_kib": 174816,
+      "timestamp_ns": 1791859858399600157
+    },
+    {
+      "MemAvailable": 15372908,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.2548828125,
+      "parent_rss_kib": 56440,
+      "pss_sum_kib": 113604,
+      "rss_sum_kib": 174816,
+      "timestamp_ns": 1791859858473789527
+    }
+  ],
+  "run_id": 2,
+  "sampled_peak_pss_sum_kib": 113604,
+  "sampled_peak_rss_sum_kib": 174816,
+  "scenario": "healthy",
+  "setup_ms": 1096.779034,
+  "t": 2,
+  "total_group_cpu_ms": 1600.0,
+  "worker_pids": [
+    7886,
+    7898,
+    7910
+  ],
+  "worker_startup_ms": 1055.4611789999626
+}

@@ -1,0 +1,13 @@
+baseline,attack,cases,detected,outcomes
+FullEscrow,post_authorization_tariff_swap,50,50,refused
+FullEscrow,over_cap_delivery,50,50,refused
+FullEscrow,single_signer_inflated_amount,50,50,refused
+HashAnchor,post_authorization_tariff_swap,50,0,settled_wrong_amount
+HashAnchor,over_cap_delivery,50,0,settled
+HashAnchor,single_signer_inflated_amount,50,0,settled_wrong_amount
+CDR,post_authorization_tariff_swap,50,0,settled_wrong_amount
+CDR,over_cap_delivery,50,0,settled
+CDR,single_signer_inflated_amount,50,0,settled_wrong_amount
+DVAS-EV,post_authorization_tariff_swap,50,50,refused
+DVAS-EV,over_cap_delivery,50,50,refused
+DVAS-EV,single_signer_inflated_amount,50,50,refused

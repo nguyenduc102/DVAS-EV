@@ -1,0 +1,162 @@
+{
+  "coordinator_pid": 1637,
+  "dataset": "MFEV",
+  "group_cpu_ms_per_attempt": 11.15,
+  "group_id": "g089",
+  "group_wall_ms": 1203.419947,
+  "measured_sessions": 200,
+  "method": "DVASSelectiveQuorum",
+  "mutation": "honest",
+  "n": 5,
+  "phase": "healthy",
+  "post_group_drain_ms": 10,
+  "profile": "C0",
+  "registry_snapshot_bytes_fanout": 1553010,
+  "resource_samples": [
+    {
+      "MemAvailable": 15320116,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.2783203125,
+      "parent_rss_kib": 65840,
+      "pss_sum_kib": 166305,
+      "rss_sum_kib": 261500,
+      "timestamp_ns": 1791859737676148080
+    },
+    {
+      "MemAvailable": 15320116,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.2783203125,
+      "parent_rss_kib": 65840,
+      "pss_sum_kib": 166329,
+      "rss_sum_kib": 261500,
+      "timestamp_ns": 1791859737777517061
+    },
+    {
+      "MemAvailable": 15321740,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.2783203125,
+      "parent_rss_kib": 65840,
+      "pss_sum_kib": 166357,
+      "rss_sum_kib": 261500,
+      "timestamp_ns": 1791859737879372478
+    },
+    {
+      "MemAvailable": 15321740,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.2783203125,
+      "parent_rss_kib": 65840,
+      "pss_sum_kib": 166541,
+      "rss_sum_kib": 261500,
+      "timestamp_ns": 1791859737980900659
+    },
+    {
+      "MemAvailable": 15321740,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.2783203125,
+      "parent_rss_kib": 65840,
+      "pss_sum_kib": 166705,
+      "rss_sum_kib": 261500,
+      "timestamp_ns": 1791859738082571649
+    },
+    {
+      "MemAvailable": 15321740,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.2783203125,
+      "parent_rss_kib": 65840,
+      "pss_sum_kib": 166869,
+      "rss_sum_kib": 261500,
+      "timestamp_ns": 1791859738184800825
+    },
+    {
+      "MemAvailable": 15321740,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.2783203125,
+      "parent_rss_kib": 65840,
+      "pss_sum_kib": 167049,
+      "rss_sum_kib": 261884,
+      "timestamp_ns": 1791859738287281086
+    },
+    {
+      "MemAvailable": 15321740,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.2783203125,
+      "parent_rss_kib": 65840,
+      "pss_sum_kib": 167173,
+      "rss_sum_kib": 262460,
+      "timestamp_ns": 1791859738389798036
+    },
+    {
+      "MemAvailable": 15321236,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.2783203125,
+      "parent_rss_kib": 65840,
+      "pss_sum_kib": 167313,
+      "rss_sum_kib": 262460,
+      "timestamp_ns": 1791859738491497096
+    },
+    {
+      "MemAvailable": 15320984,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.2783203125,
+      "parent_rss_kib": 65840,
+      "pss_sum_kib": 167413,
+      "rss_sum_kib": 262460,
+      "timestamp_ns": 1791859738593062307
+    },
+    {
+      "MemAvailable": 15320480,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.2783203125,
+      "parent_rss_kib": 65840,
+      "pss_sum_kib": 167585,
+      "rss_sum_kib": 262460,
+      "timestamp_ns": 1791859738695072163
+    },
+    {
+      "MemAvailable": 15320008,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.2783203125,
+      "parent_rss_kib": 65840,
+      "pss_sum_kib": 167741,
+      "rss_sum_kib": 262460,
+      "timestamp_ns": 1791859738797057365
+    },
+    {
+      "MemAvailable": 15320008,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.2783203125,
+      "parent_rss_kib": 65840,
+      "pss_sum_kib": 167853,
+      "rss_sum_kib": 262460,
+      "timestamp_ns": 1791859738878378085
+    }
+  ],
+  "run_id": 1,
+  "sampled_peak_pss_sum_kib": 167853,
+  "sampled_peak_rss_sum_kib": 262460,
+  "scenario": "healthy",
+  "setup_ms": 1883.989539,
+  "t": 3,
+  "total_group_cpu_ms": 2230.0,
+  "worker_pids": [
+    5074,
+    5086,
+    5098,
+    5110,
+    5122
+  ],
+  "worker_startup_ms": 1790.7983780000052
+}

@@ -1,0 +1,8 @@
+family,generation,compound,attack_types,cases,expected_rejections,rejected,unexpected_accepts,harness_errors
+A (single-field),randomized,False,6,1287,1287,1287,0,0
+A (single-field),systematic,False,13,780,780,780,0,0
+B (compound),randomized,True,1,213,213,213,0,0
+B (compound),systematic,True,7,420,420,420,0,0
+C (sequence/state),systematic,False,6,360,360,360,0,0
+TOTAL,all,,27,3060,3060,3060,0,0
+legacy regression R1-R5,fixed,,5,5,5,5,0,0

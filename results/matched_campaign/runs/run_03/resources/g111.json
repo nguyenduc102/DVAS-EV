@@ -1,0 +1,86 @@
+{
+  "coordinator_pid": 10844,
+  "dataset": "ACN",
+  "group_cpu_ms_per_attempt": 2.35,
+  "group_id": "g111",
+  "group_wall_ms": 478.270853,
+  "measured_sessions": 200,
+  "method": "FullTranscriptEscrow",
+  "mutation": "honest",
+  "n": 3,
+  "phase": "healthy",
+  "post_group_drain_ms": 10,
+  "profile": "C0",
+  "registry_snapshot_bytes_fanout": 0,
+  "resource_samples": [
+    {
+      "MemAvailable": 15431004,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.96728515625,
+      "parent_rss_kib": 68404,
+      "pss_sum_kib": 58148,
+      "rss_sum_kib": 68404,
+      "timestamp_ns": 1791860160648690808
+    },
+    {
+      "MemAvailable": 15430752,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.96728515625,
+      "parent_rss_kib": 68404,
+      "pss_sum_kib": 58152,
+      "rss_sum_kib": 68404,
+      "timestamp_ns": 1791860160750121249
+    },
+    {
+      "MemAvailable": 15430752,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.96728515625,
+      "parent_rss_kib": 68404,
+      "pss_sum_kib": 58152,
+      "rss_sum_kib": 68404,
+      "timestamp_ns": 1791860160850773808
+    },
+    {
+      "MemAvailable": 15430752,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.96728515625,
+      "parent_rss_kib": 68404,
+      "pss_sum_kib": 58152,
+      "rss_sum_kib": 68404,
+      "timestamp_ns": 1791860160951368695
+    },
+    {
+      "MemAvailable": 15430752,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.96728515625,
+      "parent_rss_kib": 68404,
+      "pss_sum_kib": 58172,
+      "rss_sum_kib": 68404,
+      "timestamp_ns": 1791860161052151454
+    },
+    {
+      "MemAvailable": 15430560,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 0.96728515625,
+      "parent_rss_kib": 68404,
+      "pss_sum_kib": 58180,
+      "rss_sum_kib": 68404,
+      "timestamp_ns": 1791860161126474230
+    }
+  ],
+  "run_id": 3,
+  "sampled_peak_pss_sum_kib": 58180,
+  "sampled_peak_rss_sum_kib": 68404,
+  "scenario": "healthy",
+  "setup_ms": 35.712317,
+  "t": 2,
+  "total_group_cpu_ms": 470.0,
+  "worker_pids": [],
+  "worker_startup_ms": 0
+}

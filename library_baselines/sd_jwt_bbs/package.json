@@ -1,0 +1,9 @@
+{
+  "name": "dvas-sota-sdjwt-bbs",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@digitalbazaar/bbs-signatures": "3.1.0",
+    "@sd-jwt/core": "0.24.3"
+  }
+}

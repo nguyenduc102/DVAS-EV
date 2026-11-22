@@ -1,0 +1,5 @@
+workload,quorum,workers,sessions,settled,errors,wall_s,throughput_sessions_per_s,service_median_ms,service_p95_ms
+ACN-30k,2-of-3,8,30000,30000,0,23.77,1261.86,4.207,5.706
+ACN-30k,3-of-5,8,30000,30000,0,34.51,869.37,5.15,6.319
+MFEV-50k,2-of-3,8,50000,50000,0,44.95,1112.3,4.731,5.817
+MFEV-50k,3-of-5,8,50000,50000,0,61.97,806.87,5.49,6.53

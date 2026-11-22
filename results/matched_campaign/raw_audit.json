@@ -1,0 +1,39 @@
+{
+  "aggregation_correction": {
+    "archived_original": "measured_source/run_matched_campaign.py",
+    "corrected_sha256": "b09c64b64353947eb27addf55f8fc1580096e83e52954237e924d884cddfb19e",
+    "description": "preserve verifier n; rename per-run metric sample count to sample_count"
+  },
+  "groups": 600,
+  "harness_errors": 0,
+  "healthy_denominator": 24000,
+  "healthy_rejections": 0,
+  "independent_runs": 5,
+  "measured_attempts": 29160,
+  "measured_core_source_hashes_unchanged": true,
+  "measurement_window_utc": {
+    "end": "2026-10-13T03:02:44.015311+00:00",
+    "start": "2026-10-13T02:46:14.789311+00:00"
+  },
+  "outside_model_collusion_cases": 240,
+  "phase_counts": {
+    "fault": 2160,
+    "healthy": 24000,
+    "security": 3000
+  },
+  "replay_refusals": 600,
+  "security_negative_count": 2400,
+  "unexpected_results": 0,
+  "verification": "raw_audit_passed",
+  "verified_at_utc": "2026-10-13T03:08:47.227474+00:00",
+  "windows_cpu_percent": {
+    "max": 43,
+    "median": 14,
+    "p95": 26.0
+  },
+  "windows_free_ram_gib": {
+    "max": 16.051551818847656,
+    "min": 12.798141479492188
+  },
+  "windows_samples": 369
+}

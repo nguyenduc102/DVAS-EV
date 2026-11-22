@@ -1,0 +1,8 @@
+item,trials,passed,contexts,holds
+A_correctness,14300,14300,100,True
+B_leaf_encoding_injective,5100,5100,100,True
+B_opening_binding,1023,1023,100,True
+C_exact_policy,39,39,100,True
+C_predicate_completeness,33174,33174,100,True
+D_no_default_substitution,7500,7500,100,True
+D_projection_soundness,35900,35900,100,True

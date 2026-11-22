@@ -1,0 +1,14 @@
+{
+  "country_code": "NL",
+  "party_id": "CPB",
+  "id": "TAR-ENERGY-TIME-01",
+  "currency": "EUR",
+  "type": "REGULAR",
+  "elements": [
+    {"price_components": [
+      {"type": "ENERGY", "price": 0.32, "step_size": 1},
+      {"type": "TIME", "price": 0.03, "step_size": 60}
+    ]}
+  ],
+  "last_updated": "2026-09-01T00:00:00Z"
+}

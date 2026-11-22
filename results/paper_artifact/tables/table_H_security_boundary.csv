@@ -1,0 +1,17 @@
+config,malicious_colluding,offline,available,sessions_per_goal,semantic_incorrect_settlement_possible,settlement_possible,capture_above_hold_possible,replay_possible,expected_reason
+2-of-3,0,0,3,100,no,yes,no,no,f < t: honest quorum decides; malicious attestations cannot reach t
+2-of-3,0,1,2,100,no,yes,no,no,f < t: honest quorum decides; malicious attestations cannot reach t
+2-of-3,0,2,1,100,no,no,no,no (nothing settled to replay: available < t),"available honest verifiers < t: no quorum, no settlement (never incorrect)"
+2-of-3,1,0,3,100,no,yes,no,no,f < t: honest quorum decides; malicious attestations cannot reach t
+2-of-3,1,1,2,100,no,no,no,no,"available honest verifiers < t: no quorum, no settlement (never incorrect)"
+2-of-3,2,0,3,100,yes,yes,no,no,f >= t colluding: semantic decision can be bypassed; SettleSC public invariants still enforced
+2-of-3,3,0,3,100,yes,yes,no,no,f >= t colluding: semantic decision can be bypassed; SettleSC public invariants still enforced
+3-of-5,0,0,5,100,no,yes,no,no,f < t: honest quorum decides; malicious attestations cannot reach t
+3-of-5,0,1,4,100,no,yes,no,no,f < t: honest quorum decides; malicious attestations cannot reach t
+3-of-5,0,2,3,100,no,yes,no,no,f < t: honest quorum decides; malicious attestations cannot reach t
+3-of-5,0,3,2,100,no,no,no,no (nothing settled to replay: available < t),"available honest verifiers < t: no quorum, no settlement (never incorrect)"
+3-of-5,1,0,5,100,no,yes,no,no,f < t: honest quorum decides; malicious attestations cannot reach t
+3-of-5,1,2,3,100,no,no,no,no,"available honest verifiers < t: no quorum, no settlement (never incorrect)"
+3-of-5,2,0,5,100,no,yes,no,no,f < t: honest quorum decides; malicious attestations cannot reach t
+3-of-5,2,1,4,100,no,no,no,no,"available honest verifiers < t: no quorum, no settlement (never incorrect)"
+3-of-5,3,0,5,100,yes,yes,no,no,f >= t colluding: semantic decision can be bypassed; SettleSC public invariants still enforced

@@ -1,0 +1,13 @@
+quorum,profile,dataset,scenario,sessions,settled,blocked,amount_exact,blocked_by_stage,median_ms,p95_ms,wall_s,input
+2/3,C3,ACN-30k,Valid,30000,30000,0,30000,,3.9961,4.4904,178.6,data/acn/processed/profile_valid_preauthorization_cached_acn_0p1_n30000_unique.csv
+2/3,C3,ACN-30k,Original cap,30000,26605,3395,26605,quorum:3395,3.9636,4.4381,170.3,data/acn/processed/profile_original_cap_cached_acn_0p1_n30000_unique.csv
+2/3,C3,ACN-30k,Top-up,3395,3395,0,3395,,4.6762,5.3798,22.5,data/acn/processed/profile_undercap_topup_cached_acn_0p1_n30000_unique_exact.csv
+2/3,C3,MFEV-50k,Valid,50000,50000,0,50000,,3.8213,4.5574,317.8,data/processed/mfev/runner_fixed/mfev_50000_valid_fixed.csv
+2/3,C3,MFEV-50k,Original cap,50000,48758,1242,48758,quorum:1242,3.6392,4.3904,297.5,data/processed/mfev/runner_fixed/mfev_50000_original_cap_fixed.csv
+2/3,C3,MFEV-50k,Top-up,1242,1242,0,1242,,4.319,5.2492,8.0,data/processed/mfev/runner_fixed/mfev_50000_topup_cases_fixed.csv
+3/5,C3,ACN-30k,Valid,30000,30000,0,30000,,4.145,4.5725,219.4,data/acn/processed/profile_valid_preauthorization_cached_acn_0p1_n30000_unique.csv
+3/5,C3,ACN-30k,Original cap,30000,26605,3395,26605,quorum:3395,4.1638,5.0058,212.4,data/acn/processed/profile_original_cap_cached_acn_0p1_n30000_unique.csv
+3/5,C3,ACN-30k,Top-up,3395,3395,0,3395,,4.7442,5.4615,27.0,data/acn/processed/profile_undercap_topup_cached_acn_0p1_n30000_unique_exact.csv
+3/5,C3,MFEV-50k,Valid,50000,50000,0,50000,,4.1607,4.6841,408.1,data/processed/mfev/runner_fixed/mfev_50000_valid_fixed.csv
+3/5,C3,MFEV-50k,Original cap,50000,48758,1242,48758,quorum:1242,4.1665,4.5825,401.3,data/processed/mfev/runner_fixed/mfev_50000_original_cap_fixed.csv
+3/5,C3,MFEV-50k,Top-up,1242,1242,0,1242,,4.875,5.3285,10.5,data/processed/mfev/runner_fixed/mfev_50000_topup_cases_fixed.csv

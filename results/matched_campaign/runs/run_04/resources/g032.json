@@ -1,0 +1,232 @@
+{
+  "coordinator_pid": 15395,
+  "dataset": "ACN",
+  "group_cpu_ms_per_attempt": 15.833333333333334,
+  "group_id": "g032",
+  "group_wall_ms": 1851.273333,
+  "measured_sessions": 12,
+  "method": "DVASSelectiveQuorum",
+  "mutation": "honest",
+  "n": 5,
+  "phase": "fault",
+  "post_group_drain_ms": 10,
+  "profile": "C3",
+  "registry_snapshot_bytes_fanout": 741730,
+  "resource_samples": [
+    {
+      "MemAvailable": 15351600,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.083984375,
+      "parent_rss_kib": 53680,
+      "pss_sum_kib": 144908,
+      "rss_sum_kib": 242032,
+      "timestamp_ns": 1791860228507790080
+    },
+    {
+      "MemAvailable": 15351600,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.083984375,
+      "parent_rss_kib": 53680,
+      "pss_sum_kib": 145032,
+      "rss_sum_kib": 242032,
+      "timestamp_ns": 1791860228609444399
+    },
+    {
+      "MemAvailable": 15351096,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.083984375,
+      "parent_rss_kib": 53680,
+      "pss_sum_kib": 145140,
+      "rss_sum_kib": 242032,
+      "timestamp_ns": 1791860228710757578
+    },
+    {
+      "MemAvailable": 15351096,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.083984375,
+      "parent_rss_kib": 53680,
+      "pss_sum_kib": 145140,
+      "rss_sum_kib": 242032,
+      "timestamp_ns": 1791860228812227732
+    },
+    {
+      "MemAvailable": 15351096,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.083984375,
+      "parent_rss_kib": 53680,
+      "pss_sum_kib": 145152,
+      "rss_sum_kib": 242032,
+      "timestamp_ns": 1791860228913476117
+    },
+    {
+      "MemAvailable": 15350872,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.083984375,
+      "parent_rss_kib": 53680,
+      "pss_sum_kib": 145164,
+      "rss_sum_kib": 242032,
+      "timestamp_ns": 1791860229014799197
+    },
+    {
+      "MemAvailable": 15350872,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.083984375,
+      "parent_rss_kib": 53680,
+      "pss_sum_kib": 145164,
+      "rss_sum_kib": 242032,
+      "timestamp_ns": 1791860229116180676
+    },
+    {
+      "MemAvailable": 15350872,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.083984375,
+      "parent_rss_kib": 53680,
+      "pss_sum_kib": 145164,
+      "rss_sum_kib": 242032,
+      "timestamp_ns": 1791860229217638744
+    },
+    {
+      "MemAvailable": 15350872,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.083984375,
+      "parent_rss_kib": 53680,
+      "pss_sum_kib": 145208,
+      "rss_sum_kib": 242032,
+      "timestamp_ns": 1791860229319106570
+    },
+    {
+      "MemAvailable": 15350872,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.083984375,
+      "parent_rss_kib": 53680,
+      "pss_sum_kib": 145208,
+      "rss_sum_kib": 242032,
+      "timestamp_ns": 1791860229420555483
+    },
+    {
+      "MemAvailable": 15350872,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.083984375,
+      "parent_rss_kib": 53680,
+      "pss_sum_kib": 145256,
+      "rss_sum_kib": 242032,
+      "timestamp_ns": 1791860229522065605
+    },
+    {
+      "MemAvailable": 15350872,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.083984375,
+      "parent_rss_kib": 53680,
+      "pss_sum_kib": 145272,
+      "rss_sum_kib": 242032,
+      "timestamp_ns": 1791860229623571216
+    },
+    {
+      "MemAvailable": 15350872,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.083984375,
+      "parent_rss_kib": 53680,
+      "pss_sum_kib": 145272,
+      "rss_sum_kib": 242032,
+      "timestamp_ns": 1791860229725048553
+    },
+    {
+      "MemAvailable": 15350872,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.083984375,
+      "parent_rss_kib": 53680,
+      "pss_sum_kib": 145272,
+      "rss_sum_kib": 242032,
+      "timestamp_ns": 1791860229826400902
+    },
+    {
+      "MemAvailable": 15350872,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.083984375,
+      "parent_rss_kib": 53680,
+      "pss_sum_kib": 145284,
+      "rss_sum_kib": 242032,
+      "timestamp_ns": 1791860229927708052
+    },
+    {
+      "MemAvailable": 15350872,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.083984375,
+      "parent_rss_kib": 53680,
+      "pss_sum_kib": 145284,
+      "rss_sum_kib": 242032,
+      "timestamp_ns": 1791860230029156559
+    },
+    {
+      "MemAvailable": 15350872,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.083984375,
+      "parent_rss_kib": 53680,
+      "pss_sum_kib": 145316,
+      "rss_sum_kib": 242224,
+      "timestamp_ns": 1791860230130544167
+    },
+    {
+      "MemAvailable": 15350872,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.083984375,
+      "parent_rss_kib": 53680,
+      "pss_sum_kib": 145340,
+      "rss_sum_kib": 242224,
+      "timestamp_ns": 1791860230231846006
+    },
+    {
+      "MemAvailable": 15350872,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.083984375,
+      "parent_rss_kib": 53680,
+      "pss_sum_kib": 145340,
+      "rss_sum_kib": 242224,
+      "timestamp_ns": 1791860230333199039
+    },
+    {
+      "MemAvailable": 15350872,
+      "SwapFree": 4194304,
+      "SwapTotal": 4194304,
+      "load1": 1.083984375,
+      "parent_rss_kib": 53680,
+      "pss_sum_kib": 145336,
+      "rss_sum_kib": 242224,
+      "timestamp_ns": 1791860230358206491
+    }
+  ],
+  "run_id": 4,
+  "sampled_peak_pss_sum_kib": 145340,
+  "sampled_peak_rss_sum_kib": 242224,
+  "scenario": "withholding_beyond_liveness",
+  "setup_ms": 1760.30211,
+  "t": 3,
+  "total_group_cpu_ms": 190.0,
+  "worker_pids": [
+    16775,
+    16787,
+    16799,
+    16811,
+    16823
+  ],
+  "worker_startup_ms": 1749.8636369999758
+}
