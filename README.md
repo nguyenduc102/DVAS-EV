@@ -60,7 +60,23 @@ The workloads are derived from two public datasets that are not redistributed he
 * ACN-Data (Caltech Adaptive Charging Network), which needs a free API token.
 * MFEV charging records (Baek et al., Scientific Data 2024), from figshare.
 
-The test suite and the figure script run without the datasets.
+Without the datasets, 121 tests run and the 165 tests that read a workload are skipped with
+"dataset not found". The contract tests and the figure script do not need the datasets.
+
+## Quick check
+
+On a fresh clone, after `setup_env.sh` and `git submodule update --init` (about one minute in total
+once the environment is built):
+
+```bash
+R="bash scripts/env/dvas_run.sh python"
+$R -m pytest tests -q                    # 121 passed, 165 skipped (286 passed with data/)
+(cd foundry && forge test)               # 42 tests passed
+$R scripts/figures/make_paper_figures.py # Figs. 2-6 into outputs/figures/
+```
+
+With the datasets in place, `$R scripts/dvas/run_paper_artifact.py --quick` runs every step of the
+pipeline on small inputs in about one minute and ends with `DONE`.
 
 ## Reproducing the results
 
@@ -79,6 +95,11 @@ $R scripts/figures/make_paper_figures.py        # Figs. 2-6 from results/ into o
 
 `docs/RESULTS_MAP.md` lists the exact command, output file and paper location for each result, including the
 library baselines of Fig. 6 and the pricing-stress experiment.
+
+Measured run times on the machine above: test suite 20 s, quick pipeline 1 min, full
+`run_paper_artifact.py` 5 min (of which the 5,000-session regression takes 100 s), matched campaign
+about 17 min of measurement plus key and worker setup. The matched campaign and the timing experiments
+should run on an otherwise idle machine.
 
 Run-to-run timing differences of a few percent are expected. Counts, accept and reject decisions, sizes in
 bytes and gas are deterministic for the fixed seeds.
