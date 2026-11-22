@@ -371,9 +371,8 @@ def main() -> int:
         and summary["undercap_topup_rows"] >= 0
     )
 
-    # undercap_topup_rows can be zero in principle if the deterministic original
-    # preauthorization policy happens to cover all sessions. This is not a code
-    # error, but downstream top-up benchmark needs a non-empty top-up subset.
+    # undercap_topup_rows is zero when the original preauthorization covers every
+    # session. The top-up benchmark needs at least one such row.
     summary["status"] = "passed" if status_ok else "failed"
     summary["topup_subset_available"] = summary["undercap_topup_rows"] > 0
 

@@ -7,17 +7,17 @@ legacy single-SV figure used:
   ACN-30k  Valid | Original cap | Top-up (3,394 under-reserved rows)
   MFEV-50k Valid | Original cap | Top-up (1,242 under-reserved rows)
 
-MFEV top-up rows carry no ``topup_delta_recommended`` column; the delta follows
+MFEV top-up rows carry no ``topup_delta_recommended`` column. The delta follows
 the legacy harness fallback rule (scripts/benchmark_common.py):
     delta = max(0, 1.10 * expected_amount - preauth_limit)
 
-Timings are ``timings_ms["total"]`` of settled sessions: LOCAL in-process
-protocol-processing latency (same metric as the 5k regression), NOT the matched
-loopback campaign (separate verifier processes) and NOT end-to-end charging.
+Timings are ``timings_ms["total"]`` of settled sessions: local in-process
+protocol-processing latency (same metric as the 5k regression), not the matched
+loopback campaign (separate verifier processes) and not end-to-end charging.
 
 Outputs (under $DVAS_OUT or outputs/):
   scale_workloads/scale_rows.csv      one row per session
-  scale_workloads/scale_summary.csv   one row per workload/config (Fig. 2a/2b source)
+  scale_workloads/scale_summary.csv   one row per workload/config (source of Fig. 3)
 """
 
 from __future__ import annotations

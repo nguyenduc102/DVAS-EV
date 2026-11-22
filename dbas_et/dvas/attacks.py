@@ -9,7 +9,7 @@ Generation
   systematic  every attack on every selected workload row
   randomized  attack parameters (which field, which value, how much) drawn
               from ``random.Random(seed)``.  The seed controls test-case
-              selection and mutation parameters only; cryptographic keys
+              selection and mutation parameters only. Cryptographic keys
               come from the OS CSPRNG.
 
 Adversary model.  Semantic attacks (wrong pricing/time/cap/station) use a
@@ -81,7 +81,7 @@ def _prep(env: DvasEnvironment, spec: SessionSpec, *, deliver: bool = True, **de
 
 
 def _finish(s: Session, *, submit: bool = True, opening=None) -> tuple[str, str]:
-    """Run the rest of the pipeline; return (stage, reason) of the first rejection or ('settled','OK')."""
+    """Run the rest of the pipeline. Return (stage, reason) of the first rejection or ('settled','OK')."""
     if submit:
         r = s.submit_receipt()
         if not r.ok:

@@ -3,15 +3,15 @@ Independent settlement verifiers and quorum attestations.
 
 Each verifier independently executes, in this order:
 
- 1. resolve the registered meter key (role, epoch, revocation);
- 2. verify the meter signature over the canonical public receipt;
- 3. verify tid/sid/rho_t against ledger state and the station-meter binding;
- 4. decapsulate its key slot and decrypt the private payload;
- 5. recompute h_priv = H(canonical DR_private);
- 6. compare h_priv with the meter-signed public receipt;
- 7. public/private consistency checks;
+ 1. resolve the registered meter key (role, epoch, revocation)
+ 2. verify the meter signature over the canonical public receipt
+ 3. verify tid/sid/rho_t against ledger state and the station-meter binding
+ 4. decapsulate its key slot and decrypt the private payload
+ 5. recompute h_priv = H(canonical DR_private)
+ 6. compare h_priv with the meter-signed public receipt
+ 7. public/private consistency checks
  8. verify the predicate-complete PAM opening and evaluate Match
-    (the "settlement" predicate) without defaults;
+    (the "settlement" predicate) without defaults
  9. build the canonical decision and sign its digest.
 
 An attestation is produced only if every step succeeds.  ``behavior``

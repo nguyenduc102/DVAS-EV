@@ -1,4 +1,4 @@
-"""Section 1: canonical encoding, test vectors and field lifecycle."""
+"""Canonical encoding, test vectors and field lifecycle."""
 
 from __future__ import annotations
 
@@ -185,7 +185,7 @@ def test_serialization_mismatch_trailing_and_truncated():
 
 
 def test_legacy_json_float_ambiguity_is_removed():
-    """Legacy canonical JSON encodes floats as '%.12g'; distinct values can collide.
+    """Legacy canonical JSON encodes floats as '%.12g'. Distinct values can collide.
     The new encoder either encodes them exactly or rejects them."""
     from dbas_et.crypto import canonical_dumps
 

@@ -8,7 +8,7 @@ measured outputs reported in the paper.
 
 | Paper item | Values in the paper | Shipped result | Command |
 |---|---|---|---|
-| Fig. 2, text of 7.1 | DVAS-EV hybrid ACN 5.355 / 6.597 ms vs full-evidence 5.497 / 6.735 ms; escrow 2.670 ms; classical 4.926 ms; P95 below 7.2 ms; private bytes 20,687 to 39,730 | `results/matched_campaign/summary_uncertainty.csv`, `RESULTS.md` | `$R scripts/dvas/run_matched_campaign.py --out outputs/matched_campaign` (5 runs, 200 sessions, seed 20261013) |
+| Fig. 2, text of 7.1 | DVAS-EV hybrid ACN 5.355 / 6.597 ms vs full-evidence 5.497 / 6.735 ms, escrow 2.670 ms, classical 4.926 ms, P95 below 7.2 ms, private bytes 20,687 to 39,730 | `results/matched_campaign/summary_uncertainty.csv`, `RESULTS.md` | `$R scripts/dvas/run_matched_campaign.py --out outputs/matched_campaign` (5 runs, 200 sessions, seed 20261013) |
 | Paired gains 0.149 / 0.142 ms and their 95% intervals | | `results/matched_campaign/paired_differences.csv` | same run |
 | 24,000 valid sessions, 2,160 fault attempts, 3,000 attack attempts | | `results/matched_campaign/run_statistics.csv`, `validation.csv` | same run |
 | Table 4, runtime and bytes | e.g. full escrow 1.137 ms, DVAS-EV 2-of-3 3.665 ms, top-up 4.398 ms over 3,395 sessions | `results/baselines_table/t1_settlement_baselines.csv` | `$R scripts/dvas/run_quorum_tables.py --part t1` |
@@ -29,7 +29,7 @@ measured outputs reported in the paper.
 
 | Paper item | Values in the paper | Shipped result | Command |
 |---|---|---|---|
-| Fig. 3 | 3,395 ACN-30k and 1,242 MFEV-50k refused at the original hold, all settled after top-up; P95 below 5.5 ms | `results/scale/scale_summary.csv`, `scale_rows.csv.gz` | `$R scripts/dvas/run_scale_workloads.py --quorum 2/3,3/5` |
+| Fig. 3 | 3,395 ACN-30k and 1,242 MFEV-50k refused at the original hold, all settled after top-up, P95 below 5.5 ms | `results/scale/scale_summary.csv`, `scale_rows.csv.gz` | `$R scripts/dvas/run_scale_workloads.py --quorum 2/3,3/5` |
 | 5,000-session regression, 5,000-session multi-operator workload with 3,899 cross-domain cases | | `results/paper_artifact/regression_checks.csv`, `multi_operator_results.csv` | `$R scripts/dvas/run_paper_artifact.py` (steps 01 and 10) |
 | Fig. 4 | component medians, totals 3.63 and 4.03 ms | `results/quorum_tables/t3_rbc_timing.csv` | `$R scripts/dvas/run_quorum_tables.py --part t3` |
 | Fig. 5 | 3–21 instead of 6–24 fields, 72.8–86.6% smaller, 35–64% faster | `results/paper_artifact/pam_ablation.csv` | `$R scripts/dvas/run_pam_ablation.py --capsules 500 --repeats 10 --warmup 100` |
@@ -53,7 +53,7 @@ performance cores. Unpinned runs were about two times slower.
 ## Released code and the code that produced each result
 
 Every runner records a SHA-256 digest of the `dbas_et/dvas/*.py` sources in its environment file.
-The released code has digest `0f85d39d…` (recomputed by `scripts/dvas/bench_env.py: source_digest`).
+The released code has digest `81471dbd…` (recomputed by `scripts/dvas/bench_env.py: source_digest`).
 It differs from `bcaf2315…` only in docstrings and comments: with docstrings and comments removed, the
 Python syntax trees of the two versions are identical.
 

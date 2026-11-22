@@ -3,7 +3,7 @@ DVAS-EV field registry, committed layout schema and record types.
 
 Every semantic field has a stable u16 ID, a type, and a lifecycle class:
 
-PRE_SERVICE_COMMITTED  fixed before charging; the only fields allowed in the
+PRE_SERVICE_COMMITTED  fixed before charging. The only fields allowed in the
                        transaction commitment rho_t.
 POST_SERVICE_EVIDENCE  produced by the meter/station after charging
                        (public delivery receipt, private delivery payload).

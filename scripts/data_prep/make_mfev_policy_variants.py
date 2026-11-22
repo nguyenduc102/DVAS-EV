@@ -26,14 +26,13 @@ def make_variants(n: int, in_dir: Path, out_dir: Path) -> None:
 
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    # 1) Valid policy: enough preauthorization, should settle successfully.
+    # 1) Valid policy: enough preauthorization, every session settles.
     valid = df.copy()
     valid["preauth_limit_t"] = valid["preauth_limit_valid"].astype(float)
     valid_path = out_dir / f"mfev_{n}_policy_valid.csv"
     valid.to_csv(valid_path, index=False)
 
-    # 2) Original-cap policy: some sessions are under-cap and should be blocked
-    # unless top-up is applied.
+    # 2) Original-cap policy: under-cap sessions are blocked unless topped up.
     original = df.copy()
     original["preauth_limit_t"] = original["preauth_limit_original"].astype(float)
     original_path = out_dir / f"mfev_{n}_policy_original_cap.csv"

@@ -20,7 +20,7 @@ R="bash scripts/env/dvas_run.sh python"
 # 5,000-session profiles (regression workload): data/acn/processed/profile_*.csv
 $R scripts/data_prep/build_acn_profiles.py --target-n 5000 \
    --site caltech --site jpl --site office001 --min-kwh 0.1 --oversample-factor 1.5
-# raw download for the larger workloads (checkpointed, resumable; the paper's raw cache was
+# raw download for the larger workloads (checkpointed and resumable, the raw cache used for the paper was
 # collected over several resumed runs and holds 31,258 sessions)
 $R scripts/data_prep/download_acn_sessions.py --targets 10000 30000 \
    --site caltech --site jpl --site office001 --min-kwh 0.1

@@ -3,9 +3,9 @@ Key/role registry with activation, revocation, rotation and key epochs.
 
 Registry assumptions (explicit and testable, not cryptographically enforced):
 - the registration authority (RA) correctly binds entity IDs, roles,
-  operators and public keys; a malicious RA is out of scope;
+  operators and public keys (a malicious RA is out of scope)
 - registry state is read consistently by verifiers and SettleSC
-  (contract-state simulation; on chain this is contract storage);
+  (contract-state simulation, on chain this is contract storage)
 - revocation takes effect for every lookup after it is recorded.
 
 Each record carries: entity_id, role, operator, public key, key type,
@@ -161,7 +161,7 @@ class KeyRegistry:
                at: int | None = None) -> Lookup:
         """Resolve the active key of ``entity_id`` in ``role``.
 
-        epoch=None returns the active key; an explicit epoch must equal the
+        epoch=None returns the active key. An explicit epoch must equal the
         active epoch (older epochs are STALE_EPOCH).
         """
         count("registry_lookup")
@@ -215,7 +215,7 @@ class KeyRegistry:
 
     def publish_tariff(self, station_id: str, tariff_id: str, tariff_version: str, mode: str,
                        unit_price: Any, currency: str) -> None:
-        """Publish a tariff entry; the catalog is functional in (station, tariff_id, version).
+        """Publish a tariff entry. The catalog is functional in (station, tariff_id, version).
 
         Re-publishing the identical tuple is idempotent. A different
         (mode, unit_price, currency) for an existing key is rejected, which

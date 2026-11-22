@@ -1,4 +1,4 @@
-"""Section 15: OCPI/OCPP semantic adapter (mapping demonstration, not compliance)."""
+"""OCPI/OCPP semantic adapter (mapping demonstration, not compliance)."""
 
 from __future__ import annotations
 

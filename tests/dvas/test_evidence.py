@@ -1,4 +1,4 @@
-"""Section 7: single-ciphertext multi-recipient private evidence."""
+"""Single-ciphertext multi-recipient private evidence."""
 
 from __future__ import annotations
 

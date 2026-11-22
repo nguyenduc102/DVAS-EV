@@ -4,19 +4,19 @@ Contract-state simulation for DVAS-EV (AuthSC + SettleSC with quorum RBC).
 Money is Decimal with 6 decimals throughout (no float tolerance).
 
 SettleSC.settle(rbc) checks, in order:
-  1. RBC structure (version, decision, policy, non-empty attestations);
-  2. tid/sid/rho_t binding to the authorization/session record;
-  3. receipt digest and h_priv equal the submitted meter receipt;
+  1. RBC structure (version, decision, policy, non-empty attestations)
+  2. tid/sid/rho_t binding to the authorization/session record
+  3. receipt digest and h_priv equal the submitted meter receipt
   4. amount bounds: 0 <= capture <= effective limit, capture <= hold,
-     refund == hold - capture, and auth_digest equals current record state;
-  5. distinct verifier identities (duplicates reject the whole RBC);
+     refund == hold - capture, and auth_digest equals current record state
+  5. distinct verifier identities (duplicates reject the whole RBC)
   6. registered, active, non-revoked VERIFIER keys at the attested epoch,
-     and the body's verifier-set epoch equals the current one;
-  7. every attestation carries the body's decision digest;
-  8. every signature verifies; the number of valid attestations >= t;
+     and the body's verifier-set epoch equals the current one
+  7. every attestation carries the body's decision digest
+  8. every signature verifies and the number of valid attestations >= t
   9. replay state (receipt digest and RBC digest unused) -- evaluated
-     right after (1) so a replay is reported as such;
- 10. transaction state == RECEIPT_SUBMITTED;
+     right after (1) so a replay is reported as such
+ 10. transaction state == RECEIPT_SUBMITTED
  11. atomic consumption: mark receipt + RBC used, transfer, state SETTLED.
 """
 

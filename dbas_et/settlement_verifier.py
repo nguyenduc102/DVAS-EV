@@ -7,9 +7,8 @@ release.  This module implements that verifier layer for the Python simulator:
     protected envelopes -> open/verify private payloads -> Match(S_t, DR_t)
     -> signed RBC_public
 
-SettleSC can then release funds from reserved balance by checking RBC_public,
-state, replay status, and amount bounds.  This mirrors a realistic blockchain
-architecture where smart contracts do not hold KEM secret keys.
+SettleSC then releases funds from the reserved balance by checking RBC_public,
+state, replay status and amount bounds. The contract never holds KEM secret keys.
 """
 
 from __future__ import annotations
@@ -166,15 +165,13 @@ class SettlementVerifier:
         """Verify settlement semantics and issue RBC_public/RBC_private.
 
         Cheap-first order for attack traffic:
-          1. verify S projection;
-          2. verify meter signature;
-          3. run public Match(S_t, DR_t) checks;
-          4. open KEM-AEAD private payloads only for valid-looking requests;
+          1. verify S projection
+          2. verify meter signature
+          3. run public Match(S_t, DR_t) checks
+          4. open KEM-AEAD private payloads only for valid-looking requests
           5. issue RBC_public/RBC_private.
 
-        This preserves correctness for valid requests and avoids expensive
-        private-payload opening for requests that are already invalid from
-        public evidence.
+        Requests that already fail on public evidence never reach the KEM/AEAD step.
         """
         meter_samples = meter_samples or []
         tariff_record = tariff_record or {}
@@ -202,7 +199,7 @@ class SettlementVerifier:
         if not sig_ok:
             add_reason("bad_meter_signature")
 
-        # 3) Public Match fields. Do not open protected payloads yet.
+        # 3) Public Match fields. Protected payloads are not opened yet.
         public_match_checks, public_match_reasons = evaluate_match_checks(
             ar_t=ar_t,
             receipt=receipt,
@@ -259,7 +256,7 @@ class SettlementVerifier:
             for reason in private_match_reasons:
                 add_reason(reason)
         elif protected_payloads:
-            # Do not spend KEM/AEAD work on obviously invalid requests.
+            # No KEM/AEAD work for requests that already failed.
             semantic_checks["protected_payload_open_skipped"] = True
             add_reason("protected_open_skipped_due_public_reject")
         else:
@@ -286,8 +283,7 @@ class SettlementVerifier:
 
         m_root = meter_values_root(meter_samples)
 
-        # Note:
-        # RBC_public.ar_digest must be computed over the same public
+        # RBC_public.ar_digest is computed over the same public
         # AuthRecord representation that SettleSC recomputes from
         # AuthSC.records[trade_id].to_record().
         #
@@ -301,14 +297,14 @@ class SettlementVerifier:
         dr_digest = digest_record("DBAS-ET:DR:v1", receipt.signed_record())
 
         # Receipt replay hash used by SettleSC.
-        # This must use payments.receipt_hash(receipt), not dr_digest.
-        # dr_digest binds the delivery-receipt record for RBC semantics;
+        # Uses payments.receipt_hash(receipt), not dr_digest.
+        # dr_digest binds the delivery-receipt record for RBC semantics, while
         # rh binds the exact signed receipt submitted to SettleSC for replay prevention.
         rh = receipt_hash(receipt)
 
         # Tariff digest is part of RBC_public binding.
-        # It must be computed before binding_digest / unsigned_public use it.
-        # Prefer the explicit tariff_record when supplied; otherwise derive a
+        # Computed before binding_digest and unsigned_public use it.
+        # Prefer the explicit tariff_record when supplied. Otherwise derive a
         # deterministic tariff evidence record from public authorization fields.
         tariff_digest_input = dict(tariff_record) if tariff_record else {
             "tariff_id": ar_t.get("tariff_id", ""),
@@ -457,14 +453,13 @@ def canonical_auth_record_digest_input(ar_t: Mapping[str, Any]) -> dict[str, Any
     SettleSC cannot recompute a digest over those verifier-only fields because
     only AuthSC.records[trade_id].to_record() is contract-visible state.
 
-    Therefore RBC_public.ar_digest MUST be computed over exactly the same
-    AuthRecord representation that SettleSC later recomputes:
+    RBC_public.ar_digest is therefore computed over exactly the AuthRecord
+    representation that SettleSC recomputes:
 
         digest_record("DBAS-ET:AR:v1", AuthSC.records[trade_id].to_record())
 
-    If the caller provides an explicit "_auth_record" snapshot, use it.
-    Otherwise, project ar_t down to the AuthRecord key set and ignore
-    verifier-only semantic fields.
+    An explicit "_auth_record" snapshot is used when the caller provides one.
+    Otherwise ar_t is reduced to the AuthRecord keys.
     """
 
     explicit = ar_t.get("_auth_record")
@@ -563,10 +558,10 @@ def evaluate_match_checks(
             "private_time_mismatch",
         )
 
-    # S_view must be the settlement projection by construction.
+    # S_view is the settlement projection by construction.
     set_check("settlement_phase", S_view.phase == "S", "wrong_projection_phase")
 
-    # Optional meter-values consistency: if samples exist, the root is at least
+    # Optional meter-values consistency: if samples exist, the root is
     # deterministic and becomes part of RBC binding_digest.
     if meter_samples:
         set_check("meter_values_root_present", bool(meter_values_root(meter_samples)), "missing_meter_values_root")

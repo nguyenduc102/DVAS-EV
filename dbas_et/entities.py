@@ -10,8 +10,8 @@ The schema follows the paper model:
 
 Payment note
 ------------
-`allowcap_t` in later modules must be interpreted as a pre-authorized payment
-limit, not the final captured payment.
+`allowcap_t` in the other modules is the pre-authorized payment limit, not the
+final captured payment.
 """
 
 from __future__ import annotations

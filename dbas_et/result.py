@@ -1,12 +1,10 @@
 """
 Result and protocol status types for DBAS-ET.
 
-Protocol-level failures such as invalid signatures, bad proofs, wrong meters,
-replayed receipts, or cap violations must be represented as explicit reject or
-blocked results. Normal protocol rejection must not crash the simulator through
-AssertionError.
-
-Assertions should be reserved for tests and developer invariants.
+Protocol failures such as invalid signatures, bad proofs, wrong meters, replayed
+receipts or cap violations are returned as explicit reject or blocked results,
+not raised as AssertionError. Assertions are used only in tests and for internal
+invariants.
 """
 
 from __future__ import annotations

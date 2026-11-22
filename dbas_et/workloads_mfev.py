@@ -10,8 +10,8 @@ import pandas as pd
 
 
 RAW_COLUMN_CANDIDATES = {
-    # MFEV raw ChargingRecords.csv does NOT contain an explicit session id.
-    # Keep this optional. If missing, we generate a deterministic synthetic id.
+    # ChargingRecords.csv has no session id column. When it is missing, a
+    # deterministic id is derived from the row content.
     "session_id": [
         "ChargingsessionID",
         "ChargingSessionID",
@@ -123,15 +123,14 @@ def normalize_mfev_to_dbas(
     Convert MFEV ChargingRecords.csv to an ACN-compatible + DBAS-compatible
     workload schema.
 
-    Important:
-    - The actual MFEV ChargingRecords.csv may not contain an explicit session id.
-    - We generate a deterministic source_session_id/session_id from row content.
+    - ChargingRecords.csv has no explicit session id, so source_session_id and
+      session_id are derived from the row content.
     - The output includes ACN-like aliases:
         session_id, connectionTime, disconnectTime, doneChargingTime,
         kWhDelivered, site, station_id, user_id
     - The output also includes DBAS-ET fields:
         trade_id, meter_id, tariff_id, unit_price, cap_kwh,
-        preauth_limit_t, preauth_limit_original, etc.
+        preauth_limit_t, preauth_limit_original and the other protocol columns.
     """
 
     rng = np.random.default_rng(seed)
@@ -163,7 +162,7 @@ def normalize_mfev_to_dbas(
     out["end_ts"] = pd.to_datetime(df[detected["end_dt"]], errors="coerce")
     out["delivered_kwh"] = pd.to_numeric(df[deted["demand"]], errors="coerce") if False else pd.to_numeric(df[detected["demand"]], errors="coerce")
 
-    # Optional raw session id; otherwise create deterministic synthetic id later.
+    # Optional raw session id. Otherwise create deterministic synthetic id later.
     if "session_id" in detected:
         out["source_session_id"] = df[detected["session_id"]].astype(str)
     else:
@@ -205,7 +204,7 @@ def normalize_mfev_to_dbas(
             errors="coerce",
         )
     else:
-        # If absent, keep NaN. Do not invent this as a measured value.
+        # Kept as NaN when absent, never filled with a made-up value.
         out["charger_capacity_kw"] = np.nan
 
     if "duration" in detected:
@@ -223,7 +222,7 @@ def normalize_mfev_to_dbas(
     )
 
     # ACN-compatible aliases.
-    # Many ACN pipelines expect these names.
+    # Same names as in the ACN workloads.
     out["session_id"] = out["source_session_id"].astype(str)
     out["connectionTime"] = out["start_ts"]
     out["disconnectTime"] = out["end_ts"]
@@ -263,8 +262,7 @@ def normalize_mfev_to_dbas(
         axis=1,
     )
 
-    # Do not use this as final cryptographic sid_t; real protocol should derive sid_t from rho_t.
-    # It is only a stable workload-side seed/reference.
+    # Workload-side reference only. The protocol derives sid_t from rho_t.
     out["sid_seed"] = out.apply(
         lambda r: "SIDSEED_MFEV_" + _stable_hash(
             r["trade_id"],
@@ -449,7 +447,7 @@ def normalize_mfev_to_dbas(
         "duration_raw",
     ]
 
-    # Some columns may be absent only if future raw format changes.
+    # A column is missing only if the raw format changes.
     preferred_cols = [c for c in preferred_cols if c in out.columns]
     out = out[preferred_cols].reset_index(drop=True)
 

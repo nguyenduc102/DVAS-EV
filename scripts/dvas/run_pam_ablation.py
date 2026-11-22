@@ -2,7 +2,7 @@
 
 Variants (same SHA-256 binary Merkle commitment rho_t in every variant):
 
-B0-full  disclose the whole committed layout; verifier recomputes the root
+B0-full  disclose the whole committed layout. Verifier recomputes the root
          from all leaves (no sibling hashes).
 B0-row   row-level disclosure: every field of each layout group that contains
          a required field, independent authentication paths.
@@ -14,7 +14,7 @@ B3       PA-MSP selected fields F_req, packed multiproof, predicate-
 
 selection_gain = B0 - B1   (reported against B0-row and B0-full)
 packing_gain   = B1 - B2
-B3 vs B2: identical bytes by construction; B3's contribution is enforcement,
+B3 vs B2: identical bytes by construction. B3 adds enforcement,
 measured as the acceptance rate of authentic-but-incomplete openings.
 
 Outputs: outputs/pam_ablation.csv (summary), outputs/raw/pam_ablation_raw.csv

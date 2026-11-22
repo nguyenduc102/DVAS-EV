@@ -2,7 +2,7 @@
 Quorum Receipt Binding Certificate: RBC = RBC_body + verifier attestations.
 
 RBC_body is the canonical SETTLEMENT_DECISION record.  Every accepting
-verifier signs the SAME decision digest
+verifier signs the same decision digest
 
     decision_digest = H(encode(RBC_body))
 
@@ -109,7 +109,7 @@ def aggregate(
     threshold: int,
 ) -> QuorumRBC | None:
     """Aggregator (untrusted, e.g. the station): keep only attestations over the
-    most-supported ACCEPT decision digest; return an RBC if it reaches t."""
+    most-supported ACCEPT decision digest. Return an RBC if it reaches t."""
     groups: dict[str, list[VerificationAttestation]] = defaultdict(list)
     for a in attestations:
         if a.decision == "ACCEPT" and a.decision_digest in bodies:

@@ -161,7 +161,7 @@ class SessionResult:
 
 
 class Session:
-    """One charging session; each method is one protocol stage."""
+    """One charging session. Each method is one protocol stage."""
 
     def __init__(self, env: DvasEnvironment, spec: SessionSpec) -> None:
         self.env = env

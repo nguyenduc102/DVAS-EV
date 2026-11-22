@@ -2,7 +2,7 @@
 
 Systematic: every attack in families A/B/C on each of the first --rows ACN
 rows (plus --mfev-rows MFEV rows).  Randomized: --random cases whose attack
-type and mutation parameters are drawn from random.Random(--seed); the seed
+type and mutation parameters are drawn from random.Random(--seed). The seed
 never touches key generation.
 """
 

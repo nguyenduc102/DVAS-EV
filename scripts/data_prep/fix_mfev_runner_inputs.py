@@ -32,7 +32,7 @@ def fix_one(df: pd.DataFrame, *, policy: str) -> pd.DataFrame:
     old_unit_price = pd.to_numeric(out["unit_price"], errors="coerce")
     old_amount = pd.to_numeric(out.get("amount", np.nan), errors="coerce")
 
-    # Keep a copy for audit/paper explanation.
+    # Copy of the original values.
     out["mfev_original_unit_price"] = old_unit_price
     out["mfev_original_amount"] = old_amount
 
@@ -45,8 +45,8 @@ def fix_one(df: pd.DataFrame, *, policy: str) -> pd.DataFrame:
         out["unit_price"] = old_unit_price.round(9)
         out["monetary_scale_fix"] = "none"
 
-    # Current payment code does not support off_peak/mid_peak/on_peak.
-    # Treat each row as a flat per-session tariff snapshot.
+    # The payment code has no off_peak/mid_peak/on_peak, so each row gets a flat
+    # per-session tariff.
     out["tariff_mode_raw_mfev"] = out.get("tariff_mode", "unknown")
     out["tariff_mode"] = "ENERGY_ONLY"
 
@@ -86,7 +86,7 @@ def fix_one(df: pd.DataFrame, *, policy: str) -> pd.DataFrame:
     else:
         raise ValueError(f"Unknown policy: {policy}")
 
-    # Add common aliases used by older ACN-specific code.
+    # Aliases used by the ACN runners.
     alias_cols = [
         "preauth_limit",
         "preauthorized_limit",
@@ -101,9 +101,8 @@ def fix_one(df: pd.DataFrame, *, policy: str) -> pd.DataFrame:
     for c in alias_cols:
         out[c] = out["preauth_limit_t"]
 
-    # Make balance safely larger than preauth. If the runner reads row balance,
-    # this prevents insufficient_balance. If it uses a default balance, the
-    # normalized amount is now also small enough.
+    # Balance well above the preauthorization, so no row fails with
+    # insufficient_balance.
     safe_balance = max(float(out["preauth_limit_valid"].max()) * 100.0, 1_000_000.0)
     for c in [
         "user_balance",

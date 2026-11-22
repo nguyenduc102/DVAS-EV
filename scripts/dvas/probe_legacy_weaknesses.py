@@ -4,11 +4,11 @@ This script does not modify any legacy module.  It demonstrates, on the
 unchanged legacy settlement path, whether:
 
   P1  a predicate-incomplete settlement context is accepted
-      (legacy Match silently defaults a missing operand);
-  P1b a field-level Merkle opening that omits a predicate operand verifies;
+      (legacy Match silently defaults a missing operand),
+  P1b a field-level Merkle opening that omits a predicate operand verifies
   P2  a private payload created by a party other than the meter is accepted
-      (KEM+AEAD gives confidentiality/integrity, not sender authentication);
-  P2b settlement proceeds with no private payload at all;
+      (KEM+AEAD gives confidentiality/integrity, not sender authentication),
+  P2b settlement proceeds with no private payload at all
   P3  a single (malicious) SettlementVerifier can authorise an inflated capture.
 
 Output: outputs/legacy_probe.csv

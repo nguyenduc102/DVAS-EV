@@ -1,7 +1,7 @@
 """Multi-operator scenario.
 
 Workload: ACN-Data (Caltech) + MFEV (two real CPO operator codes) sessions in
-ONE registry/ledger with a 3-verifier cluster run by three verifier operators.
+one registry/ledger with a 3-verifier cluster run by three verifier operators.
 
 Scenario mapping (documented, not dataset facts):
   CPO (foreign operator):  ACN OF_CALTECH -> OP_A, MFEV OF_6b86b273 -> OP_B,

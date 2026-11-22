@@ -1,4 +1,4 @@
-"""Section 3: predicate-complete PAM-Proof (completeness + Merkle authenticity)."""
+"""Predicate-complete PAM-Proof (completeness + Merkle authenticity)."""
 
 from __future__ import annotations
 

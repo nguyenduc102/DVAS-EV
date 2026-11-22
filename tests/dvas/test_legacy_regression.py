@@ -41,7 +41,7 @@ def test_r5_no_default_operand():
 
 
 def test_dataset_expected_amount_rounding_is_documented():
-    """The dataset column was float-rounded; exactly the documented half-way rows differ by 1e-6."""
+    """The dataset column was float-rounded. Exactly the documented half-way rows differ by 1e-6."""
     diffs = [s.row_index for s in acn_sessions(ACN_VALID) if s.expected_amount != honest_amount(s)]
     assert len(diffs) == 4 and {491, 2320, 2648} <= set(diffs)
     for s in acn_sessions(ACN_VALID, max_rows=3000):

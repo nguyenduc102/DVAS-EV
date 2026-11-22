@@ -2,7 +2,7 @@
 
 Run through scripts/env/dvas_run.sh under Linux/WSL. --prepare-only does
 not generate keys, spawn verifiers, or measure performance. No host process
-is stopped by this program. Campaign outputs are append-only per run.
+is stopped by this program. Each run only appends to its outputs.
 """
 from __future__ import annotations
 
@@ -251,7 +251,7 @@ def summarize(out, config):
     write_csv(out / "summary_uncertainty.csv", summaries)
     write_csv(out / "validation.csv", validation)
     write_csv(out / "resource_summary.csv", resources)
-    # Pair independent-run summaries by workload/configuration; bootstrap runs,
+    # Pair independent-run summaries by workload/configuration. Bootstrap runs,
     # not individual sessions. Positive difference means selective is slower.
     paired = []
     matched = defaultdict(dict)
@@ -312,7 +312,7 @@ def freeze(out, config):
     if (out / "runs").exists() and manifest.exists() and json.loads(manifest.read_text()) != hashes:
         raise ValueError("source changed during campaign; use a new output directory")
     write_json(manifest, hashes)
-    # Preflight only parses deterministic inputs; no crypto or timing begins.
+    # Preflight only parses deterministic inputs. No crypto or timing begins.
     for dataset in ("ACN", "MFEV"):
         workload(dataset, config["sessions"] + config["warmup"], config["seed"])
     workload("ACN", config["fault_sessions"] + 2, config["seed"], headroom=True)

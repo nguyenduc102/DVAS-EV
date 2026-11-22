@@ -1,9 +1,9 @@
 """
 Certified minimum-cardinality gate for the PA-MSP selector (analysis only).
 
-Nothing here changes the production selector ``predicates.required_fields``;
-this module certifies, per verification reason r, that the selected set
-F_r = required_fields(L, r) is the UNIQUE minimum-cardinality sufficient
+Nothing here changes the runtime selector ``predicates.required_fields``.
+This module certifies, per verification reason r, that the selected set
+F_r = required_fields(L, r) is the unique minimum-cardinality sufficient
 committed-field set for the verifier output g_r over the admissible domain.
 
 Verifier output (what a SettlementVerifier signs / the ledger acts on)
@@ -20,24 +20,24 @@ Admissible domain D_adm (what an untrusted committer can place in a leaf)
                verifier rejects the opening (ENCODING_ERROR), so g_r = reject.
     Evidence E is shared by both inputs of every comparison.
 
-Certificate (Theorem B of the upgrade plan)
-  (S) SUFFICIENCY by construction:
-      S1  static: the committed operands of every atom AND every output term
+Certificate
+  (S) Sufficiency by construction:
+      S1  static: the committed operands of every atom and every output term
           of predicate r equal F_r, and ``evaluate`` reads committed values
-          only through ``_eval(C(name))`` (checked on the AST of predicates.py);
+          only through ``_eval(C(name))`` (checked on the AST of predicates.py)
       S2  runtime: a guarded mapping records every committed key that
-          ``evaluate`` touches on real contexts; all keys lie in F_r;
+          ``evaluate`` touches on real contexts, and all keys lie in F_r
       S3  differential: randomising every field outside F_r with admissible
           and adversarial values never changes g_r, and the production path
           (Commit -> Open(F_r) -> Verify -> evaluate on opened values) returns
           the same g_r as the full evaluator.
-      S1 is a proof for all inputs (g_r is a function of M[F_r] and E);
+      S1 is a proof for all inputs (g_r is a function of M[F_r] and E)
       S2/S3 check that the source code matches that statement.
-  (N) NECESSITY: for every f in F_r an admissible witness pair (M, M', E)
+  (N) Necessity: for every f in F_r an admissible witness pair (M, M', E)
       differing only in f with g_r(M,E) != g_r(M',E), replayed through the
       production path.  Then every sufficient G contains F_r, so F_r is the
       unique minimum.
-  Status PROVED_UNIQUE_MINIMUM requires S1, S2, S3 and N for every field;
+  Status PROVED_UNIQUE_MINIMUM requires S1, S2, S3 and N for every field,
   otherwise PARTIAL (the fields without witnesses are listed).
 """
 
@@ -91,7 +91,7 @@ def all_term_operands(pred: Predicate) -> frozenset[str]:
 
 def evaluator_reads_committed_only_via_C() -> tuple[bool, str]:
     """AST check: inside predicates.py, the parameter ``committed`` is only
-    subscripted / membership-tested in ``_eval`` (the C-term branch); every
+    subscripted / membership-tested in ``_eval`` (the C-term branch). Every
     other function passes it through unchanged."""
     tree = ast.parse(inspect.getsource(_predicates_mod))
     offenders = []

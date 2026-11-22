@@ -43,7 +43,7 @@ def _settle(env, body):
 
 @pytest.mark.parametrize("delta", ["0.000001", "0.0000005", "0.00001"])
 def test_capture_one_micro_unit_over_hold_rejected(env, acn_specs, delta):
-    """Even a full quorum signing hold + epsilon is refused; sub-micro values cannot be encoded at all."""
+    """Even a full quorum signing hold + epsilon is refused. Sub-micro values cannot be encoded at all."""
     s, b = _honest_body(env, acn_specs[0])
     hold = env.ledger.records[s.spec.tid].held
     cap = hold + Decimal(delta)
@@ -68,7 +68,7 @@ def test_randomized_invariants_on_accepted_settlements(env, acn_specs):
         forged = RBCBody.build(**{**b.values, "captured_amount": cap, "refund_amount": ref})
         r = _settle(env, forged)
         invariants = Decimal(0) <= cap <= hold and cap <= limit and ref == hold - cap
-        assert r.ok == invariants, (cap, ref, hold, r.code)  # quorum-signed body accepted IFF invariants hold
+        assert r.ok == invariants, (cap, ref, hold, r.code)  # quorum-signed body accepted iff the invariants hold
         if r.ok:
             accepted += 1
             assert env.ledger.records[s.spec.tid].held == 0

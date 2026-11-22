@@ -1,4 +1,4 @@
-"""Sections 5-6: quorum settlement verification and quorum RBC checks."""
+"""Quorum settlement verification and quorum RBC checks."""
 
 from __future__ import annotations
 
@@ -155,7 +155,7 @@ def test_two_unavailable_verifiers_cannot_settle(acn_specs):
 
 
 def test_threshold_assumption_two_colluding_verifiers(acn_specs):
-    """Documented trust assumption: >= t colluding verifiers CAN settle an inflated
+    """Trust assumption: >= t colluding verifiers can settle an inflated
     amount, but SettleSC still bounds the capture by the user's hold."""
     env = DvasEnvironment(profile=PROFILES["C0"], behaviors={"SV1": "inflate", "SV2": "inflate"})
     s = ready(env, acn_specs[16], verify=True)

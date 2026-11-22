@@ -131,7 +131,7 @@ def t1(n_sessions: int, warmup: int, out: Path) -> list[dict]:
                 continue
             if i < warmup and specs is valid:
                 continue
-            if isinstance(b, DVASQuorum):  # stage timers, SVs in parallel (as T3 and Fig. 2b)
+            if isinstance(b, DVASQuorum):  # stage timers, SVs in parallel (as in T3)
                 tot.append(session_total(b.last_session.timings))
             else:                          # single operator: harness phase wall time
                 tot.append(sum(run.phases[ph].ms for ph in PHASES))

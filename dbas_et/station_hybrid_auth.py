@@ -22,8 +22,8 @@ class StationSessionBindingCertificate:
       - meter_id
       - station nonce nonce_s
 
-    It intentionally does NOT include tariff_digest because tariff/session/payment
-    fields are already committed under rho_t and checked by projection proofs.
+    tariff_digest is not included because the tariff, session and payment fields
+    are already committed under rho_t and checked by the projection proofs.
     """
 
     station_id: str
@@ -91,10 +91,8 @@ def issue_station_session_binding_certificate(
       - station.cls_sk using ECDSA-SHA256
       - station.pq_sig_keys using ML-DSA
     """
-    # Backward-compatibility guard:
-    # Older local patch attempts may still pass tariff_digest=... into this function.
-    # Station session binding intentionally ignores it because tariff/payment fields
-    # are already committed under rho_t and checked by projection proofs.
+    # tariff_digest is accepted but ignored: tariff and payment fields are already
+    # committed under rho_t and checked by the projection proofs.
     allowed_legacy = {
         "tariff_digest",
         "tariff_record_digest",
@@ -183,8 +181,8 @@ def verify_station_session_binding_certificate(
     Verify hybrid station session certificate.
 
     Accept only if:
-      - all expected binding fields match;
-      - ECDSA signature verifies;
+      - all expected binding fields match
+      - ECDSA signature verifies
       - ML-DSA signature verifies.
     """
     try:

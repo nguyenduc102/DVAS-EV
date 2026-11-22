@@ -1,13 +1,13 @@
 """Quorum fault-tolerance matrix -> outputs/quorum_fault_matrix.csv.
 
-For each configuration (t-of-n), number m of COLLUDING malicious verifiers
-(SV1..SVm, identical behaviour) and number o of OFFLINE verifiers (last o), three
+For each configuration (t-of-n), number m of colluding malicious verifiers
+(SV1..SVm, identical behaviour) and number o of offline verifiers (last o), three
 adversarial goals are run on --rows ACN sessions:
 
-  inflate_valid      valid delivery; malicious verifiers sign capture = hold
+  inflate_valid      valid delivery. Malicious verifiers sign capture = hold
   approve_invalid    over-cap delivery (cap committed 0.5 kWh below delivery, amount
-                     inside the hold); malicious verifiers approve without checking
-  over_hold          valid delivery; malicious verifiers sign capture = hold + 1e-6
+                     inside the hold). Malicious verifiers approve without checking
+  over_hold          valid delivery. Malicious verifiers sign capture = hold + 1e-6
 
 Outcome per session: CORRECT (honest result: correct amount settled, or invalid
 delivery refused), INCORRECT_SETTLED (semantic decision bypassed),
@@ -96,7 +96,7 @@ def main() -> int:
                 holds = counts["INCORRECT_SETTLED"] == 0
             elif exp == "PUBLIC_BOUND_REFUSES":
                 holds = counts["INCORRECT_SETTLED"] == 0 and counts["CORRECT"] == 0
-            else:  # SEMANTIC_BYPASS_POSSIBLE: documented trust boundary; record what happened
+            else:  # SEMANTIC_BYPASS_POSSIBLE: documented trust boundary. Record what happened
                 holds = True
             rows.append({"config": f"{t}-of-{n}", "n": n, "t": t, "malicious_colluding": m, "offline": o,
                          "honest_available": n - m - o, "goal": goal, "malicious_behavior": beh if m else "",

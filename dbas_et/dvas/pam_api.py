@@ -3,7 +3,7 @@ Formal-style interface to PAM-Proof.
 
 PAM-Proof is a predicate-complete authenticated opening on top of a standard
 Merkle multiproof.  Commit/Open are an ordinary SHA-256 binary Merkle tree and
-packed multiproof; Verify additionally recomputes the required operand set of
+packed multiproof. Verify additionally recomputes the required operand set of
 the predicate and checks it before Merkle authenticity.
 
     pp  <- Setup(L)                      public parameters, no trusted setup
@@ -13,7 +13,7 @@ the predicate and checks it before Merkle authenticity.
     b   <- Verify(pp, rho, r, pi)        (A) F_r subset of F(pi)  [or == under EXACT]
                                          (B) Merkle authenticity against rho
 
-This module only wraps ``pam``/``predicates``; AuthSC and the settlement
+This module only wraps ``pam``/``predicates``. AuthSC and the settlement
 verifiers go through the same code.
 """
 
@@ -66,7 +66,7 @@ def Setup(L: LayoutSchema = LAYOUT_V1, *, policy: CompletenessPolicy = Completen
 
 
 def Commit(pp: PublicParams, C: Mapping[str, Any]) -> tuple[str, Commitment]:
-    """Canonical-encode C, build the domain-separated tree; return (rho, opening state)."""
+    """Canonical-encode C, build the domain-separated tree. Return (rho, opening state)."""
     c = commit(C, pp.schema)
     return c.rho_t, c
 

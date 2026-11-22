@@ -1,4 +1,4 @@
-"""Section 8: registry and key lifecycle."""
+"""Registry and key lifecycle."""
 
 from __future__ import annotations
 

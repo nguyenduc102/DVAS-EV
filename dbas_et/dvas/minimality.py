@@ -9,7 +9,7 @@ Definitions
 S sufficient for P (Boolean):  c1|S == c2|S  =>  P(c1,e) == P(c2,e)   for all e
 S sufficient for the decision: additionally the derived outputs (e.g. amount) agree.
 Sufficiency is monotone, so F_r is set-inclusion minimal iff every f in F_r
-is necessary, and f is necessary iff a WITNESS (c1, c2, e) exists with c1, c2
+is necessary, and f is necessary iff a witness (c1, c2, e) exists with c1, c2
 differing only in f and different outcome.
 
 Valid semantic domain (explicit, per field type)
@@ -17,10 +17,10 @@ Valid semantic domain (explicit, per field type)
   ENUM       the registered enum values only
   FIXED6     non-negative values
   TIMESTAMP  integers
-Witness search draws alternatives from these domains; evidence is taken from a
+Witness search draws alternatives from these domains. Evidence is taken from a
 real session plus "tightened" variants that make bound atoms active.
 
-Non-necessity certificates (needed to classify a predicate as non-minimal;
+Non-necessity certificates (needed to classify a predicate as non-minimal,
 absence of a witness alone proves nothing):
   SINGLETON_DOMAIN  the field's valid domain has exactly one value, so any
                     two valid assignments agree on it.
@@ -29,7 +29,7 @@ absence of a witness alone proves nothing):
 
 Classification
   BOOLEAN_MINIMAL        every f has a Boolean witness
-  DECISION_MINIMAL_ONLY  every f has a decision witness; each f without a
+  DECISION_MINIMAL_ONLY  every f has a decision witness. Each f without a
                          Boolean witness has a Boolean non-necessity certificate
   NOT_MINIMAL            some f has a decision non-necessity certificate
   UNRESOLVED             anything else

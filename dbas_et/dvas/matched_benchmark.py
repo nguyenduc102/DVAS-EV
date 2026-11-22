@@ -3,7 +3,7 @@
 Linux/WSL spawn workers generate their own verifier signing and KEM keys.
 The coordinator receives only public keys and sends ledger snapshots over
 framed loopback TCP. Production VerifierNode.evaluate and DvasLedger.settle
-remain unchanged. A threshold decision ends collection; late sockets close.
+remain unchanged. A threshold decision ends collection and closes the late sockets.
 The full-transcript reference evaluates all semantics locally with no oracle.
 """
 from __future__ import annotations
@@ -114,7 +114,7 @@ def _worker(control, profile_name: str, vid: str) -> None:
             node.behavior = packet["behavior"]
             outcome = node.evaluate(packet["request"], registry, ledger)
             if packet["withhold"]:
-                # Honest computation but no attestation returned; wait for the
+                # Honest computation but no attestation returned. Wait for the
                 # coordinator deadline/threshold to close this request socket.
                 try:
                     conn.recv(1)
@@ -272,7 +272,7 @@ class WorkerCluster:
 
 
 class ResourceSampler:
-    """100 ms RSS/PSS/system snapshots; CPU times come from /proc, not latency."""
+    """RSS/PSS/system snapshots every 100 ms. CPU times come from /proc."""
     def __init__(self, pids: list[int], interval_s: float = .1):
         self.pids = list(dict.fromkeys([os.getpid()] + pids))
         self.interval_s = interval_s

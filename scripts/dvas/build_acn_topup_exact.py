@@ -7,7 +7,7 @@ rounding.  One row (workload_index 14598: 0.959561 kWh x 0.55 = 0.52775855) roun
 0.527758 in float but to 0.527759 exactly, so it exceeds its 0.527758 hold and is refused
 under the original cap, yet was missing from the top-up set.  This script selects every
 original-cap row whose exact amount exceeds its hold (3,395 rows).  Rows already in the
-legacy file keep their recommended delta; new rows get the same rule
+legacy file keep their recommended delta. New rows get the same rule
 delta = 1.10 * amount - hold (fixed 6 decimals).
 """
 from __future__ import annotations

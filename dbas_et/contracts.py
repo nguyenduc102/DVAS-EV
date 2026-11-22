@@ -4,15 +4,15 @@ Python contract-state simulation for DBAS-ET.
 These classes simulate the logical state transitions of registry,
 authorization, settlement, and dispute contracts.
 
-They are not production smart contracts. Solidity feasibility and gas
-measurement should be handled separately in the Foundry artifact.
+They are not production smart contracts. The Solidity contracts and gas
+measurements are in foundry/.
 
-Important numeric note
-----------------------
+Numeric note
+------------
 The Python simulator uses float values rounded to 6 decimal places for
 protocol-level monetary amounts. Therefore settlement cap comparisons use
 MONEY_EPS to avoid false blocks caused only by floating-point roundoff.
-This tolerance is not a security relaxation; it is a simulation accounting
+This tolerance is not a security relaxation. It is a simulation accounting
 tolerance for 6-decimal deterministic tariff outputs.
 """
 
@@ -193,9 +193,8 @@ class AuthSC:
     ) -> ProtocolResult:
         """Verify A projection, optional admission certificate, and reserve hold.
 
-        adm_cert/validator are optional to keep old notebooks working.  New
-        protocol-final experiments should pass both, so AuthSC no longer
-        relies only on a local function call and projection proof.
+        adm_cert and validator are optional. With both, AuthSC also checks the
+        validator's admission certificate, not only the projection proof.
         """
         if user.user_id not in self.regsc.users:
             return ProtocolResult.reject(
@@ -488,12 +487,9 @@ class SettleSC:
     def submit_receipt(self, receipt: DeliveryReceipt) -> ProtocolResult:
         """Submit a meter-signed delivery receipt.
 
-        Replay handling is intentionally performed here as well as in
-        release_settlement.  A previously settled receipt must not be allowed
-        to move the authorization record back from SETTLED to
-        RECEIPT_SUBMITTED.  This keeps the simulator state machine faithful to
-        the protocol semantics instead of relying on settlement-time replay
-        detection only.
+        Replays are checked here and again in release_settlement, so a settled
+        receipt cannot move the authorization record from SETTLED back to
+        RECEIPT_SUBMITTED.
         """
         record = self.authsc.records.get(receipt.trade_id)
         if record is None:
@@ -712,10 +708,9 @@ class SettleSC:
         10. Enforce captured_amount <= held amount.
         11. Release captured amount and refund unused hold.
 
-        This mirrors the DBAS-ET paper protocol where the off-chain
-        SettlementVerifier decrypts private payloads and evaluates Match,
-        while SettleSC only checks public roots, digests, certificate state,
-        replay state, and reserved-fund bounds.
+        The off-chain SettlementVerifier decrypts the private payloads and
+        evaluates Match. SettleSC only checks public roots, digests, certificate
+        state, replay state and reserved-fund bounds.
         """
         rbc = (
             rbc_public
@@ -822,8 +817,7 @@ class SettleSC:
 
         # 7. RBC authorization digest must match the current AuthRecord digest.
         #
-        # Important:
-        # SettlementVerifier must compute rbc.ar_digest from the same public
+        # SettlementVerifier computes rbc.ar_digest from the same public
         # AuthRecord representation:
         #
         #     digest_record("DBAS-ET:AR:v1", record.to_record())
@@ -842,7 +836,7 @@ class SettleSC:
                 },
             )
 
-        # 8. RBC predicate must be true.  If false, verifier is saying Match failed.
+        # 8. RBC predicate must be true (false means the verifier's Match failed).
         if not rbc.predicate_result:
             return ProtocolResult.block(
                 "rbc_predicate_failed",

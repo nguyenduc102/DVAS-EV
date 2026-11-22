@@ -2,9 +2,9 @@
 pragma solidity ^0.8.24;
 
 /// @title DVASQuorumSettle
-/// @notice On-chain PUBLIC-INVARIANT + QUORUM verification for DVAS-EV settlement.
+/// @notice On-chain public-invariant and quorum checks for DVAS-EV settlement.
 /// @dev Semantic verification (PAM openings, Match predicate, meter signature,
-///      private-evidence decryption) is performed OFF-CHAIN by independent
+///      private-evidence decryption) is performed off-chain by independent
 ///      settlement verifiers. This contract only checks:
 ///        - tid/sid/rho/receipt-digest/h_priv binding to its own state,
 ///        - capture/refund bounds against the reserved amount,

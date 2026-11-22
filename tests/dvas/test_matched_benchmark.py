@@ -1,4 +1,4 @@
-"""Semantic and process-isolation checks; these are not performance samples."""
+"""Semantic and process-isolation checks. These are not performance samples."""
 import os
 from decimal import Decimal
 

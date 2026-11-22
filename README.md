@@ -99,7 +99,7 @@ library baselines of Fig. 6 and the pricing-stress experiment.
 Measured run times on the machine above: test suite 20 s, quick pipeline 1 min, full
 `run_paper_artifact.py` 5 min (of which the 5,000-session regression takes 100 s), matched campaign
 about 17 min of measurement plus key and worker setup. The matched campaign and the timing experiments
-should run on an otherwise idle machine.
+were run on an otherwise idle machine.
 
 Run-to-run timing differences of a few percent are expected. Counts, accept and reject decisions, sizes in
 bytes and gas are deterministic for the fixed seeds.

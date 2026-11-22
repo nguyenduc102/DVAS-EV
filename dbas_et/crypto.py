@@ -222,7 +222,7 @@ def make_address_from_cls_pk(pk_or_bytes: ec.EllipticCurvePublicKey | bytes) -> 
     """
     Derive a blockchain-style simulation address.
 
-    Stable within the simulator; this is not full EVM account derivation.
+    Stable within the simulator. This is not full EVM account derivation.
     """
     if isinstance(pk_or_bytes, bytes):
         pk_bytes = pk_or_bytes

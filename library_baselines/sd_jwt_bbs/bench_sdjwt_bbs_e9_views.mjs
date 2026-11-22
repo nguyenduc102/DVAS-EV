@@ -4,12 +4,12 @@
 // encodings (value_b64u), same PA-MSP selected fields per view as E9 B2/B3.
 //
 // Per (capsule, view):
-//   SD-JWT: issuer signs once (ES256, all 26 fields selectively disclosable);
-//           holder presents the selected fields (no key binding);
+//   SD-JWT: issuer signs once (ES256, all 26 fields selectively disclosable),
+//           holder presents the selected fields (no key binding),
 //           verify = issuer-signature check + disclosure digest checks.
-//   BBS:    issuer signs the 26 field encodings once; holder derives a proof
-//           revealing the selected indexes; verify = verifyProof.
-// Bytes:   SD-JWT = compact presentation length;
+//   BBS:    issuer signs the 26 field encodings once, holder derives a proof
+//           revealing the selected indexes, verify = verifyProof.
+// Bytes:   SD-JWT = compact presentation length,
 //          BBS    = proof length + disclosed encodings + 1 B per index.
 // Completeness test (as E9): for every required field, an authentic opening
 //   that omits only that field is presented and verified

@@ -1,7 +1,7 @@
 """
 Lightweight operation counters for controlled-baseline accounting.
 
-Counts are collected per context (``OpCounter`` used as a context manager);
+Counts are collected per context (``OpCounter`` used as a context manager),
 outside a context the calls are no-ops.  Counted categories:
 
 hash, sig_gen, sig_verify, kem_encap, kem_decap, aead_enc, aead_dec,

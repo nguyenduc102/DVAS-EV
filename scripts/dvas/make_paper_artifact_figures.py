@@ -3,13 +3,13 @@
 Figure 1  PAM decomposition (settlement predicate): disclosed fields, bytes split
           into disclosed values + authentication proof, verification time.
 Figure 2  Quorum cost/security trade-off: critical-path latency, RBC size, gas
-          (separate panels; never a dual axis).
+          (separate panels, no dual axis).
 Figure 3  Hybrid-PQ overhead (2-of-3): local latency and artifact sizes.
 
-Palette: reference categorical slots 1-3 (#2a78d6, #eb6834, #1baf7a; documented
-as validated for all pairs in light mode) + neutral gray for the legacy system.
+Colours: #2a78d6, #eb6834 and #1baf7a for the DVAS-EV configurations, gray for
+the legacy system.
 Every bar carries a direct value label (placed above the P95 whisker where one
-is drawn); the same numbers are in tables/*.csv.
+is drawn). The same numbers are in tables/*.csv.
 """
 
 from __future__ import annotations
@@ -53,7 +53,7 @@ def save(fig, name: str) -> None:
 
 
 def label_bars(ax, bars, fmt="{:.0f}", values=None, tops=None):
-    """Direct value labels; ``tops`` places each label above its P95 whisker instead of the bar."""
+    """Direct value labels. ``tops`` places each label above its P95 whisker instead of the bar."""
     vals = values if values is not None else [b.get_height() for b in bars]
     ys = tops if tops is not None else [b.get_y() + b.get_height() for b in bars]
     for b, v, y in zip(bars, vals, ys):

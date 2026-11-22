@@ -85,7 +85,7 @@ def regression(rows_out: list[dict], n: int) -> None:
                                          active_charging_duration_s=sp.active_charging_duration_s,
                                          parking_duration_s=sp.parking_duration_s)
             exp_settle += exact_amount <= sp.preauth_limit + (sp.topup_delta if topup else 0)
-            # legacy float tolerance (MONEY_EPS=1e-5) can capture slightly MORE than the hold
+            # legacy float tolerance (MONEY_EPS=1e-5) can capture slightly more than the hold
             legacy_over_hold = l_ok and not r.ok and l_cap is not None and l_cap > sp.preauth_limit
             if not same and legacy_over_hold:
                 explained.append(sp.row_index)
@@ -250,7 +250,7 @@ def reproducibility() -> None:
         env = DvasEnvironment(profile=PROFILES["C3"])
         res = [env.run(sp) for sp in specs]
         # receipt/RBC byte counts contain ECDSA DER signatures (70-72 bytes, random nonce) and are
-        # therefore excluded; signature-free sizes and all decisions must be identical.
+        # therefore excluded. Signature-free sizes and all decisions must be identical.
         sig = [(r.ok, str(r.captured), r.sizes.get("opening_A_bytes"), r.sizes.get("opening_S_bytes"),
                 r.sizes.get("private_envelope_bytes")) for r in res]
         atk = [(n, run_attack(env, n, specs[i % 10], specs, case_no=i).reason)

@@ -4,14 +4,14 @@ Cryptographic profiles, signature schemes and KEMs for DVAS-EV.
 Profiles (PQ ablation)
 ------------------------------
 C0  CLASSICAL       ECDSA everywhere, X25519 KEM for private evidence.
-C1  PQ-AUTH-ONLY    ML-DSA-65 user/station authorization; rest classical.
-C2  PQ-KEM-ONLY     ML-KEM-768 private evidence; signatures classical.
+C1  PQ-AUTH-ONLY    ML-DSA-65 user/station authorization. Rest classical.
+C2  PQ-KEM-ONLY     ML-KEM-768 private evidence. Signatures classical.
 C3  HYBRID          ECDSA+ML-DSA-65 hybrid authorization, ML-KEM-768 private
                     evidence, ECDSA meter receipts and ECDSA verifier
                     attestations (EVM ecrecover-compatible settlement path).
                     Labelled HYBRID: meter and RBC paths are classical.
 C4  HYBRID-PQ-ATTEST  as C3 but verifier attestations use ML-DSA-65
-                    (off-chain/contract-simulation only; not EVM-verifiable).
+                    (off-chain/contract simulation only, not EVM-verifiable).
 
 No profile is "fully post-quantum": meter receipts remain ECDSA in all of
 them because deployed meters sign classically.

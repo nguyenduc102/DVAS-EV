@@ -3,7 +3,7 @@ Deterministic canonical encoding for DVAS-EV (encoding version 1).
 
 Every party that hashes a transaction object, computes a Merkle leaf, signs a
 receipt, or signs a settlement decision uses this encoder.  The encoding is a
-binary type-length-value format; JSON is never hashed directly.
+binary type-length-value format. JSON is never hashed directly.
 
 Wire format
 -----------
@@ -16,14 +16,14 @@ All integers are big-endian.  Payload per type tag:
 UINT      0x01  u64 (rejects negative, bool, > 2^64-1)
 INT       0x02  two's-complement i64 (rejects bool)
 FIXED6    0x03  i64 count of 10^-6 units.  Energy is kWh with six decimals
-                (1 unit = 1 mWh); money is currency units with six decimals.
+                (1 unit = 1 mWh). Money is currency units with six decimals.
                 Input must already be exactly representable at 6 decimals
                 (normalisation happens explicitly via ``to_fixed6``).
 STRING    0x04  UTF-8 bytes of an NFC-normalised string (non-NFC input is
                 rejected, not silently normalised)
 BYTES     0x05  raw bytes
 ENUM      0x06  u16 code from a registered enum table
-TIMESTAMP 0x07  i64 Unix seconds, UTC.  Accepts int or tz-aware datetime;
+TIMESTAMP 0x07  i64 Unix seconds, UTC.  Accepts int or tz-aware datetime,
                 rejects naive datetimes and strings.
 BOOL      0x08  one byte 0x00/0x01 (only real bool accepted)
 DIGEST32  0x09  exactly 32 bytes (hex string of 64 chars or bytes)
@@ -77,7 +77,7 @@ class Lifecycle(IntEnum):
 
 
 # ---------------------------------------------------------------------------
-# Enum tables (stable codes; never renumber, only append)
+# Enum tables (stable codes, never renumbered, only appended)
 # ---------------------------------------------------------------------------
 
 ENUM_TABLES: dict[str, dict[str, int]] = {
@@ -119,7 +119,7 @@ def to_fixed6(value: Any) -> Decimal:
     """Normalise a numeric input to a 6-decimal Decimal (ROUND_HALF_EVEN).
 
     This is the only place where rounding is allowed.  Capsule builders call
-    it once when importing dataset values; the encoder itself is strict.
+    it once when importing dataset values. The encoder itself is strict.
     """
     if isinstance(value, bool):
         raise EncodingError("bool is not a FIXED6 value")
@@ -144,7 +144,7 @@ def to_fixed6(value: Any) -> Decimal:
 
 
 def fixed6_units(value: Any) -> int:
-    """Strictly convert to integer micro-units; reject values needing rounding."""
+    """Strictly convert to integer micro-units. Reject values needing rounding."""
     if isinstance(value, bool):
         raise EncodingError("bool is not a FIXED6 value")
     if isinstance(value, Decimal):
@@ -354,7 +354,7 @@ class FieldRegistry:
             raise EncodingError(f"unknown field {key!r}") from exc
 
     def digest(self) -> bytes:
-        """Digest of the whole registry definition (binds schema version; cached)."""
+        """Digest of the whole registry definition (binds the schema version, cached)."""
         cached = getattr(self, "_digest", None)
         if cached is not None:
             return cached

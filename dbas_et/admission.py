@@ -33,8 +33,8 @@ class AdmissionCertificate:
     Validator-signed admission certificate.
 
     The certificate proves that an entry validator accepted the admission
-    projection before AuthSC reserves funds.  It intentionally signs a compact
-    digest rather than the full capsule.
+    projection before AuthSC reserves funds.  It signs a compact digest, not the
+    full capsule.
     """
 
     validator_id: str

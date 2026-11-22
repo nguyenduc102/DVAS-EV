@@ -49,8 +49,8 @@ class ACNDownloadConfig:
     Configuration for downloading ACN sessions.
 
     target_raw_sessions:
-        Number of raw sessions to cache before normalization. This should be
-        larger than target_n because some rows may be unusable after filtering.
+        Number of raw sessions to cache before normalization. It is larger than
+        target_n because filtering drops some rows.
     """
 
     api_token: str
@@ -334,10 +334,10 @@ def fetch_acn_sessions_rest(config: ACNDownloadConfig) -> list[dict[str, Any]]:
         token as HTTP basic-auth username, blank password.
 
     Resilient version for large downloads:
-      - retries transient HTTP 429/500/502/503/504;
-      - uses exponential backoff;
-      - prints progress;
-      - can move to the next site if one site repeatedly fails after partial data;
+      - retries transient HTTP 429/500/502/503/504
+      - uses exponential backoff
+      - prints progress
+      - can move to the next site if one site repeatedly fails after partial data
       - fails immediately for 401/403 because token/auth will not be fixed by retry.
     """
     try:

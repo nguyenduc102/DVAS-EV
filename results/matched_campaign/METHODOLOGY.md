@@ -109,5 +109,5 @@ bash scripts/env/dvas_run.sh python -m pytest tests/dvas/test_matched_benchmark.
 bash scripts/env/dvas_run.sh python scripts/dvas/run_matched_campaign.py
 ```
 
-Do not run the campaign at the same time as tests or other benchmarks, and use a new output
-directory for each campaign.
+The campaign ran with no tests or other benchmarks in parallel, and each campaign writes to a
+new output directory.

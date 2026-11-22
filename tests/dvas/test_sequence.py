@@ -131,7 +131,7 @@ def test_balances_conserved(env, acn_specs):
 
 def test_zero_headroom_boundary_row_is_amount_safe():
     """ACN original-cap row 2320: exact amount 0.52775855 -> 0.527759 > hold 0.527758.
-    The legacy float path (MONEY_EPS=1e-5) captures 0.527759; DVAS-EV refuses (capture <= hold)."""
+    The legacy float path (MONEY_EPS=1e-5) captures 0.527759 and DVAS-EV refuses it (capture <= hold)."""
     from dbas_et.dvas.profiles import PROFILES
     from dbas_et.dvas.protocol import DvasEnvironment
     from dbas_et.dvas.workload import ACN_ORIGINAL_CAP

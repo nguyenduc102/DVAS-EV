@@ -46,11 +46,11 @@ def main() -> int:
                 "nonnecessity_certificates": cert} for r, n, c, b, d, cert in summ])
     md = ["# Checked minimality analysis", "",
           "Analysis tool `dbas_et/dvas/minimality.py`; runner `scripts/dvas/run_minimality_checked.py`. "
-          "The runtime selector is unchanged and claims **sufficiency only**.", "",
+          "The runtime selector is unchanged and only guarantees sufficiency.", "",
           f"Valid semantic domain: {DOMAIN}", "",
           f"Contexts: {len(ctx)} real sessions ({a.acn} ACN + {a.mfev} MFEV).", "",
           "A witness (c1, c2, e), with c1 and c2 differing only in f and a different outcome, is a constructive "
-          "proof that f is necessary. A non-necessity certificate is a proof that f is NOT necessary. A missing "
+          "proof that f is necessary. A non-necessity certificate is a proof that f is not necessary. A missing "
           "witness alone proves nothing (UNRESOLVED).", "",
           "| predicate | \\|F_r\\| | classification | Boolean witnesses | decision witnesses | non-necessity certificates |",
           "|---|---|---|---|---|---|",

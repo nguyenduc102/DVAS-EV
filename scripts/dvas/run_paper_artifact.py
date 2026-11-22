@@ -2,7 +2,7 @@
 
     scripts/env/dvas_run.sh python scripts/dvas/run_paper_artifact.py [--quick]
 
-Runs every experiment in a FIXED order with DVAS_OUT=outputs/paper_artifact (the
+Runs every experiment in a fixed order with DVAS_OUT=outputs/paper_artifact (the
 previously validated outputs/ are never overwritten), stops at the first
 unexpected failure, then derives tables, figures, the paper
 numbers, the scale comparison and the reproducibility manifest.

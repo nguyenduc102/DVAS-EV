@@ -16,7 +16,7 @@ representative structured objects onto DVAS-EV semantics:
            durations) + meter_values_digest = H(signedMeterData) inside
            DR_private (and therefore inside the meter-signed h_priv).
 
-Limitations: OCMF/EDL signed meter values are not parsed or verified;
+Limitations: OCMF/EDL signed meter values are not parsed or verified,
 tariffs whose TIME/PARKING_TIME prices differ from the protocol's fixed
 per-hour rates are rejected as unsupported rather than silently mapped.
 """

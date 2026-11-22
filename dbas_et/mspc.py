@@ -202,8 +202,8 @@ def default_predicate_spec(
     """
     Return default DBAS-ET predicate dependency specification.
 
-    The dependency map is intentionally explicit because it is part of the
-    semantic projection design.
+    The dependency map is written out by hand because it is part of the
+    projection design.
     """
     rows = layout_rows_by_id(layout)
 
@@ -332,7 +332,7 @@ def build_candidate_units(
 
     field mode:
         one unit opens one semantic field.
-        compiler estimate only; not directly verified by current row-hash backend.
+        compiler estimate only. Not directly verified by current row-hash backend.
 
     hybrid mode:
         includes both row and field units.
@@ -445,7 +445,7 @@ def compile_projection(
     Compile a predicate-sufficient projection plan (greedy weighted cover).
 
     The current implementation uses greedy weighted set cover. The certificate
-    states sufficiency only; no minimality or optimality is claimed.
+    states sufficiency only. No minimality or optimality is claimed.
     """
     pred = default_predicate_spec(layout, phase, reason)
     candidate_units = build_candidate_units(layout, phase, candidate_mode)

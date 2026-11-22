@@ -13,7 +13,7 @@ from the dependency registry and accepts only if
     F_req is a subset of F(opening)    (policy SUPERSET), or
     F(opening) == F_req                (policy EXACT),
 
-AND the supplied (field_id, value) pairs authenticate to rho_t.
+and the supplied (field_id, value) pairs authenticate to rho_t.
 
 Tree layout
 -----------
@@ -44,7 +44,7 @@ HASH_LEN = 32
 
 
 class CompletenessPolicy(str, Enum):
-    SUPERSET = "superset"  # F_req subset of F(opening); extra committed fields allowed
+    SUPERSET = "superset"  # F_req subset of F(opening), extra committed fields allowed
     EXACT = "exact"        # F(opening) == F_req
 
 
@@ -152,7 +152,7 @@ class PAMOpening:
         return sum(len(encode_field(REGISTRY.spec(fid), v)) for fid, v in self.fields)
 
     def proof_bytes(self) -> int:
-        """Bytes of authentication material (hashes only; indices are implied by field IDs)."""
+        """Bytes of authentication material (hashes only, indices follow from the field IDs)."""
         return self.sibling_hash_count * HASH_LEN
 
     def to_bytes(self) -> bytes:

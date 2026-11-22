@@ -1,4 +1,4 @@
-"""Section 4: authenticated binding between DR_private and the meter-signed DR_t."""
+"""Authenticated binding between DR_private and the meter-signed DR_t."""
 
 from __future__ import annotations
 
@@ -56,7 +56,7 @@ def test_private_payload_with_wrong_meter_receipt(env, acn_specs):
 
 
 def test_private_payload_digest_mismatch_relabelled_context(env, acn_specs):
-    """Attacker rewrites the envelope context to claim this receipt's h_priv; AEAD fails."""
+    """Attacker rewrites the envelope context to claim this receipt's h_priv. AEAD fails."""
     a = ready(env, acn_specs[6])
     b = ready(env, acn_specs[7])
     a.envelope = replace(b.envelope, context=a.envelope.context)
@@ -156,7 +156,7 @@ def test_legacy_accepts_attacker_payload_contrast():
 def test_wrong_role_key_for_meter(env, acn_specs):
     s = env.session(acn_specs[18])
     s.commit(); s.authorize(); s.open_session(); s.deliver()
-    # a verifier key is registered, but under the VERIFIER role, not METER
+    # a verifier key is registered, but under the VERIFIER role, not the METER role
     sv = env.verifiers["SV1"]
     forged = resign(s.receipt.with_values(receipt_meter_id="SV1"), sv.signer)
     assert env.registry.lookup("SV1", Role.METER).reason == "WRONG_ROLE"

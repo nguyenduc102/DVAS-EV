@@ -35,8 +35,7 @@ def meter_values_root(samples: Sequence[Mapping[str, Any]]) -> str:
     """
     Lightweight deterministic root for reconstructed meter samples.
 
-    This is a hash-chain style root, not a Merkle proof backend.
-    It is suitable for protocol-state audit evidence.
+    A hash-chain root, not a Merkle proof backend. Used as audit evidence.
     """
     acc = "00" * 32
     for i, sample in enumerate(samples):
@@ -87,7 +86,7 @@ def verify_receipt_against_authorization(
     Semantic receipt-binding verifier.
 
     This function does not replace signature verification or projection opening.
-    It should be called after:
+    It runs after these checks:
       1. AR_t/admission certificate is valid.
       2. DR_t signature is valid.
       3. S_t projection opening against rho_t is valid.

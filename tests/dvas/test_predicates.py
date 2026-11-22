@@ -1,4 +1,4 @@
-"""Section 2: PA-MSP dependency registry and predicate evaluation."""
+"""PA-MSP dependency registry and predicate evaluation."""
 
 from __future__ import annotations
 

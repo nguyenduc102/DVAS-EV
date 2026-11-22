@@ -1,7 +1,7 @@
 """
 Multi-recipient private delivery evidence.
 
-DR_private is encrypted ONCE under a fresh random content key K_t with
+DR_private is encrypted once under a fresh random content key K_t with
 ChaCha20-Poly1305.  K_t is then wrapped independently for every authorised
 verifier using that verifier's registered KEM key (ML-KEM-768 or X25519,
 per profile):
@@ -14,7 +14,7 @@ ctx = (protocol, tid, sid, rho_t, meter_id, h_priv, recipients digest).  The
 payload AEAD uses ctx as associated data, so a ciphertext moved to another
 transaction/session/root fails authentication.
 
-What this does NOT provide: sender authentication.  Anyone holding the
+This layer does not authenticate the sender.  Anyone holding the
 verifiers' public KEM keys can produce a valid envelope.  Authenticity of
 the payload comes from comparing H(DR_private) with the ``h_priv`` signed by
 the registered meter in the public receipt (see ``delivery`` and
@@ -163,7 +163,7 @@ def open_evidence(
         content_key = ChaCha20Poly1305(kek).decrypt(w.nonce, w.wrapped, ctx_digest + verifier_id.encode())
     except InvalidTag:
         return OpenResult(False, "KEY_UNWRAP_FAILED")
-    except Exception as exc:  # malformed KEM ciphertext etc.
+    except Exception as exc:  # e.g. malformed KEM ciphertext
         return OpenResult(False, f"KEM_FAILED:{type(exc).__name__}")
     try:
         count("aead_dec")

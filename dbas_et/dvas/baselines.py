@@ -1,25 +1,25 @@
 """
 Controlled architectural baselines with a common lifecycle interface.
 
-These are CONTROLLED ARCHITECTURAL BASELINES built from the same primitives
+These are controlled architectural baselines built from the same primitives
 (canonical encoder, ECDSA/ML-DSA signers, SHA-256, instrumentation) as
 DVAS-EV.  They are not reproductions of external state-of-the-art systems.
 
     authorize()  submit_receipt()  verify_delivery()  settle()
 
-FullEscrow   full capsule and full receipt posted publicly; the contract
+FullEscrow   full capsule and full receipt posted publicly. The contract
              evaluates the settlement predicate itself (no proofs, no privacy).
-HashAnchor   only H(capsule) and H(receipt) on chain; a single trusted
+HashAnchor   only H(capsule) and H(receipt) on chain. A single trusted
              operator checks semantics off-chain and signs the settlement
-             claim; the contract checks the signature and amount <= hold.
+             claim. The contract checks the signature and amount <= hold.
 CDR          OCPI-style post-hoc Charge Detail Record: no pre-service
-             commitment; CPO signs a CDR with the tariff it applied; eMSP
+             commitment. The CPO signs a CDR with the tariff it applied and the eMSP
              verifies CDR + meter signatures and pays if cost <= reserve.
 DVAS-EV      committed capsule, predicate-complete PAM openings, meter-bound
              private evidence, 2-of-3 quorum RBC.
 
-Every baseline also executes the same three attack inputs so that the
-detection comparison is measured rather than asserted.
+Every baseline also runs the same three attack inputs, so detection is
+measured for each of them.
 """
 
 from __future__ import annotations
@@ -251,7 +251,7 @@ class HashAnchor(LifecycleBaseline):
         return verify_signature(ECDSA, ctx["p"].meter.public_key, h, sig)
 
     def verify_delivery(self, spec, ctx):
-        # single trusted operator: computes the amount with the tariff it APPLIED (no committed binding)
+        # single trusted operator: computes the amount with the tariff it applied (no committed binding)
         d = ctx["d"]
         ctx["amount"] = _amount(spec.tariff_mode, d["applied_unit_price"], d)
         claim = tagged_hash("baseline/claim", ctx["h_capsule"], ctx["h_receipt"], str(ctx["amount"]).encode())
@@ -345,7 +345,7 @@ class DVASEV(LifecycleBaseline):
         self._priv(s.sizes["opening_S_bytes"] * len(s.outcomes))
         rbc = s.aggregate()
         if rbc is not None and "claimed_amount" in ctx["mutate"]:
-            # one settlement signer (SV1) inflates; it cannot replace the quorum's digest
+            # one settlement signer (SV1) inflates. It cannot replace the quorum's digest
             from .rbc import QuorumRBC, RBCBody
 
             b = rbc.body
@@ -367,9 +367,9 @@ class DVASEV(LifecycleBaseline):
 BASELINES = {"FullEscrow": FullEscrow, "HashAnchor": HashAnchor, "CDR": CDR, "DVAS-EV": DVASEV}
 
 # Same three attack inputs for every baseline.  Each keeps the resulting amount
-# INSIDE the user's hold, so a refusal can only come from a semantic check,
+# inside the user's hold, so a refusal can only come from a semantic check,
 # not from the reserve bound.  criterion: "refuse" = the only correct outcome
-# is refusal; "refuse_or_honest" = refusal or settling the honest amount.
+# is refusal, and "refuse_or_honest" = refusal or settling the honest amount.
 def _attack_inputs(spec: SessionSpec, attack: str) -> tuple[SessionSpec, dict[str, Any], str]:
     if attack == "post_authorization_tariff_swap":
         return spec, {"applied_tariff_version": spec.tariff_version + "-swap",

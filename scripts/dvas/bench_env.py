@@ -2,15 +2,14 @@
 
 - ``environment_metadata()`` records CPU, cores, RAM, OS, Python/compiler,
   liboqs/liboqs-python versions and enabled algorithms, crypto library
-  versions, solc/forge versions, and a source digest (the repository is not
-  a git repository, so the digest of the measured source files is recorded
-  instead of a commit hash).
+  versions, solc/forge versions, and a SHA-256 digest of the measured source
+  files.
 - ``measure()`` runs explicit warm-up iterations, then repeated runs timed
   with ``time.perf_counter_ns`` (monotonic, high resolution), and returns the
   raw samples.
 - ``stats()`` summarises samples as median, P95, mean, std, min, max.
 
-All timings are LOCAL PROTOCOL-PROCESSING LATENCY in one Python process.
+All timings are local protocol-processing latency in one Python process.
 They are not EV-charging end-to-end latency and include no network or
 blockchain inclusion time.
 """

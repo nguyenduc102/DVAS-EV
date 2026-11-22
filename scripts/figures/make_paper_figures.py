@@ -16,7 +16,7 @@
              results/library_baselines/oz_e9_check_summary.csv,
              results/library_baselines/sdjwt_bbs_e9_summary.csv
 
-The script only reads results; it reruns no benchmark. Point --results at a fresh
+The script only reads results. It reruns no benchmark. Point --results at a fresh
 output directory with the same layout to plot a new run.
 """
 from __future__ import annotations
@@ -95,7 +95,7 @@ def fig_matched_latency_split():
             for j, (ds, t, n) in enumerate(CATS):
                 tot, q = E[(k, pr, ds, t, n)], Q[(k, pr, ds, t, n)]
                 x = j + (i - 1) * (w + 0.02)
-                # solid lower part: local processing; hatched upper part: quorum collection
+                # solid lower part: local processing. Hatched upper part: quorum collection
                 ax.bar(x, tot - q, w, color=col, edgecolor="white", linewidth=0.4, zorder=2)
                 if q > 0:
                     ax.bar(x, q, w, bottom=tot - q, color=col, alpha=0.45, hatch="////", edgecolor=col,

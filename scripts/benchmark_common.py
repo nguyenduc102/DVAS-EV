@@ -2,7 +2,7 @@ from __future__ import annotations
 
 
 def _dbas_truthy_bool(v):
-    """Robust bool parser for Python bool, numpy.bool_, pandas bool, int, and string."""
+    """Bool parser for Python bool, numpy.bool_, pandas bool, int and string."""
     if v is True:
         return True
     if v is False or v is None:
@@ -185,7 +185,7 @@ def _safe_str(row: pd.Series, key: str, default: str = "") -> str:
 
 
 def _safe_bool(value: Any) -> bool:
-    """Robust bool parsing for pandas/CSV values."""
+    """Bool parsing for pandas/CSV values."""
     if isinstance(value, bool):
         return value
 

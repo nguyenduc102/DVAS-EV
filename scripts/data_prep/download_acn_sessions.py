@@ -8,7 +8,7 @@ appended to a JSONL checkpoint, so a re-run loads it, removes duplicates and
 continues until there are enough sessions for the target size.
 
 - The API token is never written to outputs.
-- Output names include the target size; the default 5k inputs are only
+- Output names include the target size. The default 5k inputs are only
   replaced with --update-defaults.
 - One ACN charging session becomes one DBAS-ET transaction.
 """
@@ -239,10 +239,9 @@ def fetch_acn_sessions_checkpointed(
 
     sessions: list[dict[str, Any]] = []
 
-    # Optional seed files allow continuing from a checkpoint created with a
-    # different site order or a different raw-limit filename. This is useful
-    # when caltech deep pagination becomes unhealthy and we want to continue
-    # with jpl/office001 without losing already fetched caltech sessions.
+    # Seed files let a run continue from a checkpoint made with another site order
+    # or raw-limit file name, e.g. to go on with jpl/office001 when caltech deep
+    # pagination fails, without losing the caltech sessions already fetched.
     for seed in seed_jsonl_paths or []:
         seed_path = Path(seed)
         if seed_path.exists():
@@ -358,10 +357,9 @@ def fetch_acn_sessions_checkpointed(
                     )
                     break
             except RuntimeError as exc:
-                # Large ACN downloads sometimes hit a bad deep-pagination window
-                # for one site.  If we have already collected useful sessions
-                # from this site, keep the checkpoint and continue with the next
-                # site instead of losing all progress.
+                # Deep pagination sometimes fails for one site. If sessions from
+                # this site are already in the checkpoint, keep them and move on
+                # to the next site.
                 state = {
                     "updated_at_utc": _now_utc_iso(),
                     "collected": len(sessions),

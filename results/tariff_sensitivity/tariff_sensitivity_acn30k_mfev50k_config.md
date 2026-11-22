@@ -25,4 +25,4 @@
 
 ## Fairness note
 
-This benchmark is a tariff-sensitivity and reserve/top-up stress test. It does not claim to reproduce every production tariff or market price. The monetary units remain dataset-specific: ACN uses deterministic protocol amounts, whereas MFEV uses its processed monetary scale. The main comparison is therefore within each dataset across tariff policies, not between ACN and MFEV currencies.
+This benchmark is a tariff-sensitivity and reserve/top-up stress test. It does not model every real tariff or market price. The monetary units remain dataset-specific: ACN uses deterministic protocol amounts, whereas MFEV uses its processed monetary scale. The main comparison is therefore within each dataset across tariff policies, not between ACN and MFEV currencies.

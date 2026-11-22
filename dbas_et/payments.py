@@ -131,9 +131,8 @@ def build_session_id(
 ) -> str:
     """Build deterministic session id from committed transaction context.
 
-    Protocol-final form binds the session to both trade_id and capsule root
-    rho_t.  The rho_t argument is optional for backward compatibility with
-    older notebooks; new code should pass the committed root explicitly.
+    The session is bound to trade_id and to the capsule root rho_t. rho_t is
+    optional only for the older call sites that do not pass it.
     """
     session_nonce = nonce or uuid.uuid4().hex
     return H_hex(

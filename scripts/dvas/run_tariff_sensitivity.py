@@ -100,7 +100,7 @@ def read_duration_min(df: pd.DataFrame) -> pd.Series:
         if col in df.columns:
             s = pd.to_numeric(df[col], errors="coerce")
             if not s.isna().all():
-                # ACN duration columns are seconds; MFEV duration_raw is in minutes.
+                # ACN duration columns are seconds, MFEV duration_raw is in minutes.
                 if col.endswith("_s"):
                     return (s / 60.0).fillna((s / 60.0).median()).clip(lower=1.0)
                 return s.fillna(s.median()).clip(lower=1.0)
@@ -316,8 +316,7 @@ def write_md(df: pd.DataFrame, path: Path, title: str) -> None:
 
 
 def make_paper_table(summary: pd.DataFrame) -> pd.DataFrame:
-    # Main paper should be compact:
-    # native sanity + tariff-aware flat + flat-estimate stress rows.
+    # Paper table: native sanity row, tariff-aware flat row and flat-estimate stress rows.
     keep = (
         ((summary["tariff_model"] == "native_committed") & (summary["reserve_policy"] == "native_preauth"))
         | ((summary["tariff_model"] == "flat") & (summary["reserve_policy"] == "tariff_aware"))
@@ -440,7 +439,7 @@ def main() -> None:
         f.write("## Fairness note\n\n")
         f.write(
             "This benchmark is a tariff-sensitivity and reserve/top-up stress test. "
-            "It does not claim to reproduce every production tariff or market price. "
+            "It does not model every real tariff or market price. "
             "The monetary units remain dataset-specific: ACN uses deterministic protocol amounts, "
             "whereas MFEV uses its processed monetary scale. The main comparison is therefore "
             "within each dataset across tariff policies, not between ACN and MFEV currencies.\n"

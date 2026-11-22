@@ -5,10 +5,10 @@ Rules (flags are reported, not hidden):
   invariants  (unexpected accepts, property violations, minimality classes,
                fault-matrix mismatches, completeness bytes): must be identical / zero
   sizes       (bytes, sibling hashes, field counts): deviation > 2 % flagged
-  timings     (median latencies): deviation > 25 % flagged (machine noise expected;
+  timings     (median latencies): deviation > 25 % flagged (machine noise expected,
                timings are local protocol-processing measurements)
   gas         must be identical (deterministic EVM execution)
-Larger empirical coverage is NOT a formal proof.
+More test cases do not make a formal proof.
 """
 
 from __future__ import annotations
@@ -97,7 +97,7 @@ def main() -> int:
     flag_rows = [f"| {r['kind']} | {r['metric']} | {r['validated']} | {r['paper_artifact']} | {r['deviation_pct']} | {r['note']} |"
                  for r in flagged]
     lines = ["# Larger campaign vs validated outputs", "",
-             "Larger empirical coverage strengthens the evidence but is **not a formal proof**.", "",
+             "More test cases strengthen the evidence but are not a formal proof.", "",
              f"Compared metrics: {len(R)}; flagged: {len(flagged)} "
              f"(invariant flags: {sum(r['kind'] == 'invariant' for r in flagged)}).", "",
              "| kind | metric | validated | paper artifact | deviation % | note |", "|---|---|---|---|---|---|",

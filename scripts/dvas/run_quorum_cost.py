@@ -5,7 +5,7 @@ SettleSC.release_settlement_with_certificate, ML-KEM protected payload, OQS)
 with DVAS-EV 1-of-1, 2-of-3 and 3-of-5 (profile C3).
 
 Scope: local protocol-processing latency (single Python process, verifiers run
-sequentially; critical path = slowest verifier + aggregation + settlement).
+sequentially, critical path = slowest verifier + aggregation + settlement).
 Gas = gasleft() delta inside Foundry tests (outputs/solidity_gas.csv).
 Transaction inclusion and end-to-end charging latency are not measured.
 """

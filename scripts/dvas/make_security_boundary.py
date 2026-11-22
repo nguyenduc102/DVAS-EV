@@ -2,8 +2,8 @@
 
 Derived from <OUT>/quorum_fault_matrix.csv (raw per-cell counts) plus an explicit
 replay-under-collusion experiment: after a session settles, the m malicious
-verifiers (or, if m < t, the honest set) sign a FRESH, different RBC body for the
-same transaction; SettleSC must refuse it.
+verifiers (or, if m < t, the honest set) sign a fresh, different RBC body for the
+same transaction. SettleSC refuses it.
 """
 
 from __future__ import annotations
@@ -26,7 +26,7 @@ from dbas_et.dvas.workload import acn_sessions  # noqa: E402
 
 def replay_attempts(n: int, t: int, m: int, o: int, sessions: int) -> tuple[int, set[str], int]:
     """Settle each session (last o verifiers offline), then have the available signers -- the m colluders
-    if m >= t, else the available honest verifiers -- sign a FRESH body for the same transaction."""
+    if m >= t, else the available honest verifiers -- sign a fresh body for the same transaction."""
     env = DvasEnvironment(profile=PROFILES["C3"], n=n, t=t, behaviors={f"SV{i}": "offline" for i in range(n - o + 1, n + 1)})
     available = [f"SV{i}" for i in range(1, n - o + 1)]
     signers = available[: max(m, t)]

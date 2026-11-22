@@ -1,4 +1,4 @@
-"""Checked minimality analysis: classifications must stay as established unless evidence changes."""
+"""Checked minimality analysis: the classification of each predicate is pinned."""
 
 from __future__ import annotations
 

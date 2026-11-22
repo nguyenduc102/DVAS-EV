@@ -4,7 +4,7 @@ Workload adapters: ACN / MFEV processed profiles -> DVAS-EV session specs.
 Provenance rules
 ----------------
 * Energy, timestamps and durations are copied from the processed dataset
-  rows (ACN-Data sessions; MFEV SciData 2024 charging records).  Nothing
+  rows (ACN-Data sessions, MFEV SciData 2024 charging records).  Nothing
   physical is synthesised.
 * Tariff, pre-authorisation limits and top-up deltas are the legacy
   artifact's deterministic protocol tariff (``tariff_source`` column), not
@@ -160,7 +160,7 @@ def _bucket(s: str) -> int:
 
 
 def assign_operators(specs: list[SessionSpec], cpo_map: dict[str, str]) -> list[SessionSpec]:
-    """Multi-operator scenario: users -> home operator by hash(user_id);
+    """Multi-operator scenario: users -> home operator by hash(user_id), and
     stations keep their dataset CPO, relabelled through ``cpo_map``."""
     out = []
     for s in specs:
@@ -175,7 +175,7 @@ def honest_amount(spec: SessionSpec) -> Decimal:
     """Exact (Decimal, ROUND_HALF_EVEN) tariff amount of a session: the honest reference
     used by experiment harnesses.  The dataset's precomputed ``expected_amount``
     column was produced with float rounding and differs by 1e-6 on 4 of 5,000 ACN
-    rows (exact half-way cases); harnesses therefore compare against this value."""
+    rows (exact half-way cases). Harnesses therefore compare against this value."""
     from .tariff import tariff_amount
 
     return tariff_amount(mode=spec.tariff_mode, unit_price=spec.unit_price, delivered_kwh=spec.delivered_kwh,

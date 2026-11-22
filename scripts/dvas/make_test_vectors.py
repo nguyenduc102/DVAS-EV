@@ -1,6 +1,6 @@
 """Write the pinned canonical-encoding test vectors (tests/dvas/vectors/canonical_v1.json).
 
-Run once when the encoding version changes; the test suite then requires the
+Run once when the encoding version changes. The test suite then requires the
 current implementation to reproduce these bytes, leaf hashes and root exactly.
 """
 

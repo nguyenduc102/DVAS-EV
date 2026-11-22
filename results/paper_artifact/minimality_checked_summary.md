@@ -1,12 +1,12 @@
 # Checked minimality analysis
 
-Analysis tool `dbas_et/dvas/minimality.py`; runner `scripts/dvas/run_minimality_checked.py`. The runtime selector is unchanged and claims **sufficiency only**.
+Analysis tool `dbas_et/dvas/minimality.py`; runner `scripts/dvas/run_minimality_checked.py`. The runtime selector is unchanged and only guarantees sufficiency.
 
 Valid semantic domain: STRING: non-empty NFC strings; ENUM: registered values only; FIXED6: >= 0; TIMESTAMP: integers. Evidence: real session evidence plus tightened variants that make bound atoms active.
 
 Contexts: 15 real sessions (10 ACN + 5 MFEV).
 
-A witness (c1, c2, e), with c1 and c2 differing only in f and a different outcome, is a constructive proof that f is necessary. A non-necessity certificate is a proof that f is NOT necessary. A missing witness alone proves nothing (UNRESOLVED).
+A witness (c1, c2, e), with c1 and c2 differing only in f and a different outcome, is a constructive proof that f is necessary. A non-necessity certificate is a proof that f is not necessary. A missing witness alone proves nothing (UNRESOLVED).
 
 | predicate | \|F_r\| | classification | Boolean witnesses | decision witnesses | non-necessity certificates |
 |---|---|---|---|---|---|

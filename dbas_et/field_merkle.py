@@ -84,7 +84,7 @@ class V2FieldMerkleSettlementBackend:
     """Field-sensitive Merkle backend for DBAS-ET projections.
 
     This backend is intended as a stronger prototype than the row-level
-    simulated projection backend. It still uses hashes only; it is not a
+    simulated projection backend. It still uses hashes only. It is not a
     vector commitment, not a polynomial commitment, and not a zero-knowledge
     proof. Its purpose is to make proof size and disclosure depend on the
     selected fields rather than only on selected rows.
@@ -126,7 +126,7 @@ class V2FieldMerkleSettlementBackend:
 
         If no MSP-C plan is supplied, the backend compiles a field-mode plan
         for the requested phase. For A/S this opens the fields required by the
-        phase predicate; for D this can be reason-aware.
+        phase predicate. For D this can be reason-aware.
         """
         if phase not in {"A", "S", "D"}:
             raise ValueError(f"unsupported projection phase: {phase}")

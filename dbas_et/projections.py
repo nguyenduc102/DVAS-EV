@@ -11,7 +11,7 @@ Security note
 -------------
 ProjectionProof is a simulated algebraic/Merkle-style opening proof using
 canonical serialization and row hashes. It is not a ZK proof, not a Verkle
-proof, and not a KZG/PCS proof. Benchmark outputs must label it as simulated.
+proof, and not a KZG/PCS proof. Benchmark outputs label it as simulated.
 """
 
 from __future__ import annotations
@@ -159,7 +159,7 @@ class V2SlimSettlementBackend:
     Simulated V2 backend with slim settlement projection.
 
     The backend commits the full semantic layout but opens phase-specific rows.
-    Settlement projection S is intentionally smaller than authorization A.
+    The settlement projection S is smaller than the authorization projection A.
     """
 
     backend_name = "V2SlimSettlementBackend"

@@ -73,8 +73,7 @@ class CanonicalCapsule:
         """
         Backward-compatible alias.
 
-        Important:
-            allowcap_t means pre-authorized payment limit, not captured amount.
+        allowcap_t is the pre-authorized payment limit, not the captured amount.
         """
         return self.preauth_limit_t
 

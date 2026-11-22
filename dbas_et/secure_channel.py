@@ -82,9 +82,8 @@ def _derive_aead_key(
     """
     Derive a 256-bit AEAD key from the KEM shared secret.
 
-    The salt binds transaction/session identity. The info field binds protocol
-    role, phase, payload type, recipient, and algorithms. This keeps the code
-    aligned with the paper-level KEM+AEAD transcript.
+    The salt binds the transaction and session. The info field binds protocol
+    role, phase, payload type, recipient and algorithms.
     """
     ctx = dict(context)
 
@@ -168,7 +167,7 @@ def _encapsulate_to_public(
     Return kem_ciphertext, shared_secret, actual_backend, warning.
 
     mock-sha256 is deterministic plumbing for portable artifact execution.
-    It is not cryptographically secure and must not be used for security claims.
+    It is not cryptographically secure and is not used in any reported result.
     """
     if kem_backend in {"oqs", "auto"}:
         try:
